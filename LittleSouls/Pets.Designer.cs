@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pets));
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -61,7 +62,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Graphik Arabic Medium", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(92)))), ((int)(((byte)(199)))));
-            this.label1.Location = new System.Drawing.Point(495, 9);
+            this.label1.Location = new System.Drawing.Point(386, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(225, 44);
             this.label1.TabIndex = 8;
@@ -82,14 +83,14 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(217, 450);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(278, 536);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
             // panel6
             // 
             this.panel6.Location = new System.Drawing.Point(3, 3);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(214, 132);
+            this.panel6.Size = new System.Drawing.Size(275, 132);
             this.panel6.TabIndex = 0;
             // 
             // panel5
@@ -98,7 +99,7 @@
             this.panel5.Location = new System.Drawing.Point(3, 145);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 7, 3, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(214, 34);
+            this.panel5.Size = new System.Drawing.Size(275, 34);
             this.panel5.TabIndex = 3;
             // 
             // button5
@@ -120,7 +121,7 @@
             this.panel2.Location = new System.Drawing.Point(3, 189);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 7, 3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(214, 34);
+            this.panel2.Size = new System.Drawing.Size(275, 34);
             this.panel2.TabIndex = 4;
             // 
             // button4
@@ -141,7 +142,7 @@
             this.panel1.Location = new System.Drawing.Point(3, 233);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 7, 3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(214, 34);
+            this.panel1.Size = new System.Drawing.Size(275, 34);
             this.panel1.TabIndex = 4;
             // 
             // button1
@@ -162,7 +163,7 @@
             this.panel7.Location = new System.Drawing.Point(3, 277);
             this.panel7.Margin = new System.Windows.Forms.Padding(3, 7, 3, 3);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(214, 34);
+            this.panel7.Size = new System.Drawing.Size(275, 34);
             this.panel7.TabIndex = 5;
             // 
             // button6
@@ -183,7 +184,7 @@
             this.panel8.Location = new System.Drawing.Point(3, 404);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 90, 3, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(214, 34);
+            this.panel8.Size = new System.Drawing.Size(275, 34);
             this.panel8.TabIndex = 6;
             // 
             // button7
@@ -204,7 +205,7 @@
             this.panel9.Location = new System.Drawing.Point(3, 448);
             this.panel9.Margin = new System.Windows.Forms.Padding(3, 7, 3, 3);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(214, 34);
+            this.panel9.Size = new System.Drawing.Size(275, 34);
             this.panel9.TabIndex = 7;
             // 
             // button8
@@ -243,7 +244,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(941, 536);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel3);
