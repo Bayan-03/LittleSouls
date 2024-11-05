@@ -16,5 +16,10 @@ namespace LittleSouls
         {
             InitializeComponent();
         }
+
+        private void Pets_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
