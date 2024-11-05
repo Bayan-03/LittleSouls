@@ -1,6 +1,6 @@
 ﻿namespace LittleSouls
 {
-    partial class Form1
+    partial class Pets
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -37,13 +37,14 @@
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -51,7 +52,21 @@
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Graphik Arabic Medium", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(92)))), ((int)(((byte)(199)))));
+            this.label1.Location = new System.Drawing.Point(495, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(225, 44);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Littel Souls";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // flowLayoutPanel1
             // 
@@ -67,8 +82,8 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 30, 3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(217, 644);
-            this.flowLayoutPanel1.TabIndex = 0;
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(217, 450);
+            this.flowLayoutPanel1.TabIndex = 5;
             // 
             // panel6
             // 
@@ -141,19 +156,6 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Graphik Arabic Medium", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(92)))), ((int)(((byte)(199)))));
-            this.label1.Location = new System.Drawing.Point(513, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(225, 44);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Littel Souls";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.button6);
@@ -217,18 +219,36 @@
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Location = new System.Drawing.Point(84, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(197, 34);
+            this.panel3.TabIndex = 6;
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(-3, -12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(209, 55);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "     Home";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // Pets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(929, 644);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.flowLayoutPanel1);
-            this.DoubleBuffered = true;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.panel3);
+            this.Name = "Pets";
+            this.Text = "Pets";
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -236,6 +256,7 @@
             this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,21 +264,22 @@
 
         #endregion
 
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button button2;
     }
 }
-
