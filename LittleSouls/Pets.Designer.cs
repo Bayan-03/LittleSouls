@@ -33,23 +33,23 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.petsBtn7 = new LittleSouls.PetsBtn();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.petsBtn5 = new LittleSouls.PetsBtn();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.petsBtn6 = new LittleSouls.PetsBtn();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.petsBtn3 = new LittleSouls.PetsBtn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.petsBtn2 = new LittleSouls.PetsBtn();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.petsBtn1 = new LittleSouls.PetsBtn();
             this.panel6 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.petsBtn10 = new LittleSouls.PetsBtn();
             this.petsBtn9 = new LittleSouls.PetsBtn();
             this.petsBtn8 = new LittleSouls.PetsBtn();
             this.petsBtn4 = new LittleSouls.PetsBtn();
-            this.petsBtn1 = new LittleSouls.PetsBtn();
-            this.petsBtn2 = new LittleSouls.PetsBtn();
-            this.petsBtn3 = new LittleSouls.PetsBtn();
-            this.petsBtn6 = new LittleSouls.PetsBtn();
-            this.petsBtn5 = new LittleSouls.PetsBtn();
-            this.petsBtn7 = new LittleSouls.PetsBtn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -80,7 +80,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(219)))), ((int)(((byte)(157)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1120, 287);
+            this.pictureBox1.Location = new System.Drawing.Point(882, 279);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(113, 85);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -108,6 +108,22 @@
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
+            // petsBtn7
+            // 
+            this.petsBtn7.FlatAppearance.BorderSize = 0;
+            this.petsBtn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.petsBtn7.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.petsBtn7.HoverForecolor1 = System.Drawing.Color.Empty;
+            this.petsBtn7.HoverImage1 = null;
+            this.petsBtn7.Location = new System.Drawing.Point(0, 3);
+            this.petsBtn7.Name = "petsBtn7";
+            this.petsBtn7.NormalForecolor1 = System.Drawing.Color.Empty;
+            this.petsBtn7.NormalImage1 = null;
+            this.petsBtn7.Size = new System.Drawing.Size(272, 47);
+            this.petsBtn7.TabIndex = 0;
+            this.petsBtn7.Text = "Profile";
+            this.petsBtn7.UseVisualStyleBackColor = true;
+            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.petsBtn5);
@@ -116,6 +132,22 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(275, 40);
             this.panel5.TabIndex = 7;
+            // 
+            // petsBtn5
+            // 
+            this.petsBtn5.FlatAppearance.BorderSize = 0;
+            this.petsBtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.petsBtn5.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.petsBtn5.HoverForecolor1 = System.Drawing.Color.Empty;
+            this.petsBtn5.HoverImage1 = null;
+            this.petsBtn5.Location = new System.Drawing.Point(0, 3);
+            this.petsBtn5.Name = "petsBtn5";
+            this.petsBtn5.NormalForecolor1 = System.Drawing.Color.Empty;
+            this.petsBtn5.NormalImage1 = null;
+            this.petsBtn5.Size = new System.Drawing.Size(272, 37);
+            this.petsBtn5.TabIndex = 0;
+            this.petsBtn5.Text = "Setting";
+            this.petsBtn5.UseVisualStyleBackColor = true;
             // 
             // panel7
             // 
@@ -126,6 +158,22 @@
             this.panel7.Size = new System.Drawing.Size(275, 40);
             this.panel7.TabIndex = 8;
             // 
+            // petsBtn6
+            // 
+            this.petsBtn6.FlatAppearance.BorderSize = 0;
+            this.petsBtn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.petsBtn6.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.petsBtn6.HoverForecolor1 = System.Drawing.Color.Empty;
+            this.petsBtn6.HoverImage1 = null;
+            this.petsBtn6.Location = new System.Drawing.Point(0, 3);
+            this.petsBtn6.Name = "petsBtn6";
+            this.petsBtn6.NormalForecolor1 = System.Drawing.Color.Empty;
+            this.petsBtn6.NormalImage1 = null;
+            this.petsBtn6.Size = new System.Drawing.Size(272, 37);
+            this.petsBtn6.TabIndex = 0;
+            this.petsBtn6.Text = "Storage";
+            this.petsBtn6.UseVisualStyleBackColor = true;
+            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.petsBtn3);
@@ -134,6 +182,22 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(275, 40);
             this.panel4.TabIndex = 6;
+            // 
+            // petsBtn3
+            // 
+            this.petsBtn3.FlatAppearance.BorderSize = 0;
+            this.petsBtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.petsBtn3.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.petsBtn3.HoverForecolor1 = System.Drawing.Color.Empty;
+            this.petsBtn3.HoverImage1 = null;
+            this.petsBtn3.Location = new System.Drawing.Point(0, 3);
+            this.petsBtn3.Name = "petsBtn3";
+            this.petsBtn3.NormalForecolor1 = System.Drawing.Color.Empty;
+            this.petsBtn3.NormalImage1 = null;
+            this.petsBtn3.Size = new System.Drawing.Size(272, 37);
+            this.petsBtn3.TabIndex = 0;
+            this.petsBtn3.Text = "Invoises";
+            this.petsBtn3.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -144,6 +208,22 @@
             this.panel1.Size = new System.Drawing.Size(275, 40);
             this.panel1.TabIndex = 5;
             // 
+            // petsBtn2
+            // 
+            this.petsBtn2.FlatAppearance.BorderSize = 0;
+            this.petsBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.petsBtn2.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.petsBtn2.HoverForecolor1 = System.Drawing.Color.Empty;
+            this.petsBtn2.HoverImage1 = null;
+            this.petsBtn2.Location = new System.Drawing.Point(0, 3);
+            this.petsBtn2.Name = "petsBtn2";
+            this.petsBtn2.NormalForecolor1 = System.Drawing.Color.Empty;
+            this.petsBtn2.NormalImage1 = null;
+            this.petsBtn2.Size = new System.Drawing.Size(272, 37);
+            this.petsBtn2.TabIndex = 0;
+            this.petsBtn2.Text = " ";
+            this.petsBtn2.UseVisualStyleBackColor = true;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.petsBtn1);
@@ -152,6 +232,22 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(275, 40);
             this.panel2.TabIndex = 4;
+            // 
+            // petsBtn1
+            // 
+            this.petsBtn1.FlatAppearance.BorderSize = 0;
+            this.petsBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.petsBtn1.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.petsBtn1.HoverForecolor1 = System.Drawing.Color.Empty;
+            this.petsBtn1.HoverImage1 = null;
+            this.petsBtn1.Location = new System.Drawing.Point(0, 3);
+            this.petsBtn1.Name = "petsBtn1";
+            this.petsBtn1.NormalForecolor1 = System.Drawing.Color.Empty;
+            this.petsBtn1.NormalImage1 = null;
+            this.petsBtn1.Size = new System.Drawing.Size(272, 37);
+            this.petsBtn1.TabIndex = 0;
+            this.petsBtn1.Text = "Pets";
+            this.petsBtn1.UseVisualStyleBackColor = true;
             // 
             // panel6
             // 
@@ -250,107 +346,11 @@
             this.petsBtn4.NormalForecolor1 = System.Drawing.Color.Empty;
             this.petsBtn4.NormalImage1 = null;
             this.petsBtn4.Padding = new System.Windows.Forms.Padding(15, 15, 0, 0);
-            this.petsBtn4.Size = new System.Drawing.Size(889, 216);
+            this.petsBtn4.Size = new System.Drawing.Size(652, 216);
             this.petsBtn4.TabIndex = 9;
             this.petsBtn4.Text = "All Pets";
             this.petsBtn4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.petsBtn4.UseVisualStyleBackColor = false;
-            // 
-            // petsBtn1
-            // 
-            this.petsBtn1.FlatAppearance.BorderSize = 0;
-            this.petsBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.petsBtn1.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.petsBtn1.HoverForecolor1 = System.Drawing.Color.Empty;
-            this.petsBtn1.HoverImage1 = null;
-            this.petsBtn1.Location = new System.Drawing.Point(0, 3);
-            this.petsBtn1.Name = "petsBtn1";
-            this.petsBtn1.NormalForecolor1 = System.Drawing.Color.Empty;
-            this.petsBtn1.NormalImage1 = null;
-            this.petsBtn1.Size = new System.Drawing.Size(272, 37);
-            this.petsBtn1.TabIndex = 0;
-            this.petsBtn1.Text = "Pets";
-            this.petsBtn1.UseVisualStyleBackColor = true;
-            // 
-            // petsBtn2
-            // 
-            this.petsBtn2.FlatAppearance.BorderSize = 0;
-            this.petsBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.petsBtn2.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.petsBtn2.HoverForecolor1 = System.Drawing.Color.Empty;
-            this.petsBtn2.HoverImage1 = null;
-            this.petsBtn2.Location = new System.Drawing.Point(0, 3);
-            this.petsBtn2.Name = "petsBtn2";
-            this.petsBtn2.NormalForecolor1 = System.Drawing.Color.Empty;
-            this.petsBtn2.NormalImage1 = null;
-            this.petsBtn2.Size = new System.Drawing.Size(272, 37);
-            this.petsBtn2.TabIndex = 0;
-            this.petsBtn2.Text = " ";
-            this.petsBtn2.UseVisualStyleBackColor = true;
-            // 
-            // petsBtn3
-            // 
-            this.petsBtn3.FlatAppearance.BorderSize = 0;
-            this.petsBtn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.petsBtn3.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.petsBtn3.HoverForecolor1 = System.Drawing.Color.Empty;
-            this.petsBtn3.HoverImage1 = null;
-            this.petsBtn3.Location = new System.Drawing.Point(0, 3);
-            this.petsBtn3.Name = "petsBtn3";
-            this.petsBtn3.NormalForecolor1 = System.Drawing.Color.Empty;
-            this.petsBtn3.NormalImage1 = null;
-            this.petsBtn3.Size = new System.Drawing.Size(272, 37);
-            this.petsBtn3.TabIndex = 0;
-            this.petsBtn3.Text = "Invoises";
-            this.petsBtn3.UseVisualStyleBackColor = true;
-            // 
-            // petsBtn6
-            // 
-            this.petsBtn6.FlatAppearance.BorderSize = 0;
-            this.petsBtn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.petsBtn6.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.petsBtn6.HoverForecolor1 = System.Drawing.Color.Empty;
-            this.petsBtn6.HoverImage1 = null;
-            this.petsBtn6.Location = new System.Drawing.Point(0, 3);
-            this.petsBtn6.Name = "petsBtn6";
-            this.petsBtn6.NormalForecolor1 = System.Drawing.Color.Empty;
-            this.petsBtn6.NormalImage1 = null;
-            this.petsBtn6.Size = new System.Drawing.Size(272, 37);
-            this.petsBtn6.TabIndex = 0;
-            this.petsBtn6.Text = "Storage";
-            this.petsBtn6.UseVisualStyleBackColor = true;
-            // 
-            // petsBtn5
-            // 
-            this.petsBtn5.FlatAppearance.BorderSize = 0;
-            this.petsBtn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.petsBtn5.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.petsBtn5.HoverForecolor1 = System.Drawing.Color.Empty;
-            this.petsBtn5.HoverImage1 = null;
-            this.petsBtn5.Location = new System.Drawing.Point(0, 3);
-            this.petsBtn5.Name = "petsBtn5";
-            this.petsBtn5.NormalForecolor1 = System.Drawing.Color.Empty;
-            this.petsBtn5.NormalImage1 = null;
-            this.petsBtn5.Size = new System.Drawing.Size(272, 37);
-            this.petsBtn5.TabIndex = 0;
-            this.petsBtn5.Text = "Setting";
-            this.petsBtn5.UseVisualStyleBackColor = true;
-            // 
-            // petsBtn7
-            // 
-            this.petsBtn7.FlatAppearance.BorderSize = 0;
-            this.petsBtn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.petsBtn7.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.petsBtn7.HoverForecolor1 = System.Drawing.Color.Empty;
-            this.petsBtn7.HoverImage1 = null;
-            this.petsBtn7.Location = new System.Drawing.Point(0, 3);
-            this.petsBtn7.Name = "petsBtn7";
-            this.petsBtn7.NormalForecolor1 = System.Drawing.Color.Empty;
-            this.petsBtn7.NormalImage1 = null;
-            this.petsBtn7.Size = new System.Drawing.Size(272, 47);
-            this.petsBtn7.TabIndex = 0;
-            this.petsBtn7.Text = "Profile";
-            this.petsBtn7.UseVisualStyleBackColor = true;
             // 
             // Pets
             // 
