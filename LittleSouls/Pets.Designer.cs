@@ -35,8 +35,8 @@
             this.petsBtn8 = new LittleSouls.PetsBtn();
             this.petsBtn9 = new LittleSouls.PetsBtn();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.petsBtn7 = new LittleSouls.PetsBtn();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.petsBtn7 = new LittleSouls.PetsBtn();
             this.panel5 = new System.Windows.Forms.Panel();
             this.petsBtn5 = new LittleSouls.PetsBtn();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -151,6 +151,17 @@
             this.panel8.Size = new System.Drawing.Size(275, 53);
             this.panel8.TabIndex = 9;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(53, 53);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
             // petsBtn7
             // 
             this.petsBtn7.FlatAppearance.BorderSize = 0;
@@ -166,17 +177,6 @@
             this.petsBtn7.TabIndex = 0;
             this.petsBtn7.Text = "Profile";
             this.petsBtn7.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(53, 53);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
             // 
             // panel5
             // 
@@ -341,6 +341,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "Pets";
             this.Text = "Pets";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Pets_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel8.ResumeLayout(false);
