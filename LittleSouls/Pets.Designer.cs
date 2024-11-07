@@ -49,7 +49,6 @@
             this.petsBtn1 = new LittleSouls.PetsBtn();
             this.panel6 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -276,7 +275,7 @@
             this.petsBtn2.NormalImage1 = null;
             this.petsBtn2.Size = new System.Drawing.Size(272, 37);
             this.petsBtn2.TabIndex = 0;
-            this.petsBtn2.Text = "Adopt";
+            this.petsBtn2.Text = " ";
             this.petsBtn2.UseVisualStyleBackColor = true;
             // 
             // panel2
@@ -328,23 +327,12 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(278, 536);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(750, 64);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(47, 21);
-            this.checkBox1.TabIndex = 13;
-            this.checkBox1.Text = "tfo";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
             // Pets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(941, 536);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.petsBtn9);
             this.Controls.Add(this.petsBtn8);
             this.Controls.Add(this.pictureBox1);
@@ -391,6 +379,5 @@
         private PetsBtn petsBtn1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
