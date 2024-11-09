@@ -52,11 +52,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddPret.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPret.Designer.cs">
+      <DependentUpon>AddPret.cs</DependentUpon>
+    </Compile>
     <Compile Include="ADOP.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ADOP.Designer.cs">
       <DependentUpon>ADOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adoption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adoption.Designer.cs">
+      <DependentUpon>Adoption.cs</DependentUpon>
     </Compile>
     <Compile Include="AllPet.cs">
       <SubType>Form</SubType>
@@ -76,11 +88,29 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoices.Designer.cs">
+      <DependentUpon>Invoices.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="medicalCare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="medicalCare.Designer.cs">
+      <DependentUpon>medicalCare.cs</DependentUpon>
     </Compile>
     <Compile Include="Pets.cs">
       <SubType>Form</SubType>
@@ -94,10 +124,22 @@
     <Compile Include="PetsBtn.Designer.cs">
       <DependentUpon>PetsBtn.cs</DependentUpon>
     </Compile>
+    <Compile Include="PetsExamination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PetsExamination.Designer.cs">
+      <DependentUpon>PetsExamination.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AddPret.resx">
+      <DependentUpon>AddPret.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ADOP.resx">
       <DependentUpon>ADOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adoption.resx">
+      <DependentUpon>Adoption.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AllPet.resx">
       <DependentUpon>AllPet.cs</DependentUpon>
@@ -108,14 +150,26 @@
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoices.resx">
+      <DependentUpon>Invoices.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="medicalCare.resx">
+      <DependentUpon>medicalCare.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pets.resx">
       <DependentUpon>Pets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PetsBtn.resx">
       <DependentUpon>PetsBtn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PetsExamination.resx">
+      <DependentUpon>PetsExamination.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -176,6 +230,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon_logo-062.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dog1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

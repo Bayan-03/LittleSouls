@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace LittleSouls
 {
-    public partial class Home : Form
+    public partial class PetsExamination : Form
     {
-        public Home()
+        public PetsExamination()
         {
             InitializeComponent();
         }
-
-        
     }
 }
