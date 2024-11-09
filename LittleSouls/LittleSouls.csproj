@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ADOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADOP.Designer.cs">
+      <DependentUpon>ADOP.cs</DependentUpon>
+    </Compile>
     <Compile Include="AllPet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,11 +70,17 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
     </Compile>
     <Compile Include="Pets.cs">
       <SubType>Form</SubType>
@@ -84,14 +96,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ADOP.resx">
+      <DependentUpon>ADOP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AllPet.resx">
       <DependentUpon>AllPet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pets.resx">
       <DependentUpon>Pets.cs</DependentUpon>
@@ -124,31 +142,40 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\box.png" />
+    <None Include="Resources\little soul-01.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\paws.png" />
+    <None Include="Resources\little soul-011.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\bar-chart %281%29.png" />
+    <None Include="Resources\little soul-012.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\report.png" />
+    <None Include="Resources\little soul-013.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\vet.png" />
+    <None Include="Resources\little soul-014.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pet-care.png" />
+    <None Include="Resources\logo-01.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\adoption.png" />
+    <None Include="Resources\security-04.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\dog.png" />
+    <None Include="Resources\little soul-04.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\setting.png" />
+    <None Include="Resources\user-05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_logo-06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_logo-061.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_logo-062.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
