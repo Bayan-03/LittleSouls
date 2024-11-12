@@ -38,7 +38,6 @@
             this.medbtn = new Guna.UI2.WinForms.Guna2Button();
             this.UpdateRecord = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -49,7 +48,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.PetId = new Guna.UI2.WinForms.Guna2TextBox();
-            this.PetName = new Guna.UI2.WinForms.Guna2TextBox();
             this.petspecies = new Guna.UI2.WinForms.Guna2TextBox();
             this.Petgender = new Guna.UI2.WinForms.Guna2TextBox();
             this.petBreed = new Guna.UI2.WinForms.Guna2TextBox();
@@ -185,7 +183,6 @@
             this.medbtn.Animated = true;
             this.medbtn.BackColor = System.Drawing.Color.Transparent;
             this.medbtn.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.medbtn.Checked = true;
             this.medbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.medbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.medbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -207,6 +204,7 @@
             this.UpdateRecord.AutoRoundedCorners = true;
             this.UpdateRecord.BackColor = System.Drawing.Color.Transparent;
             this.UpdateRecord.BorderRadius = 18;
+            this.UpdateRecord.Cursor = System.Windows.Forms.Cursors.Hand;
             this.UpdateRecord.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.UpdateRecord.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.UpdateRecord.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -229,24 +227,12 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(342, 180);
+            this.label2.Location = new System.Drawing.Point(342, 191);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 32);
+            this.label2.Size = new System.Drawing.Size(44, 33);
             this.label2.TabIndex = 32;
             this.label2.Text = "ID";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(342, 254);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 32);
-            this.label3.TabIndex = 33;
-            this.label3.Text = "Name";
             // 
             // label4
             // 
@@ -256,7 +242,7 @@
             this.label4.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(860, 180);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(182, 32);
+            this.label4.Size = new System.Drawing.Size(188, 33);
             this.label4.TabIndex = 34;
             this.label4.Text = "Date Of Birth";
             // 
@@ -266,9 +252,9 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(342, 406);
+            this.label5.Location = new System.Drawing.Point(342, 264);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(112, 32);
+            this.label5.Size = new System.Drawing.Size(115, 33);
             this.label5.TabIndex = 35;
             this.label5.Text = "Gender";
             // 
@@ -278,9 +264,9 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(342, 480);
+            this.label6.Location = new System.Drawing.Point(342, 410);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 32);
+            this.label6.Size = new System.Drawing.Size(94, 33);
             this.label6.TabIndex = 36;
             this.label6.Text = "Breed";
             // 
@@ -290,9 +276,9 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(342, 327);
+            this.label7.Location = new System.Drawing.Point(342, 337);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(118, 32);
+            this.label7.Size = new System.Drawing.Size(121, 33);
             this.label7.TabIndex = 37;
             this.label7.Text = "Species";
             // 
@@ -304,7 +290,7 @@
             this.label8.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(860, 253);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(182, 32);
+            this.label8.Size = new System.Drawing.Size(190, 33);
             this.label8.TabIndex = 38;
             this.label8.Text = "Arraival Date";
             // 
@@ -314,9 +300,9 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label9.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(342, 547);
+            this.label9.Location = new System.Drawing.Point(342, 483);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(87, 32);
+            this.label9.Size = new System.Drawing.Size(89, 33);
             this.label9.TabIndex = 39;
             this.label9.Text = "Color";
             // 
@@ -326,9 +312,9 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(860, 328);
+            this.label10.Location = new System.Drawing.Point(342, 569);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(175, 32);
+            this.label10.Size = new System.Drawing.Size(183, 33);
             this.label10.TabIndex = 40;
             this.label10.Text = "Health Statu";
             // 
@@ -338,9 +324,9 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label11.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(860, 406);
+            this.label11.Location = new System.Drawing.Point(860, 337);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(143, 32);
+            this.label11.Size = new System.Drawing.Size(148, 33);
             this.label11.TabIndex = 41;
             this.label11.Text = "Pet Setter";
             // 
@@ -350,9 +336,9 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label12.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(860, 505);
+            this.label12.Location = new System.Drawing.Point(860, 436);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(92, 32);
+            this.label12.Size = new System.Drawing.Size(94, 33);
             this.label12.TabIndex = 42;
             this.label12.Text = "Photo";
             // 
@@ -369,37 +355,15 @@
             this.PetId.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PetId.Font = new System.Drawing.Font("Graphik Arabic Medium", 12F, System.Drawing.FontStyle.Bold);
             this.PetId.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PetId.Location = new System.Drawing.Point(504, 178);
+            this.PetId.Location = new System.Drawing.Point(538, 191);
             this.PetId.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.PetId.Name = "PetId";
             this.PetId.PasswordChar = '\0';
             this.PetId.PlaceholderText = "";
             this.PetId.SelectedText = "";
-            this.PetId.Size = new System.Drawing.Size(241, 35);
+            this.PetId.Size = new System.Drawing.Size(259, 36);
             this.PetId.TabIndex = 43;
             this.PetId.TextChanged += new System.EventHandler(this.PetId_TextChanged);
-            // 
-            // PetName
-            // 
-            this.PetName.BackColor = System.Drawing.Color.Transparent;
-            this.PetName.BorderRadius = 15;
-            this.PetName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.PetName.DefaultText = "";
-            this.PetName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.PetName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.PetName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PetName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PetName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PetName.Font = new System.Drawing.Font("Graphik Arabic Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.PetName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PetName.Location = new System.Drawing.Point(504, 252);
-            this.PetName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.PetName.Name = "PetName";
-            this.PetName.PasswordChar = '\0';
-            this.PetName.PlaceholderText = "";
-            this.PetName.SelectedText = "";
-            this.PetName.Size = new System.Drawing.Size(241, 35);
-            this.PetName.TabIndex = 44;
             // 
             // petspecies
             // 
@@ -414,14 +378,15 @@
             this.petspecies.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.petspecies.Font = new System.Drawing.Font("Graphik Arabic Medium", 12F, System.Drawing.FontStyle.Bold);
             this.petspecies.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.petspecies.Location = new System.Drawing.Point(494, 327);
+            this.petspecies.Location = new System.Drawing.Point(538, 339);
             this.petspecies.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.petspecies.Name = "petspecies";
             this.petspecies.PasswordChar = '\0';
             this.petspecies.PlaceholderText = "";
             this.petspecies.SelectedText = "";
-            this.petspecies.Size = new System.Drawing.Size(241, 35);
+            this.petspecies.Size = new System.Drawing.Size(259, 36);
             this.petspecies.TabIndex = 45;
+            this.petspecies.TextChanged += new System.EventHandler(this.petspecies_TextChanged);
             // 
             // Petgender
             // 
@@ -436,14 +401,15 @@
             this.Petgender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Petgender.Font = new System.Drawing.Font("Graphik Arabic Medium", 12F, System.Drawing.FontStyle.Bold);
             this.Petgender.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Petgender.Location = new System.Drawing.Point(504, 404);
+            this.Petgender.Location = new System.Drawing.Point(538, 265);
             this.Petgender.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Petgender.Name = "Petgender";
             this.Petgender.PasswordChar = '\0';
             this.Petgender.PlaceholderText = "";
             this.Petgender.SelectedText = "";
-            this.Petgender.Size = new System.Drawing.Size(241, 35);
+            this.Petgender.Size = new System.Drawing.Size(259, 36);
             this.Petgender.TabIndex = 46;
+            this.Petgender.TextChanged += new System.EventHandler(this.Petgender_TextChanged);
             // 
             // petBreed
             // 
@@ -458,14 +424,15 @@
             this.petBreed.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.petBreed.Font = new System.Drawing.Font("Graphik Arabic Medium", 12F, System.Drawing.FontStyle.Bold);
             this.petBreed.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.petBreed.Location = new System.Drawing.Point(504, 478);
+            this.petBreed.Location = new System.Drawing.Point(538, 413);
             this.petBreed.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.petBreed.Name = "petBreed";
             this.petBreed.PasswordChar = '\0';
             this.petBreed.PlaceholderText = "";
             this.petBreed.SelectedText = "";
-            this.petBreed.Size = new System.Drawing.Size(241, 35);
+            this.petBreed.Size = new System.Drawing.Size(259, 36);
             this.petBreed.TabIndex = 47;
+            this.petBreed.TextChanged += new System.EventHandler(this.petBreed_TextChanged);
             // 
             // PetBirth
             // 
@@ -480,7 +447,7 @@
             this.PetBirth.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.PetBirth.Font = new System.Drawing.Font("Graphik Arabic Medium", 12F, System.Drawing.FontStyle.Bold);
             this.PetBirth.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PetBirth.Location = new System.Drawing.Point(1056, 403);
+            this.PetBirth.Location = new System.Drawing.Point(1056, 334);
             this.PetBirth.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.PetBirth.Name = "PetBirth";
             this.PetBirth.PasswordChar = '\0';
@@ -492,7 +459,7 @@
             // guna2DateTimePicker1
             // 
             this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.DodgerBlue;
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1.Location = new System.Drawing.Point(1056, 176);
@@ -506,7 +473,7 @@
             // guna2DateTimePicker2
             // 
             this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.DodgerBlue;
             this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker2.Location = new System.Drawing.Point(1056, 254);
@@ -532,7 +499,7 @@
             "Helthy",
             "Not Helthy",
             "Need Surgery"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(1056, 323);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(538, 561);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.Size = new System.Drawing.Size(259, 36);
             this.guna2ComboBox1.TabIndex = 52;
@@ -541,9 +508,9 @@
             // petPhoto
             // 
             this.petPhoto.ImageRotate = 0F;
-            this.petPhoto.Location = new System.Drawing.Point(1056, 478);
+            this.petPhoto.Location = new System.Drawing.Point(1056, 409);
             this.petPhoto.Name = "petPhoto";
-            this.petPhoto.Size = new System.Drawing.Size(259, 202);
+            this.petPhoto.Size = new System.Drawing.Size(259, 248);
             this.petPhoto.TabIndex = 53;
             this.petPhoto.TabStop = false;
             // 
@@ -552,16 +519,20 @@
             this.clearForm.Animated = true;
             this.clearForm.AutoRoundedCorners = true;
             this.clearForm.BackColor = System.Drawing.Color.Transparent;
+            this.clearForm.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(218)))));
             this.clearForm.BorderRadius = 18;
+            this.clearForm.BorderThickness = 2;
+            this.clearForm.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clearForm.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.clearForm.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.clearForm.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.clearForm.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.clearForm.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.clearForm.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(218)))));
-            this.clearForm.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.clearForm.FillColor = System.Drawing.Color.Transparent;
+            this.clearForm.FillColor2 = System.Drawing.Color.Transparent;
             this.clearForm.Font = new System.Drawing.Font("Graphik Arabic Bold", 13.8F, System.Drawing.FontStyle.Bold);
-            this.clearForm.ForeColor = System.Drawing.Color.Black;
+            this.clearForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(218)))));
+            this.clearForm.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.clearForm.Location = new System.Drawing.Point(414, 725);
             this.clearForm.Name = "clearForm";
             this.clearForm.Size = new System.Drawing.Size(183, 39);
@@ -575,9 +546,9 @@
             this.label13.Font = new System.Drawing.Font("Graphik Arabic Bold", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(306, 78);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(394, 40);
+            this.label13.Size = new System.Drawing.Size(242, 39);
             this.label13.TabIndex = 55;
-            this.label13.Text = "Adoptionn Application";
+            this.label13.Text = "ADD NEW PET";
             // 
             // guna2ComboBox2
             // 
@@ -598,7 +569,7 @@
             "Red",
             "Green",
             "Mixed"});
-            this.guna2ComboBox2.Location = new System.Drawing.Point(504, 543);
+            this.guna2ComboBox2.Location = new System.Drawing.Point(538, 487);
             this.guna2ComboBox2.Name = "guna2ComboBox2";
             this.guna2ComboBox2.Size = new System.Drawing.Size(259, 36);
             this.guna2ComboBox2.TabIndex = 56;
@@ -622,10 +593,8 @@
             this.Controls.Add(this.petBreed);
             this.Controls.Add(this.Petgender);
             this.Controls.Add(this.petspecies);
-            this.Controls.Add(this.PetName);
             this.Controls.Add(this.PetId);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label9);
@@ -662,7 +631,6 @@
         private Guna.UI2.WinForms.Guna2Button medbtn;
         private Guna.UI2.WinForms.Guna2GradientButton UpdateRecord;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -673,7 +641,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2TextBox PetId;
-        private Guna.UI2.WinForms.Guna2TextBox PetName;
         private Guna.UI2.WinForms.Guna2TextBox petspecies;
         private Guna.UI2.WinForms.Guna2TextBox Petgender;
         private Guna.UI2.WinForms.Guna2TextBox petBreed;

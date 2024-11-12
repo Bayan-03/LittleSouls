@@ -33,14 +33,15 @@
             this.Invoicesbtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.Homebtn = new Guna.UI2.WinForms.Guna2Button();
             this.invoicbtn = new Guna.UI2.WinForms.Guna2Button();
             this.petHomebtn = new Guna.UI2.WinForms.Guna2Button();
             this.medbtn = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // MedicalBtn
@@ -49,6 +50,7 @@
             this.MedicalBtn.BackColor = System.Drawing.Color.Transparent;
             this.MedicalBtn.BorderColor = System.Drawing.Color.Transparent;
             this.MedicalBtn.BorderRadius = 20;
+            this.MedicalBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MedicalBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.MedicalBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.MedicalBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -58,8 +60,8 @@
             this.MedicalBtn.ForeColor = System.Drawing.Color.Black;
             this.MedicalBtn.Image = global::LittleSouls.Properties.Resources.vet;
             this.MedicalBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.MedicalBtn.ImageOffset = new System.Drawing.Point(5, 20);
-            this.MedicalBtn.ImageSize = new System.Drawing.Size(80, 80);
+            this.MedicalBtn.ImageOffset = new System.Drawing.Point(5, 30);
+            this.MedicalBtn.ImageSize = new System.Drawing.Size(120, 120);
             this.MedicalBtn.Location = new System.Drawing.Point(936, 224);
             this.MedicalBtn.Name = "MedicalBtn";
             this.MedicalBtn.Size = new System.Drawing.Size(429, 250);
@@ -74,6 +76,7 @@
             this.Petsbtn.BackColor = System.Drawing.Color.Transparent;
             this.Petsbtn.BorderColor = System.Drawing.Color.Transparent;
             this.Petsbtn.BorderRadius = 20;
+            this.Petsbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Petsbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Petsbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Petsbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -99,6 +102,7 @@
             this.Invoicesbtn.BackColor = System.Drawing.Color.Transparent;
             this.Invoicesbtn.BorderColor = System.Drawing.Color.Transparent;
             this.Invoicesbtn.BorderRadius = 20;
+            this.Invoicesbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Invoicesbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Invoicesbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Invoicesbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -106,10 +110,10 @@
             this.Invoicesbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(219)))), ((int)(((byte)(157)))));
             this.Invoicesbtn.Font = new System.Drawing.Font("Graphik Arabic Bold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Invoicesbtn.ForeColor = System.Drawing.Color.Black;
-            this.Invoicesbtn.Image = global::LittleSouls.Properties.Resources.vet;
+            this.Invoicesbtn.Image = global::LittleSouls.Properties.Resources.receipt;
             this.Invoicesbtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Invoicesbtn.ImageOffset = new System.Drawing.Point(5, 20);
-            this.Invoicesbtn.ImageSize = new System.Drawing.Size(80, 80);
+            this.Invoicesbtn.ImageSize = new System.Drawing.Size(135, 135);
             this.Invoicesbtn.Location = new System.Drawing.Point(606, 514);
             this.Invoicesbtn.Name = "Invoicesbtn";
             this.Invoicesbtn.Size = new System.Drawing.Size(429, 250);
@@ -121,7 +125,7 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(218)))));
-            this.guna2Panel2.Location = new System.Drawing.Point(269, 1);
+            this.guna2Panel2.Location = new System.Drawing.Point(269, 0);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1167, 48);
             this.guna2Panel2.TabIndex = 29;
@@ -129,7 +133,6 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(218)))));
-            this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Panel1.Controls.Add(this.Homebtn);
             this.guna2Panel1.Controls.Add(this.invoicbtn);
@@ -140,19 +143,6 @@
             this.guna2Panel1.Size = new System.Drawing.Size(275, 832);
             this.guna2Panel1.TabIndex = 28;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Graphik Arabic Bold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(72, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 35);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "Little Souls";
-            // 
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.Transparent;
@@ -161,7 +151,7 @@
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(12, 17);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(62, 58);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(53, 46);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox1.TabIndex = 28;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -202,6 +192,9 @@
             this.invoicbtn.FillColor = System.Drawing.Color.Transparent;
             this.invoicbtn.Font = new System.Drawing.Font("Graphik Arabic Bold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.invoicbtn.ForeColor = System.Drawing.Color.Black;
+            this.invoicbtn.Image = global::LittleSouls.Properties.Resources.invoice;
+            this.invoicbtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.invoicbtn.ImageSize = new System.Drawing.Size(35, 35);
             this.invoicbtn.Location = new System.Drawing.Point(-3, 305);
             this.invoicbtn.Name = "invoicbtn";
             this.invoicbtn.Size = new System.Drawing.Size(275, 45);
@@ -237,7 +230,6 @@
             this.medbtn.Animated = true;
             this.medbtn.BackColor = System.Drawing.Color.Transparent;
             this.medbtn.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.medbtn.Checked = true;
             this.medbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.medbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.medbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -253,6 +245,19 @@
             this.medbtn.Text = "Medical Care";
             this.medbtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
+            // guna2CirclePictureBox2
+            // 
+            this.guna2CirclePictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CirclePictureBox2.Image = global::LittleSouls.Properties.Resources.icon_logo_061;
+            this.guna2CirclePictureBox2.ImageRotate = 0F;
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(281, 55);
+            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
+            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(128, 116);
+            this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox2.TabIndex = 30;
+            this.guna2CirclePictureBox2.TabStop = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -265,12 +270,13 @@
             this.Controls.Add(this.MedicalBtn);
             this.Controls.Add(this.Invoicesbtn);
             this.Controls.Add(this.Petsbtn);
+            this.Controls.Add(this.guna2CirclePictureBox2);
             this.Name = "Home";
             this.Text = "Home";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -282,11 +288,11 @@
         private Guna.UI2.WinForms.Guna2Button Invoicesbtn;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2Button Homebtn;
         private Guna.UI2.WinForms.Guna2Button invoicbtn;
         private Guna.UI2.WinForms.Guna2Button petHomebtn;
         private Guna.UI2.WinForms.Guna2Button medbtn;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
     }
 }

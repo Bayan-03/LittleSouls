@@ -95,7 +95,7 @@
             this.label2.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(934, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 32);
+            this.label2.Size = new System.Drawing.Size(163, 33);
             this.label2.TabIndex = 33;
             this.label2.Text = "Categories";
             // 
@@ -218,7 +218,6 @@
             this.medbtn.Animated = true;
             this.medbtn.BackColor = System.Drawing.Color.Transparent;
             this.medbtn.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.medbtn.Checked = true;
             this.medbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.medbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.medbtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;

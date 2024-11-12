@@ -47,6 +47,7 @@
             this.examinate.Animated = true;
             this.examinate.BackColor = System.Drawing.Color.Transparent;
             this.examinate.BorderRadius = 20;
+            this.examinate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.examinate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.examinate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.examinate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -73,6 +74,7 @@
             this.petReports.Animated = true;
             this.petReports.BackColor = System.Drawing.Color.Transparent;
             this.petReports.BorderRadius = 20;
+            this.petReports.Cursor = System.Windows.Forms.Cursors.Hand;
             this.petReports.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.petReports.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.petReports.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));

@@ -46,5 +46,25 @@ namespace LittleSouls
         {
 
         }
+
+        private void petBreed_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Petgender_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void petspecies_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PetName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
