@@ -216,7 +216,7 @@
             this.UpdateRecord.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.UpdateRecord.Font = new System.Drawing.Font("Graphik Arabic Bold", 13.8F, System.Drawing.FontStyle.Bold);
             this.UpdateRecord.ForeColor = System.Drawing.Color.Black;
-            this.UpdateRecord.Location = new System.Drawing.Point(1149, 725);
+            this.UpdateRecord.Location = new System.Drawing.Point(1161, 705);
             this.UpdateRecord.Name = "UpdateRecord";
             this.UpdateRecord.Size = new System.Drawing.Size(207, 39);
             this.UpdateRecord.TabIndex = 30;
@@ -415,7 +415,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.MedicalExamination.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.MedicalExamination.ColumnHeadersHeight = 28;
+            this.MedicalExamination.ColumnHeadersHeight = 50;
             this.MedicalExamination.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.MedicalExamination.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idPet,
@@ -434,7 +434,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.MedicalExamination.DefaultCellStyle = dataGridViewCellStyle3;
             this.MedicalExamination.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.MedicalExamination.Location = new System.Drawing.Point(428, 345);
+            this.MedicalExamination.Location = new System.Drawing.Point(428, 314);
             this.MedicalExamination.Name = "MedicalExamination";
             this.MedicalExamination.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -448,7 +448,7 @@
             this.MedicalExamination.RowHeadersVisible = false;
             this.MedicalExamination.RowHeadersWidth = 51;
             this.MedicalExamination.RowTemplate.Height = 26;
-            this.MedicalExamination.Size = new System.Drawing.Size(824, 361);
+            this.MedicalExamination.Size = new System.Drawing.Size(824, 368);
             this.MedicalExamination.TabIndex = 67;
             this.MedicalExamination.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.MedicalExamination.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Graphik Arabic Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -462,7 +462,7 @@
             this.MedicalExamination.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MedicalExamination.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.MedicalExamination.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.MedicalExamination.ThemeStyle.HeaderStyle.Height = 28;
+            this.MedicalExamination.ThemeStyle.HeaderStyle.Height = 50;
             this.MedicalExamination.ThemeStyle.ReadOnly = false;
             this.MedicalExamination.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.MedicalExamination.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;

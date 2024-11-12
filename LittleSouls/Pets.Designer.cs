@@ -91,7 +91,7 @@
             this.AdoptBtn.Image = global::LittleSouls.Properties.Resources.pet_care;
             this.AdoptBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.AdoptBtn.ImageOffset = new System.Drawing.Point(5, 20);
-            this.AdoptBtn.ImageSize = new System.Drawing.Size(80, 80);
+            this.AdoptBtn.ImageSize = new System.Drawing.Size(120, 120);
             this.AdoptBtn.Location = new System.Drawing.Point(867, 237);
             this.AdoptBtn.Name = "AdoptBtn";
             this.AdoptBtn.Size = new System.Drawing.Size(407, 206);
