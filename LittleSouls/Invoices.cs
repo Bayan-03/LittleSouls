@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace LittleSouls
 {
-    public partial class AllPet : Form
+    public partial class Invoices : Form
     {
-        public AllPet()
+        public Invoices()
         {
             InitializeComponent();
-        }
-
-        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void petType_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
