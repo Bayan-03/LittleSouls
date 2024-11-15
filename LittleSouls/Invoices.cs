@@ -21,5 +21,10 @@ namespace LittleSouls
         {
 
         }
+
+        private void Invoices_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
