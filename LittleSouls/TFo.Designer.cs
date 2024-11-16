@@ -1,6 +1,6 @@
 ﻿namespace LittleSouls
 {
-    partial class Invoices
+    partial class TFo
     {
         /// <summary>
         /// Required designer variable.

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LittleSouls
 {
-    public partial class Invoices : Form
+    public partial class TFo : Form
     {
-        public Invoices()
+        public TFo()
         {
             InitializeComponent();
         }
