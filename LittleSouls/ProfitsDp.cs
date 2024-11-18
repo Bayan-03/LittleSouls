@@ -10,20 +10,21 @@ using System.Windows.Forms;
 
 namespace LittleSouls
 {
-    public partial class Form3 : Form
+    public partial class ProfitsDp : Form
     {
-        public Form3()
+        public ProfitsDp()
         {
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        //private void guna2VProgressBar1_ValueChanged(object sender, EventArgs e)
+        //{
+
+        //}
+
+        private void Profits_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-                    }
     }
 }

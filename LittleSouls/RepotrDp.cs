@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace LittleSouls
 {
-    public partial class Form2 : Form
+    public partial class RepotrDp : Form
     {
-        public Form2()
+        public RepotrDp()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
