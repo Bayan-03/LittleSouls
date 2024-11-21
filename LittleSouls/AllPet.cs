@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LittleSouls.littleSoulsDataSetTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +31,20 @@ namespace LittleSouls
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void AllPet_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'littleSoulsDataSet.pet' table. You can move, or remove it, as needed.
+            this.petTableAdapter.Fill(this.littleSoulsDataSet.pet);
+            petType.SelectedIndex = 0;
+
+        }
+
+        private void Search_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+            
         }
     }
 }

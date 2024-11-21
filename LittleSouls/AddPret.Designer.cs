@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.UpdateRecord = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.Add = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -41,52 +41,52 @@
             this.label12 = new System.Windows.Forms.Label();
             this.PetId = new Guna.UI2.WinForms.Guna2TextBox();
             this.petspecies = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Petgender = new Guna.UI2.WinForms.Guna2TextBox();
             this.petBreed = new Guna.UI2.WinForms.Guna2TextBox();
-            this.PetBirth = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.PetSetter = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Birth = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.Arival = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.PetHelth = new Guna.UI2.WinForms.Guna2ComboBox();
             this.petPhoto = new Guna.UI2.WinForms.Guna2PictureBox();
             this.clearForm = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label13 = new System.Windows.Forms.Label();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.PetColor = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.SideBar = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.PetGender = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.petPhoto)).BeginInit();
             this.SideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // UpdateRecord
+            // Add
             // 
-            this.UpdateRecord.Animated = true;
-            this.UpdateRecord.AutoRoundedCorners = true;
-            this.UpdateRecord.BackColor = System.Drawing.Color.Transparent;
-            this.UpdateRecord.BorderRadius = 18;
-            this.UpdateRecord.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.UpdateRecord.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateRecord.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.UpdateRecord.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.UpdateRecord.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.UpdateRecord.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.UpdateRecord.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(218)))));
-            this.UpdateRecord.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.UpdateRecord.Font = new System.Drawing.Font("Graphik Arabic Bold", 13.8F, System.Drawing.FontStyle.Bold);
-            this.UpdateRecord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.UpdateRecord.Location = new System.Drawing.Point(1050, 747);
-            this.UpdateRecord.Name = "UpdateRecord";
-            this.UpdateRecord.Size = new System.Drawing.Size(183, 39);
-            this.UpdateRecord.TabIndex = 31;
-            this.UpdateRecord.Text = "Add";
-            this.UpdateRecord.Click += new System.EventHandler(this.UpdateRecord_Click);
+            this.Add.Animated = true;
+            this.Add.AutoRoundedCorners = true;
+            this.Add.BackColor = System.Drawing.Color.Transparent;
+            this.Add.BorderRadius = 18;
+            this.Add.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Add.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Add.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Add.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Add.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Add.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(218)))));
+            this.Add.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Add.Font = new System.Drawing.Font("Graphik Arabic Bold", 13.8F, System.Drawing.FontStyle.Bold);
+            this.Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
+            this.Add.Location = new System.Drawing.Point(1050, 747);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(183, 39);
+            this.Add.TabIndex = 31;
+            this.Add.Text = "Add";
+            this.Add.Click += new System.EventHandler(this.UpdateRecord_Click);
             // 
             // label2
             // 
@@ -241,6 +241,7 @@
             this.PetId.Size = new System.Drawing.Size(259, 36);
             this.PetId.TabIndex = 43;
             this.PetId.TextChanged += new System.EventHandler(this.PetId_TextChanged);
+            this.PetId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PetId_KeyPress);
             // 
             // petspecies
             // 
@@ -264,29 +265,7 @@
             this.petspecies.Size = new System.Drawing.Size(259, 36);
             this.petspecies.TabIndex = 45;
             this.petspecies.TextChanged += new System.EventHandler(this.petspecies_TextChanged);
-            // 
-            // Petgender
-            // 
-            this.Petgender.BackColor = System.Drawing.Color.Transparent;
-            this.Petgender.BorderRadius = 15;
-            this.Petgender.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Petgender.DefaultText = "";
-            this.Petgender.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Petgender.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Petgender.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Petgender.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Petgender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Petgender.Font = new System.Drawing.Font("Graphik Arabic Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.Petgender.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Petgender.Location = new System.Drawing.Point(408, 273);
-            this.Petgender.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.Petgender.Name = "Petgender";
-            this.Petgender.PasswordChar = '\0';
-            this.Petgender.PlaceholderText = "";
-            this.Petgender.SelectedText = "";
-            this.Petgender.Size = new System.Drawing.Size(259, 36);
-            this.Petgender.TabIndex = 46;
-            this.Petgender.TextChanged += new System.EventHandler(this.Petgender_TextChanged);
+            this.petspecies.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.petspecies_KeyPress);
             // 
             // petBreed
             // 
@@ -310,77 +289,79 @@
             this.petBreed.Size = new System.Drawing.Size(259, 36);
             this.petBreed.TabIndex = 47;
             this.petBreed.TextChanged += new System.EventHandler(this.petBreed_TextChanged);
+            this.petBreed.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.petBreed_KeyPress);
             // 
-            // PetBirth
+            // PetSetter
             // 
-            this.PetBirth.BackColor = System.Drawing.Color.Transparent;
-            this.PetBirth.BorderRadius = 15;
-            this.PetBirth.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.PetBirth.DefaultText = "";
-            this.PetBirth.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.PetBirth.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.PetBirth.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PetBirth.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.PetBirth.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PetBirth.Font = new System.Drawing.Font("Graphik Arabic Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.PetBirth.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.PetBirth.Location = new System.Drawing.Point(993, 349);
-            this.PetBirth.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.PetBirth.Name = "PetBirth";
-            this.PetBirth.PasswordChar = '\0';
-            this.PetBirth.PlaceholderText = "";
-            this.PetBirth.SelectedText = "";
-            this.PetBirth.Size = new System.Drawing.Size(259, 35);
-            this.PetBirth.TabIndex = 49;
+            this.PetSetter.BackColor = System.Drawing.Color.Transparent;
+            this.PetSetter.BorderRadius = 15;
+            this.PetSetter.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.PetSetter.DefaultText = "";
+            this.PetSetter.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.PetSetter.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.PetSetter.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PetSetter.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.PetSetter.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PetSetter.Font = new System.Drawing.Font("Graphik Arabic Medium", 12F, System.Drawing.FontStyle.Bold);
+            this.PetSetter.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PetSetter.Location = new System.Drawing.Point(993, 349);
+            this.PetSetter.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.PetSetter.Name = "PetSetter";
+            this.PetSetter.PasswordChar = '\0';
+            this.PetSetter.PlaceholderText = "";
+            this.PetSetter.SelectedText = "";
+            this.PetSetter.Size = new System.Drawing.Size(259, 35);
+            this.PetSetter.TabIndex = 49;
+            this.PetSetter.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PetSetter_KeyPress);
             // 
-            // guna2DateTimePicker1
+            // Birth
             // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.DodgerBlue;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(993, 191);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(259, 36);
-            this.guna2DateTimePicker1.TabIndex = 50;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 11, 10, 0, 0, 51, 96);
+            this.Birth.Checked = true;
+            this.Birth.FillColor = System.Drawing.Color.DodgerBlue;
+            this.Birth.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Birth.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.Birth.Location = new System.Drawing.Point(993, 191);
+            this.Birth.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.Birth.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.Birth.Name = "Birth";
+            this.Birth.Size = new System.Drawing.Size(259, 36);
+            this.Birth.TabIndex = 50;
+            this.Birth.Value = new System.DateTime(2024, 11, 10, 0, 0, 51, 96);
             // 
-            // guna2DateTimePicker2
+            // Arival
             // 
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.DodgerBlue;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(993, 269);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(259, 36);
-            this.guna2DateTimePicker2.TabIndex = 51;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2024, 11, 10, 0, 0, 51, 96);
+            this.Arival.Checked = true;
+            this.Arival.FillColor = System.Drawing.Color.DodgerBlue;
+            this.Arival.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Arival.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.Arival.Location = new System.Drawing.Point(993, 269);
+            this.Arival.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.Arival.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.Arival.Name = "Arival";
+            this.Arival.Size = new System.Drawing.Size(259, 36);
+            this.Arival.TabIndex = 51;
+            this.Arival.Value = new System.DateTime(2024, 11, 10, 0, 0, 51, 96);
             // 
-            // guna2ComboBox1
+            // PetHelth
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 10;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Graphik Arabic Medium", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.PetHelth.BackColor = System.Drawing.Color.Transparent;
+            this.PetHelth.BorderRadius = 10;
+            this.PetHelth.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.PetHelth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.PetHelth.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PetHelth.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PetHelth.Font = new System.Drawing.Font("Graphik Arabic Medium", 12F, System.Drawing.FontStyle.Bold);
+            this.PetHelth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.PetHelth.ItemHeight = 30;
+            this.PetHelth.Items.AddRange(new object[] {
             "Helthy",
             "Not Helthy",
             "Need Surgery"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(408, 569);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(259, 36);
-            this.guna2ComboBox1.TabIndex = 52;
-            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
+            this.PetHelth.Location = new System.Drawing.Point(408, 569);
+            this.PetHelth.Name = "PetHelth";
+            this.PetHelth.Size = new System.Drawing.Size(259, 36);
+            this.PetHelth.TabIndex = 52;
+            this.PetHelth.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // petPhoto
             // 
@@ -410,11 +391,12 @@
             this.clearForm.Font = new System.Drawing.Font("Graphik Arabic Bold", 13.8F, System.Drawing.FontStyle.Bold);
             this.clearForm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
             this.clearForm.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.clearForm.Location = new System.Drawing.Point(390, 747);
+            this.clearForm.Location = new System.Drawing.Point(240, 747);
             this.clearForm.Name = "clearForm";
             this.clearForm.Size = new System.Drawing.Size(183, 39);
             this.clearForm.TabIndex = 54;
             this.clearForm.Text = "Clear Form";
+            this.clearForm.Click += new System.EventHandler(this.clearForm_Click);
             // 
             // label13
             // 
@@ -428,18 +410,18 @@
             this.label13.TabIndex = 55;
             this.label13.Text = "ADD NEW PET";
             // 
-            // guna2ComboBox2
+            // PetColor
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.BorderRadius = 10;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Items.AddRange(new object[] {
+            this.PetColor.BackColor = System.Drawing.Color.Transparent;
+            this.PetColor.BorderRadius = 10;
+            this.PetColor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.PetColor.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.PetColor.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PetColor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PetColor.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.PetColor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.PetColor.ItemHeight = 30;
+            this.PetColor.Items.AddRange(new object[] {
             "Black",
             "Orange",
             "White",
@@ -447,11 +429,11 @@
             "Red",
             "Green",
             "Mixed"});
-            this.guna2ComboBox2.Location = new System.Drawing.Point(408, 495);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.Size = new System.Drawing.Size(259, 36);
-            this.guna2ComboBox2.TabIndex = 56;
-            this.guna2ComboBox2.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
+            this.PetColor.Location = new System.Drawing.Point(408, 495);
+            this.PetColor.Name = "PetColor";
+            this.PetColor.Size = new System.Drawing.Size(259, 36);
+            this.PetColor.TabIndex = 56;
+            this.PetColor.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
             // 
             // guna2Panel1
             // 
@@ -477,6 +459,14 @@
             this.SideBar.Name = "SideBar";
             this.SideBar.Size = new System.Drawing.Size(69, 830);
             this.SideBar.TabIndex = 58;
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.FillColor = System.Drawing.Color.Gray;
+            this.guna2Separator1.Location = new System.Drawing.Point(3, 206);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(58, 10);
+            this.guna2Separator1.TabIndex = 41;
             // 
             // guna2Button5
             // 
@@ -584,13 +574,25 @@
             this.guna2CirclePictureBox1.TabStop = false;
             this.guna2CirclePictureBox1.UseTransparentBackground = true;
             // 
-            // guna2Separator1
+            // PetGender
             // 
-            this.guna2Separator1.FillColor = System.Drawing.Color.Gray;
-            this.guna2Separator1.Location = new System.Drawing.Point(3, 206);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(58, 10);
-            this.guna2Separator1.TabIndex = 41;
+            this.PetGender.BackColor = System.Drawing.Color.Transparent;
+            this.PetGender.BorderRadius = 10;
+            this.PetGender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.PetGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.PetGender.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PetGender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.PetGender.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold);
+            this.PetGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.PetGender.ItemHeight = 30;
+            this.PetGender.Items.AddRange(new object[] {
+            "Male",
+            "Femal"});
+            this.PetGender.Location = new System.Drawing.Point(408, 282);
+            this.PetGender.Name = "PetGender";
+            this.PetGender.Size = new System.Drawing.Size(259, 36);
+            this.PetGender.TabIndex = 57;
+            this.PetGender.SelectedIndexChanged += new System.EventHandler(this.PetGender_SelectedIndexChanged);
             // 
             // AddPet
             // 
@@ -599,18 +601,18 @@
             this.BackgroundImage = global::LittleSouls.Properties.Resources.الخلفية_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1435, 830);
+            this.Controls.Add(this.PetGender);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.SideBar);
-            this.Controls.Add(this.guna2ComboBox2);
+            this.Controls.Add(this.PetColor);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.clearForm);
             this.Controls.Add(this.petPhoto);
-            this.Controls.Add(this.guna2ComboBox1);
-            this.Controls.Add(this.guna2DateTimePicker2);
-            this.Controls.Add(this.guna2DateTimePicker1);
-            this.Controls.Add(this.PetBirth);
+            this.Controls.Add(this.PetHelth);
+            this.Controls.Add(this.Arival);
+            this.Controls.Add(this.Birth);
+            this.Controls.Add(this.PetSetter);
             this.Controls.Add(this.petBreed);
-            this.Controls.Add(this.Petgender);
             this.Controls.Add(this.petspecies);
             this.Controls.Add(this.PetId);
             this.Controls.Add(this.label2);
@@ -623,7 +625,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.UpdateRecord);
+            this.Controls.Add(this.Add);
             this.Name = "AddPet";
             this.Text = "Add Pet";
             this.Load += new System.EventHandler(this.AddPet_Load);
@@ -636,7 +638,7 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2GradientButton UpdateRecord;
+        private Guna.UI2.WinForms.Guna2GradientButton Add;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -649,16 +651,15 @@
         private System.Windows.Forms.Label label12;
         private Guna.UI2.WinForms.Guna2TextBox PetId;
         private Guna.UI2.WinForms.Guna2TextBox petspecies;
-        private Guna.UI2.WinForms.Guna2TextBox Petgender;
         private Guna.UI2.WinForms.Guna2TextBox petBreed;
-        private Guna.UI2.WinForms.Guna2TextBox PetBirth;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2TextBox PetSetter;
+        private Guna.UI2.WinForms.Guna2DateTimePicker Birth;
+        private Guna.UI2.WinForms.Guna2DateTimePicker Arival;
+        private Guna.UI2.WinForms.Guna2ComboBox PetHelth;
         private Guna.UI2.WinForms.Guna2PictureBox petPhoto;
         private Guna.UI2.WinForms.Guna2GradientButton clearForm;
         private System.Windows.Forms.Label label13;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox PetColor;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2GradientPanel SideBar;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
@@ -668,5 +669,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
+        private Guna.UI2.WinForms.Guna2ComboBox PetGender;
     }
 }

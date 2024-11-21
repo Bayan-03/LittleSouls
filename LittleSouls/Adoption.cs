@@ -12,6 +12,7 @@ namespace LittleSouls
 {
     public partial class Adoption : Form
     {
+        littleSoulsEntities littleSouls2 = new littleSoulsEntities();
         public Adoption()
         {
             InitializeComponent();
@@ -80,6 +81,30 @@ namespace LittleSouls
         private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Adoption_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Adoptbtn_Click(object sender, EventArgs e)
+        {
+            pet adopt = new pet()
+            {
+                petId = int.Parse(PetID.Text),
+                //petSex = Gendercheck.,
+                petBreed = BreedTextBox.Text,
+                petSpecies = SpeciesTextbox.Text,
+                petColor = PetColor.Text,
+            };
+            customer adopter = new customer()
+            {
+                customerId = int.Parse(OwnerIDTextBox.Text),
+                firstName = ClientNameTextBox.Text,
+                phoneNumber = int.Parse(PhoneTextBox.Text),
+
+            };
         }
     }
 }

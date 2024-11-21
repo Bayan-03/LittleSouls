@@ -33,13 +33,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -76,17 +85,32 @@
     <Compile Include="AllPet.Designer.cs">
       <DependentUpon>AllPet.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="CEO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="CEO.Designer.cs">
+      <DependentUpon>CEO.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="customer.cs">
+      <DependentUpon>LSDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="department.cs">
+      <DependentUpon>LSDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DonatsDp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="DonatsDp.Designer.cs">
+      <DependentUpon>DonatsDp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee.cs">
+      <DependentUpon>LSDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesDp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesDp.Designer.cs">
+      <DependentUpon>EmployeesDp.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -94,17 +118,58 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="invoiceItems.cs">
+      <DependentUpon>LSDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="invoices.cs">
+      <DependentUpon>LSDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="items.cs">
+      <DependentUpon>LSDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="littleSoulsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>littleSoulsDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="LSDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LSDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LSDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LSDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LSDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LSDB.edmx</DependentUpon>
+    </Compile>
     <Compile Include="medicalCare.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="medicalCare.Designer.cs">
       <DependentUpon>medicalCare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="medicalRecod.cs">
+      <DependentUpon>LSDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mgr.Designer.cs">
+      <DependentUpon>Mgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pet.cs">
+      <DependentUpon>LSDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Pets.cs">
       <SubType>Form</SubType>
@@ -124,8 +189,29 @@
     <Compile Include="PetsExamination.Designer.cs">
       <DependentUpon>PetsExamination.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProfitsDp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfitsDp.Designer.cs">
+      <DependentUpon>ProfitsDp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepotrDp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepotrDp.Designer.cs">
+      <DependentUpon>RepotrDp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalesDp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesDp.Designer.cs">
+      <DependentUpon>SalesDp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="storage.cs">
+      <DependentUpon>LSDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="TFo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,11 +230,14 @@
     <EmbeddedResource Include="AllPet.resx">
       <DependentUpon>AllPet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="CEO.resx">
+      <DependentUpon>CEO.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="DonatsDp.resx">
+      <DependentUpon>DonatsDp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesDp.resx">
+      <DependentUpon>EmployeesDp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -159,6 +248,9 @@
     <EmbeddedResource Include="medicalCare.resx">
       <DependentUpon>medicalCare.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Mgr.resx">
+      <DependentUpon>Mgr.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pets.resx">
       <DependentUpon>Pets.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +259,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PetsExamination.resx">
       <DependentUpon>PetsExamination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfitsDp.resx">
+      <DependentUpon>ProfitsDp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -178,9 +273,33 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RepotrDp.resx">
+      <DependentUpon>RepotrDp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesDp.resx">
+      <DependentUpon>SalesDp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TFo.resx">
       <DependentUpon>TFo.cs</DependentUpon>
     </EmbeddedResource>
+    <EntityDeploy Include="LSDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LSDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="littleSoulsDataSet.xsc">
+      <DependentUpon>littleSoulsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="littleSoulsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>littleSoulsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="littleSoulsDataSet.xss">
+      <DependentUpon>littleSoulsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LSDB.edmx.diagram">
+      <DependentUpon>LSDB.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -251,6 +370,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon_logo-063.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LSDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LSDB.Context.cs</LastGenOutput>
+      <DependentUpon>LSDB.edmx</DependentUpon>
+    </Content>
+    <Content Include="LSDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LSDB.edmx</DependentUpon>
+      <LastGenOutput>LSDB.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

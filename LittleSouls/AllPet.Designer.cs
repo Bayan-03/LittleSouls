@@ -28,25 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.petType = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.AllpetTable = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Pet_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.petname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Yearofbirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.petGender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.petspecies = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.petbreed = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.petarraival = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.petcolor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Helthstate = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.adoptionstatu = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.petseter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Adopter = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.petimage = new System.Windows.Forms.DataGridViewImageColumn();
+            this.petIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.petSexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yearOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.petBreedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.petSpeciesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateOfArraivalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.petColorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.healthStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.petSetterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.petStateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adopterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adoptDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.petImageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.petBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.littleSoulsDataSet = new LittleSouls.littleSoulsDataSet();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.SideBar = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
@@ -56,9 +59,16 @@
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.petTableAdapter = new LittleSouls.littleSoulsDataSetTableAdapters.petTableAdapter();
+            this.petBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.label3 = new System.Windows.Forms.Label();
+            this.Search = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.AllpetTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.petBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.littleSoulsDataSet)).BeginInit();
             this.SideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.petBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // petType
@@ -105,40 +115,42 @@
             // 
             this.AllpetTable.AllowUserToAddRows = false;
             this.AllpetTable.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.AllpetTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.AllpetTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.AllpetTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.AllpetTable.AutoGenerateColumns = false;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.AllpetTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.AllpetTable.ColumnHeadersHeight = 36;
             this.AllpetTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.AllpetTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Pet_ID,
-            this.petname,
-            this.Yearofbirth,
-            this.petGender,
-            this.petspecies,
-            this.petbreed,
-            this.petarraival,
-            this.petcolor,
-            this.Helthstate,
-            this.adoptionstatu,
-            this.petseter,
-            this.Adopter,
-            this.petimage});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.AllpetTable.DefaultCellStyle = dataGridViewCellStyle9;
+            this.petIdDataGridViewTextBoxColumn,
+            this.petSexDataGridViewTextBoxColumn,
+            this.yearOfBirthDataGridViewTextBoxColumn,
+            this.petBreedDataGridViewTextBoxColumn,
+            this.petSpeciesDataGridViewTextBoxColumn,
+            this.dateOfArraivalDataGridViewTextBoxColumn,
+            this.petColorDataGridViewTextBoxColumn,
+            this.healthStatusDataGridViewTextBoxColumn,
+            this.petSetterDataGridViewTextBoxColumn,
+            this.petStateDataGridViewTextBoxColumn,
+            this.adopterDataGridViewTextBoxColumn,
+            this.adoptDateDataGridViewTextBoxColumn,
+            this.petImageDataGridViewImageColumn});
+            this.AllpetTable.DataSource = this.petBindingSource;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AllpetTable.DefaultCellStyle = dataGridViewCellStyle6;
             this.AllpetTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.AllpetTable.Location = new System.Drawing.Point(103, 224);
             this.AllpetTable.Name = "AllpetTable";
@@ -171,96 +183,119 @@
             this.AllpetTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.AllpetTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
-            // Pet_ID
+            // petIdDataGridViewTextBoxColumn
             // 
-            this.Pet_ID.HeaderText = "ID";
-            this.Pet_ID.MinimumWidth = 6;
-            this.Pet_ID.Name = "Pet_ID";
-            this.Pet_ID.ReadOnly = true;
+            this.petIdDataGridViewTextBoxColumn.DataPropertyName = "petId";
+            this.petIdDataGridViewTextBoxColumn.HeaderText = "PET ID";
+            this.petIdDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.petIdDataGridViewTextBoxColumn.Name = "petIdDataGridViewTextBoxColumn";
+            this.petIdDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // petname
+            // petSexDataGridViewTextBoxColumn
             // 
-            this.petname.HeaderText = "Name";
-            this.petname.MinimumWidth = 6;
-            this.petname.Name = "petname";
-            this.petname.ReadOnly = true;
+            this.petSexDataGridViewTextBoxColumn.DataPropertyName = "petSex";
+            this.petSexDataGridViewTextBoxColumn.HeaderText = "PET GENDER";
+            this.petSexDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.petSexDataGridViewTextBoxColumn.Name = "petSexDataGridViewTextBoxColumn";
+            this.petSexDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // Yearofbirth
+            // yearOfBirthDataGridViewTextBoxColumn
             // 
-            this.Yearofbirth.HeaderText = "Birth Date";
-            this.Yearofbirth.MinimumWidth = 6;
-            this.Yearofbirth.Name = "Yearofbirth";
-            this.Yearofbirth.ReadOnly = true;
+            this.yearOfBirthDataGridViewTextBoxColumn.DataPropertyName = "yearOfBirth";
+            this.yearOfBirthDataGridViewTextBoxColumn.HeaderText = "BIRTH";
+            this.yearOfBirthDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.yearOfBirthDataGridViewTextBoxColumn.Name = "yearOfBirthDataGridViewTextBoxColumn";
+            this.yearOfBirthDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // petGender
+            // petBreedDataGridViewTextBoxColumn
             // 
-            this.petGender.HeaderText = "Gender";
-            this.petGender.MinimumWidth = 6;
-            this.petGender.Name = "petGender";
-            this.petGender.ReadOnly = true;
+            this.petBreedDataGridViewTextBoxColumn.DataPropertyName = "petBreed";
+            this.petBreedDataGridViewTextBoxColumn.HeaderText = "Breed";
+            this.petBreedDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.petBreedDataGridViewTextBoxColumn.Name = "petBreedDataGridViewTextBoxColumn";
+            this.petBreedDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // petspecies
+            // petSpeciesDataGridViewTextBoxColumn
             // 
-            this.petspecies.HeaderText = "Species";
-            this.petspecies.MinimumWidth = 6;
-            this.petspecies.Name = "petspecies";
-            this.petspecies.ReadOnly = true;
+            this.petSpeciesDataGridViewTextBoxColumn.DataPropertyName = "petSpecies";
+            this.petSpeciesDataGridViewTextBoxColumn.HeaderText = "Species";
+            this.petSpeciesDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.petSpeciesDataGridViewTextBoxColumn.Name = "petSpeciesDataGridViewTextBoxColumn";
+            this.petSpeciesDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // petbreed
+            // dateOfArraivalDataGridViewTextBoxColumn
             // 
-            this.petbreed.HeaderText = "Breed";
-            this.petbreed.MinimumWidth = 6;
-            this.petbreed.Name = "petbreed";
-            this.petbreed.ReadOnly = true;
+            this.dateOfArraivalDataGridViewTextBoxColumn.DataPropertyName = "dateOfArraival";
+            this.dateOfArraivalDataGridViewTextBoxColumn.HeaderText = "Arraival Date";
+            this.dateOfArraivalDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dateOfArraivalDataGridViewTextBoxColumn.Name = "dateOfArraivalDataGridViewTextBoxColumn";
+            this.dateOfArraivalDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // petarraival
+            // petColorDataGridViewTextBoxColumn
             // 
-            this.petarraival.HeaderText = "Arraival Date";
-            this.petarraival.MinimumWidth = 6;
-            this.petarraival.Name = "petarraival";
-            this.petarraival.ReadOnly = true;
+            this.petColorDataGridViewTextBoxColumn.DataPropertyName = "petColor";
+            this.petColorDataGridViewTextBoxColumn.HeaderText = "Pet Color";
+            this.petColorDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.petColorDataGridViewTextBoxColumn.Name = "petColorDataGridViewTextBoxColumn";
+            this.petColorDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // petcolor
+            // healthStatusDataGridViewTextBoxColumn
             // 
-            this.petcolor.HeaderText = "Color";
-            this.petcolor.MinimumWidth = 6;
-            this.petcolor.Name = "petcolor";
-            this.petcolor.ReadOnly = true;
+            this.healthStatusDataGridViewTextBoxColumn.DataPropertyName = "healthStatus";
+            this.healthStatusDataGridViewTextBoxColumn.HeaderText = "Health Status";
+            this.healthStatusDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.healthStatusDataGridViewTextBoxColumn.Name = "healthStatusDataGridViewTextBoxColumn";
+            this.healthStatusDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // Helthstate
+            // petSetterDataGridViewTextBoxColumn
             // 
-            this.Helthstate.HeaderText = "health Satute";
-            this.Helthstate.MinimumWidth = 6;
-            this.Helthstate.Name = "Helthstate";
-            this.Helthstate.ReadOnly = true;
+            this.petSetterDataGridViewTextBoxColumn.DataPropertyName = "petSetter";
+            this.petSetterDataGridViewTextBoxColumn.HeaderText = "petSetter";
+            this.petSetterDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.petSetterDataGridViewTextBoxColumn.Name = "petSetterDataGridViewTextBoxColumn";
+            this.petSetterDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // adoptionstatu
+            // petStateDataGridViewTextBoxColumn
             // 
-            this.adoptionstatu.HeaderText = "Adoption State";
-            this.adoptionstatu.MinimumWidth = 6;
-            this.adoptionstatu.Name = "adoptionstatu";
-            this.adoptionstatu.ReadOnly = true;
+            this.petStateDataGridViewTextBoxColumn.DataPropertyName = "petState";
+            this.petStateDataGridViewTextBoxColumn.HeaderText = "Pet State";
+            this.petStateDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.petStateDataGridViewTextBoxColumn.Name = "petStateDataGridViewTextBoxColumn";
+            this.petStateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // petseter
+            // adopterDataGridViewTextBoxColumn
             // 
-            this.petseter.HeaderText = "Pet Setter";
-            this.petseter.MinimumWidth = 6;
-            this.petseter.Name = "petseter";
-            this.petseter.ReadOnly = true;
+            this.adopterDataGridViewTextBoxColumn.DataPropertyName = "adopter";
+            this.adopterDataGridViewTextBoxColumn.HeaderText = "adopter";
+            this.adopterDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.adopterDataGridViewTextBoxColumn.Name = "adopterDataGridViewTextBoxColumn";
+            this.adopterDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // Adopter
+            // adoptDateDataGridViewTextBoxColumn
             // 
-            this.Adopter.HeaderText = "Adopter";
-            this.Adopter.MinimumWidth = 6;
-            this.Adopter.Name = "Adopter";
-            this.Adopter.ReadOnly = true;
+            this.adoptDateDataGridViewTextBoxColumn.DataPropertyName = "adoptDate";
+            this.adoptDateDataGridViewTextBoxColumn.HeaderText = "Adoption Date";
+            this.adoptDateDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.adoptDateDataGridViewTextBoxColumn.Name = "adoptDateDataGridViewTextBoxColumn";
+            this.adoptDateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // petimage
+            // petImageDataGridViewImageColumn
             // 
-            this.petimage.HeaderText = "photo";
-            this.petimage.MinimumWidth = 6;
-            this.petimage.Name = "petimage";
-            this.petimage.ReadOnly = true;
+            this.petImageDataGridViewImageColumn.DataPropertyName = "petImage";
+            this.petImageDataGridViewImageColumn.HeaderText = "petImage";
+            this.petImageDataGridViewImageColumn.MinimumWidth = 6;
+            this.petImageDataGridViewImageColumn.Name = "petImageDataGridViewImageColumn";
+            this.petImageDataGridViewImageColumn.ReadOnly = true;
+            // 
+            // petBindingSource
+            // 
+            this.petBindingSource.DataMember = "pet";
+            this.petBindingSource.DataSource = this.littleSoulsDataSet;
+            // 
+            // littleSoulsDataSet
+            // 
+            this.littleSoulsDataSet.DataSetName = "littleSoulsDataSet";
+            this.littleSoulsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // guna2Panel1
             // 
@@ -404,6 +439,50 @@
             this.label1.TabIndex = 39;
             this.label1.Text = "All Souls";
             // 
+            // petTableAdapter
+            // 
+            this.petTableAdapter.ClearBeforeFill = true;
+            // 
+            // petBindingSource1
+            // 
+            this.petBindingSource1.DataMember = "pet";
+            this.petBindingSource1.DataSource = this.littleSoulsDataSet;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(105)))), ((int)(((byte)(168)))));
+            this.label3.Location = new System.Drawing.Point(457, 145);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(109, 33);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "Search";
+            // 
+            // Search
+            // 
+            this.Search.BackColor = System.Drawing.Color.Transparent;
+            this.Search.BorderRadius = 15;
+            this.Search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Search.DefaultText = "";
+            this.Search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.Search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.Search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Search.Font = new System.Drawing.Font("Graphik Arabic Medium", 12F, System.Drawing.FontStyle.Bold);
+            this.Search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Search.Location = new System.Drawing.Point(585, 142);
+            this.Search.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Search.Name = "Search";
+            this.Search.PasswordChar = '\0';
+            this.Search.PlaceholderText = "";
+            this.Search.SelectedText = "";
+            this.Search.Size = new System.Drawing.Size(259, 36);
+            this.Search.TabIndex = 46;
+            this.Search.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Search_KeyDown);
+            // 
             // AllPet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -411,6 +490,8 @@
             this.BackgroundImage = global::LittleSouls.Properties.Resources.الخلفية_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1435, 830);
+            this.Controls.Add(this.Search);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.SideBar);
@@ -419,9 +500,13 @@
             this.Controls.Add(this.petType);
             this.Name = "AllPet";
             this.Text = "AllPet";
+            this.Load += new System.EventHandler(this.AllPet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.AllpetTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.petBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.littleSoulsDataSet)).EndInit();
             this.SideBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.petBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -431,19 +516,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox petType;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2DataGridView AllpetTable;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Pet_ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn petname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Yearofbirth;
-        private System.Windows.Forms.DataGridViewTextBoxColumn petGender;
-        private System.Windows.Forms.DataGridViewTextBoxColumn petspecies;
-        private System.Windows.Forms.DataGridViewTextBoxColumn petbreed;
-        private System.Windows.Forms.DataGridViewTextBoxColumn petarraival;
-        private System.Windows.Forms.DataGridViewTextBoxColumn petcolor;
-        private System.Windows.Forms.DataGridViewComboBoxColumn Helthstate;
-        private System.Windows.Forms.DataGridViewComboBoxColumn adoptionstatu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn petseter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Adopter;
-        private System.Windows.Forms.DataGridViewImageColumn petimage;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2GradientPanel SideBar;
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
@@ -453,5 +525,24 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private System.Windows.Forms.Label label1;
+        private littleSoulsDataSet littleSoulsDataSet;
+        private System.Windows.Forms.BindingSource petBindingSource;
+        private littleSoulsDataSetTableAdapters.petTableAdapter petTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn petIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn petSexDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn yearOfBirthDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn petBreedDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn petSpeciesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateOfArraivalDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn petColorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn healthStatusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn petSetterDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn petStateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adopterDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adoptDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewImageColumn petImageDataGridViewImageColumn;
+        private System.Windows.Forms.BindingSource petBindingSource1;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2TextBox Search;
     }
 }
