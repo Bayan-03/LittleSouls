@@ -1,6 +1,6 @@
 ﻿namespace LittleSouls
 {
-    partial class Form3
+    partial class Mgr
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mgr));
             this.label1 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -63,6 +63,7 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Maram25@gmail.com";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // guna2CirclePictureBox1
             // 
@@ -76,6 +77,7 @@
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2CirclePictureBox1.TabIndex = 3;
             this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2CirclePictureBox1.Click += new System.EventHandler(this.guna2CirclePictureBox1_Click);
             // 
             // guna2Button1
             // 
@@ -104,6 +106,7 @@
             this.Tb_panal.Name = "Tb_panal";
             this.Tb_panal.Size = new System.Drawing.Size(1440, 82);
             this.Tb_panal.TabIndex = 39;
+            this.Tb_panal.Paint += new System.Windows.Forms.PaintEventHandler(this.Tb_panal_Paint);
             // 
             // NameLable
             // 
@@ -117,6 +120,7 @@
             this.NameLable.TabIndex = 6;
             this.NameLable.Text = "Mgr.MARAM";
             this.NameLable.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.NameLable.Click += new System.EventHandler(this.NameLable_Click);
             // 
             // guna2PictureBox4
             // 
@@ -255,7 +259,7 @@
             this.guna2PictureBox2.TabIndex = 52;
             this.guna2PictureBox2.TabStop = false;
             // 
-            // Form3
+            // Mgr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -274,7 +278,7 @@
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.Tb_panal);
             this.DoubleBuffered = true;
-            this.Name = "Form3";
+            this.Name = "Mgr";
             this.Text = "MRG";
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.Tb_panal.ResumeLayout(false);
