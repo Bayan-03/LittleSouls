@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Adoptbtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -35,6 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Gendercheck = new Guna.UI2.WinForms.Guna2ComboBox();
             this.HelthComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.BreedTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.PetID = new Guna.UI2.WinForms.Guna2TextBox();
@@ -53,25 +55,6 @@
             this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2RadioButton11 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton12 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton9 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton10 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton7 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton8 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2TextBox9 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2RadioButton3 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton4 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.guna2VSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.clearForm = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -84,12 +67,35 @@
             this.Homebtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.Gendercheck = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.petBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.littleSoulsDataSet = new LittleSouls.littleSoulsDataSet();
+            this.petTableAdapter = new LittleSouls.littleSoulsDataSetTableAdapters.petTableAdapter();
+            this.adopttable = new System.Windows.Forms.DataGridView();
+            this.petIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yearOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.petSexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.petBreedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.petSpeciesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateOfArraivalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.petColorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.healthStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.petStateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.petImageDataGridViewImageColumn = new System.Windows.Forms.DataGridViewImageColumn();
+            this.petSetterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adopterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.adoptDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.petBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.littleSoulsDataSet1 = new LittleSouls.littleSoulsDataSet();
+            this.AdoptionDate = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.SideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.petBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.littleSoulsDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adopttable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.petBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.littleSoulsDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // Adoptbtn
@@ -212,6 +218,26 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Information";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // Gendercheck
+            // 
+            this.Gendercheck.BackColor = System.Drawing.Color.Transparent;
+            this.Gendercheck.BorderRadius = 10;
+            this.Gendercheck.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Gendercheck.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.Gendercheck.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Gendercheck.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Gendercheck.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Gendercheck.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.Gendercheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.Gendercheck.ItemHeight = 30;
+            this.Gendercheck.Items.AddRange(new object[] {
+            "Male",
+            "Femal"});
+            this.Gendercheck.Location = new System.Drawing.Point(250, 298);
+            this.Gendercheck.Name = "Gendercheck";
+            this.Gendercheck.Size = new System.Drawing.Size(202, 36);
+            this.Gendercheck.TabIndex = 73;
             // 
             // HelthComboBox2
             // 
@@ -527,345 +553,6 @@
             this.label12.TabIndex = 47;
             this.label12.Text = "Species:";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.guna2DateTimePicker1);
-            this.groupBox2.Controls.Add(this.guna2TextBox7);
-            this.groupBox2.Controls.Add(this.guna2RadioButton11);
-            this.groupBox2.Controls.Add(this.guna2RadioButton12);
-            this.groupBox2.Controls.Add(this.guna2RadioButton9);
-            this.groupBox2.Controls.Add(this.guna2RadioButton10);
-            this.groupBox2.Controls.Add(this.guna2RadioButton7);
-            this.groupBox2.Controls.Add(this.guna2RadioButton8);
-            this.groupBox2.Controls.Add(this.guna2TextBox9);
-            this.groupBox2.Controls.Add(this.guna2RadioButton3);
-            this.groupBox2.Controls.Add(this.guna2RadioButton4);
-            this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Controls.Add(this.guna2VSeparator2);
-            this.groupBox2.Font = new System.Drawing.Font("Graphik Arabic Bold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox2.Location = new System.Drawing.Point(147, 498);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1223, 387);
-            this.groupBox2.TabIndex = 45;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Adoption Contract:";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.SteelBlue;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(922, 269);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 36);
-            this.guna2DateTimePicker1.TabIndex = 82;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 11, 12, 21, 17, 12, 890);
-            // 
-            // guna2TextBox7
-            // 
-            this.guna2TextBox7.Animated = true;
-            this.guna2TextBox7.BorderRadius = 10;
-            this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2TextBox7.DefaultText = "";
-            this.guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.Font = new System.Drawing.Font("Graphik Arabic Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.Location = new System.Drawing.Point(900, 212);
-            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox7.Name = "guna2TextBox7";
-            this.guna2TextBox7.PasswordChar = '\0';
-            this.guna2TextBox7.PlaceholderText = "";
-            this.guna2TextBox7.SelectedText = "";
-            this.guna2TextBox7.Size = new System.Drawing.Size(262, 28);
-            this.guna2TextBox7.TabIndex = 81;
-            // 
-            // guna2RadioButton11
-            // 
-            this.guna2RadioButton11.AutoSize = true;
-            this.guna2RadioButton11.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton11.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton11.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton11.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton11.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2RadioButton11.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2RadioButton11.Location = new System.Drawing.Point(296, 336);
-            this.guna2RadioButton11.Name = "guna2RadioButton11";
-            this.guna2RadioButton11.Size = new System.Drawing.Size(58, 28);
-            this.guna2RadioButton11.TabIndex = 79;
-            this.guna2RadioButton11.Text = "No";
-            this.guna2RadioButton11.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton11.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton11.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton11.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2RadioButton12
-            // 
-            this.guna2RadioButton12.AutoSize = true;
-            this.guna2RadioButton12.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton12.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton12.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton12.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton12.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2RadioButton12.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2RadioButton12.Location = new System.Drawing.Point(161, 336);
-            this.guna2RadioButton12.Name = "guna2RadioButton12";
-            this.guna2RadioButton12.Size = new System.Drawing.Size(64, 28);
-            this.guna2RadioButton12.TabIndex = 78;
-            this.guna2RadioButton12.Text = "Yes";
-            this.guna2RadioButton12.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton12.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton12.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton12.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2RadioButton9
-            // 
-            this.guna2RadioButton9.AutoSize = true;
-            this.guna2RadioButton9.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton9.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton9.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton9.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton9.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2RadioButton9.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2RadioButton9.Location = new System.Drawing.Point(296, 213);
-            this.guna2RadioButton9.Name = "guna2RadioButton9";
-            this.guna2RadioButton9.Size = new System.Drawing.Size(58, 28);
-            this.guna2RadioButton9.TabIndex = 76;
-            this.guna2RadioButton9.Text = "No";
-            this.guna2RadioButton9.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton9.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton9.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton9.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2RadioButton10
-            // 
-            this.guna2RadioButton10.AutoSize = true;
-            this.guna2RadioButton10.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton10.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton10.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton10.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton10.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2RadioButton10.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2RadioButton10.Location = new System.Drawing.Point(161, 213);
-            this.guna2RadioButton10.Name = "guna2RadioButton10";
-            this.guna2RadioButton10.Size = new System.Drawing.Size(64, 28);
-            this.guna2RadioButton10.TabIndex = 75;
-            this.guna2RadioButton10.Text = "Yes";
-            this.guna2RadioButton10.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton10.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton10.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton10.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2RadioButton7
-            // 
-            this.guna2RadioButton7.AutoSize = true;
-            this.guna2RadioButton7.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton7.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton7.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton7.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton7.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2RadioButton7.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2RadioButton7.Location = new System.Drawing.Point(296, 126);
-            this.guna2RadioButton7.Name = "guna2RadioButton7";
-            this.guna2RadioButton7.Size = new System.Drawing.Size(87, 28);
-            this.guna2RadioButton7.TabIndex = 73;
-            this.guna2RadioButton7.Text = "Other";
-            this.guna2RadioButton7.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton7.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton7.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton7.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2RadioButton8
-            // 
-            this.guna2RadioButton8.AutoSize = true;
-            this.guna2RadioButton8.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton8.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton8.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton8.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton8.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2RadioButton8.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2RadioButton8.Location = new System.Drawing.Point(158, 126);
-            this.guna2RadioButton8.Name = "guna2RadioButton8";
-            this.guna2RadioButton8.Size = new System.Drawing.Size(95, 28);
-            this.guna2RadioButton8.TabIndex = 72;
-            this.guna2RadioButton8.Text = "Myself";
-            this.guna2RadioButton8.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton8.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton8.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton8.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2TextBox9
-            // 
-            this.guna2TextBox9.Animated = true;
-            this.guna2TextBox9.BorderRadius = 10;
-            this.guna2TextBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2TextBox9.DefaultText = "";
-            this.guna2TextBox9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox9.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox9.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.Font = new System.Drawing.Font("Graphik Arabic Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.Location = new System.Drawing.Point(807, 136);
-            this.guna2TextBox9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox9.Name = "guna2TextBox9";
-            this.guna2TextBox9.PasswordChar = '\0';
-            this.guna2TextBox9.PlaceholderText = "";
-            this.guna2TextBox9.SelectedText = "";
-            this.guna2TextBox9.Size = new System.Drawing.Size(278, 55);
-            this.guna2TextBox9.TabIndex = 70;
-            // 
-            // guna2RadioButton3
-            // 
-            this.guna2RadioButton3.AutoSize = true;
-            this.guna2RadioButton3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton3.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton3.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton3.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2RadioButton3.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2RadioButton3.Location = new System.Drawing.Point(965, 95);
-            this.guna2RadioButton3.Name = "guna2RadioButton3";
-            this.guna2RadioButton3.Size = new System.Drawing.Size(58, 28);
-            this.guna2RadioButton3.TabIndex = 69;
-            this.guna2RadioButton3.Text = "No";
-            this.guna2RadioButton3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton3.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton3.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton3.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // guna2RadioButton4
-            // 
-            this.guna2RadioButton4.AutoSize = true;
-            this.guna2RadioButton4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton4.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton4.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton4.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2RadioButton4.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.guna2RadioButton4.Location = new System.Drawing.Point(830, 95);
-            this.guna2RadioButton4.Name = "guna2RadioButton4";
-            this.guna2RadioButton4.Size = new System.Drawing.Size(64, 28);
-            this.guna2RadioButton4.TabIndex = 68;
-            this.guna2RadioButton4.Text = "Yes";
-            this.guna2RadioButton4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton4.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton4.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton4.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // label16
-            // 
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label16.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label16.Location = new System.Drawing.Point(710, 255);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(184, 68);
-            this.label16.TabIndex = 83;
-            this.label16.Text = "Date Of Adoption:";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label15.Location = new System.Drawing.Point(710, 208);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(191, 33);
-            this.label15.TabIndex = 80;
-            this.label15.Text = "Setter Name:";
-            // 
-            // label14
-            // 
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Graphik Arabic Medium", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label14.Location = new System.Drawing.Point(42, 278);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(456, 59);
-            this.label14.TabIndex = 77;
-            this.label14.Text = "Have You Ever Took Care Of a Little Soul?";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Graphik Arabic Medium", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label13.Location = new System.Drawing.Point(42, 170);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(326, 27);
-            this.label13.TabIndex = 74;
-            this.label13.Text = "DoYou Own Any Other Pet?";
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Graphik Arabic Medium", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label10.Location = new System.Drawing.Point(42, 53);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(395, 54);
-            this.label10.TabIndex = 71;
-            this.label10.Text = "Who You\'er Adopting This Soulss For?";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Graphik Arabic Medium", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label17.Location = new System.Drawing.Point(711, 52);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(303, 27);
-            this.label17.TabIndex = 67;
-            this.label17.Text = "DoYou Have Any Allergy?";
-            // 
-            // guna2VSeparator2
-            // 
-            this.guna2VSeparator2.FillColor = System.Drawing.Color.Teal;
-            this.guna2VSeparator2.FillStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.guna2VSeparator2.Location = new System.Drawing.Point(654, 37);
-            this.guna2VSeparator2.Name = "guna2VSeparator2";
-            this.guna2VSeparator2.Size = new System.Drawing.Size(10, 344);
-            this.guna2VSeparator2.TabIndex = 63;
-            // 
             // clearForm
             // 
             this.clearForm.Animated = true;
@@ -898,7 +585,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(79, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1335, 42);
+            this.guna2Panel1.Size = new System.Drawing.Size(1356, 42);
             this.guna2Panel1.TabIndex = 56;
             // 
             // label1
@@ -926,7 +613,7 @@
             this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.SideBar.Location = new System.Drawing.Point(0, 0);
             this.SideBar.Name = "SideBar";
-            this.SideBar.Size = new System.Drawing.Size(79, 955);
+            this.SideBar.Size = new System.Drawing.Size(79, 975);
             this.SideBar.TabIndex = 57;
             // 
             // guna2Separator1
@@ -1061,25 +748,157 @@
             this.label18.TabIndex = 58;
             this.label18.Text = "ADOPTION APPLICATION";
             // 
-            // Gendercheck
+            // petBindingSource
             // 
-            this.Gendercheck.BackColor = System.Drawing.Color.Transparent;
-            this.Gendercheck.BorderRadius = 10;
-            this.Gendercheck.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Gendercheck.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.Gendercheck.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Gendercheck.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Gendercheck.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Gendercheck.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.Gendercheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.Gendercheck.ItemHeight = 30;
-            this.Gendercheck.Items.AddRange(new object[] {
-            "Male",
-            "Femal"});
-            this.Gendercheck.Location = new System.Drawing.Point(250, 298);
-            this.Gendercheck.Name = "Gendercheck";
-            this.Gendercheck.Size = new System.Drawing.Size(202, 36);
-            this.Gendercheck.TabIndex = 73;
+            this.petBindingSource.DataMember = "pet";
+            this.petBindingSource.DataSource = this.littleSoulsDataSet;
+            // 
+            // littleSoulsDataSet
+            // 
+            this.littleSoulsDataSet.DataSetName = "littleSoulsDataSet";
+            this.littleSoulsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // petTableAdapter
+            // 
+            this.petTableAdapter.ClearBeforeFill = true;
+            // 
+            // adopttable
+            // 
+            this.adopttable.AllowUserToAddRows = false;
+            this.adopttable.AllowUserToDeleteRows = false;
+            this.adopttable.AutoGenerateColumns = false;
+            this.adopttable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.adopttable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.adopttable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.petIdDataGridViewTextBoxColumn,
+            this.yearOfBirthDataGridViewTextBoxColumn,
+            this.petSexDataGridViewTextBoxColumn,
+            this.petBreedDataGridViewTextBoxColumn,
+            this.petSpeciesDataGridViewTextBoxColumn,
+            this.dateOfArraivalDataGridViewTextBoxColumn,
+            this.petColorDataGridViewTextBoxColumn,
+            this.healthStatusDataGridViewTextBoxColumn,
+            this.petStateDataGridViewTextBoxColumn,
+            this.petImageDataGridViewImageColumn,
+            this.petSetterDataGridViewTextBoxColumn,
+            this.adopterDataGridViewTextBoxColumn,
+            this.adoptDateDataGridViewTextBoxColumn});
+            this.adopttable.DataSource = this.petBindingSource1;
+            this.adopttable.Location = new System.Drawing.Point(147, 513);
+            this.adopttable.Name = "adopttable";
+            this.adopttable.RowHeadersWidth = 51;
+            this.adopttable.RowTemplate.Height = 26;
+            this.adopttable.Size = new System.Drawing.Size(1223, 380);
+            this.adopttable.TabIndex = 59;
+            // 
+            // petIdDataGridViewTextBoxColumn
+            // 
+            this.petIdDataGridViewTextBoxColumn.DataPropertyName = "petId";
+            this.petIdDataGridViewTextBoxColumn.HeaderText = "petId";
+            this.petIdDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.petIdDataGridViewTextBoxColumn.Name = "petIdDataGridViewTextBoxColumn";
+            this.petIdDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // yearOfBirthDataGridViewTextBoxColumn
+            // 
+            this.yearOfBirthDataGridViewTextBoxColumn.DataPropertyName = "yearOfBirth";
+            this.yearOfBirthDataGridViewTextBoxColumn.HeaderText = "yearOfBirth";
+            this.yearOfBirthDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.yearOfBirthDataGridViewTextBoxColumn.Name = "yearOfBirthDataGridViewTextBoxColumn";
+            // 
+            // petSexDataGridViewTextBoxColumn
+            // 
+            this.petSexDataGridViewTextBoxColumn.DataPropertyName = "petSex";
+            this.petSexDataGridViewTextBoxColumn.HeaderText = "petSex";
+            this.petSexDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.petSexDataGridViewTextBoxColumn.Name = "petSexDataGridViewTextBoxColumn";
+            // 
+            // petBreedDataGridViewTextBoxColumn
+            // 
+            this.petBreedDataGridViewTextBoxColumn.DataPropertyName = "petBreed";
+            this.petBreedDataGridViewTextBoxColumn.HeaderText = "petBreed";
+            this.petBreedDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.petBreedDataGridViewTextBoxColumn.Name = "petBreedDataGridViewTextBoxColumn";
+            // 
+            // petSpeciesDataGridViewTextBoxColumn
+            // 
+            this.petSpeciesDataGridViewTextBoxColumn.DataPropertyName = "petSpecies";
+            this.petSpeciesDataGridViewTextBoxColumn.HeaderText = "petSpecies";
+            this.petSpeciesDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.petSpeciesDataGridViewTextBoxColumn.Name = "petSpeciesDataGridViewTextBoxColumn";
+            // 
+            // dateOfArraivalDataGridViewTextBoxColumn
+            // 
+            this.dateOfArraivalDataGridViewTextBoxColumn.DataPropertyName = "dateOfArraival";
+            this.dateOfArraivalDataGridViewTextBoxColumn.HeaderText = "dateOfArraival";
+            this.dateOfArraivalDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.dateOfArraivalDataGridViewTextBoxColumn.Name = "dateOfArraivalDataGridViewTextBoxColumn";
+            // 
+            // petColorDataGridViewTextBoxColumn
+            // 
+            this.petColorDataGridViewTextBoxColumn.DataPropertyName = "petColor";
+            this.petColorDataGridViewTextBoxColumn.HeaderText = "petColor";
+            this.petColorDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.petColorDataGridViewTextBoxColumn.Name = "petColorDataGridViewTextBoxColumn";
+            // 
+            // healthStatusDataGridViewTextBoxColumn
+            // 
+            this.healthStatusDataGridViewTextBoxColumn.DataPropertyName = "healthStatus";
+            this.healthStatusDataGridViewTextBoxColumn.HeaderText = "healthStatus";
+            this.healthStatusDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.healthStatusDataGridViewTextBoxColumn.Name = "healthStatusDataGridViewTextBoxColumn";
+            // 
+            // petStateDataGridViewTextBoxColumn
+            // 
+            this.petStateDataGridViewTextBoxColumn.DataPropertyName = "petState";
+            this.petStateDataGridViewTextBoxColumn.HeaderText = "petState";
+            this.petStateDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.petStateDataGridViewTextBoxColumn.Name = "petStateDataGridViewTextBoxColumn";
+            // 
+            // petImageDataGridViewImageColumn
+            // 
+            this.petImageDataGridViewImageColumn.DataPropertyName = "petImage";
+            this.petImageDataGridViewImageColumn.HeaderText = "petImage";
+            this.petImageDataGridViewImageColumn.MinimumWidth = 6;
+            this.petImageDataGridViewImageColumn.Name = "petImageDataGridViewImageColumn";
+            // 
+            // petSetterDataGridViewTextBoxColumn
+            // 
+            this.petSetterDataGridViewTextBoxColumn.DataPropertyName = "petSetter";
+            this.petSetterDataGridViewTextBoxColumn.HeaderText = "petSetter";
+            this.petSetterDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.petSetterDataGridViewTextBoxColumn.Name = "petSetterDataGridViewTextBoxColumn";
+            // 
+            // adopterDataGridViewTextBoxColumn
+            // 
+            this.adopterDataGridViewTextBoxColumn.DataPropertyName = "adopter";
+            this.adopterDataGridViewTextBoxColumn.HeaderText = "adopter";
+            this.adopterDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.adopterDataGridViewTextBoxColumn.Name = "adopterDataGridViewTextBoxColumn";
+            // 
+            // adoptDateDataGridViewTextBoxColumn
+            // 
+            this.adoptDateDataGridViewTextBoxColumn.DataPropertyName = "adoptDate";
+            this.adoptDateDataGridViewTextBoxColumn.HeaderText = "adoptDate";
+            this.adoptDateDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.adoptDateDataGridViewTextBoxColumn.Name = "adoptDateDataGridViewTextBoxColumn";
+            // 
+            // petBindingSource1
+            // 
+            this.petBindingSource1.DataMember = "pet";
+            this.petBindingSource1.DataSource = this.littleSoulsDataSet1;
+            // 
+            // littleSoulsDataSet1
+            // 
+            this.littleSoulsDataSet1.DataSetName = "littleSoulsDataSet";
+            this.littleSoulsDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // AdoptionDate
+            // 
+            this.AdoptionDate.Location = new System.Drawing.Point(953, 479);
+            this.AdoptionDate.Name = "AdoptionDate";
+            this.AdoptionDate.Size = new System.Drawing.Size(200, 24);
+            this.AdoptionDate.TabIndex = 60;
             // 
             // Adoption
             // 
@@ -1088,25 +907,29 @@
             this.AutoScroll = true;
             this.BackgroundImage = global::LittleSouls.Properties.Resources.الخلفية_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1435, 915);
+            this.ClientSize = new System.Drawing.Size(1435, 975);
+            this.Controls.Add(this.AdoptionDate);
+            this.Controls.Add(this.adopttable);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.SideBar);
             this.Controls.Add(this.clearForm);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Adoptbtn);
-            this.Controls.Add(this.groupBox2);
             this.Name = "Adoption";
             this.Text = "Adoption";
             this.Load += new System.EventHandler(this.Adoption_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.SideBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.petBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.littleSoulsDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.adopttable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.petBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.littleSoulsDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1128,15 +951,9 @@
         private Guna.UI2.WinForms.Guna2TextBox PhoneTextBox;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator2;
         private Guna.UI2.WinForms.Guna2TextBox PetID;
         private System.Windows.Forms.Label label29;
         private Guna.UI2.WinForms.Guna2TextBox BreedTextBox;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox9;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton3;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton4;
-        private System.Windows.Forms.Label label17;
         private Guna.UI2.WinForms.Guna2RadioButton ClientF;
         private Guna.UI2.WinForms.Guna2RadioButton clientM;
         private System.Windows.Forms.Label label7;
@@ -1144,19 +961,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox HelthComboBox2;
         private Guna.UI2.WinForms.Guna2TextBox AddressTextBox;
         private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton9;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton10;
-        private System.Windows.Forms.Label label13;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton7;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton8;
-        private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton11;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton12;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label16;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private System.Windows.Forms.Label label15;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
         private Guna.UI2.WinForms.Guna2GradientButton clearForm;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label1;
@@ -1170,5 +974,25 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private System.Windows.Forms.Label label18;
         private Guna.UI2.WinForms.Guna2ComboBox Gendercheck;
+        private littleSoulsDataSet littleSoulsDataSet;
+        private System.Windows.Forms.BindingSource petBindingSource;
+        private littleSoulsDataSetTableAdapters.petTableAdapter petTableAdapter;
+        private System.Windows.Forms.DataGridView adopttable;
+        private littleSoulsDataSet littleSoulsDataSet1;
+        private System.Windows.Forms.BindingSource petBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn petIdDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn yearOfBirthDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn petSexDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn petBreedDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn petSpeciesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateOfArraivalDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn petColorDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn healthStatusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn petStateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewImageColumn petImageDataGridViewImageColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn petSetterDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adopterDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn adoptDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DateTimePicker AdoptionDate;
     }
 }

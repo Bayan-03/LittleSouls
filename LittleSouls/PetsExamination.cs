@@ -36,5 +36,10 @@ namespace LittleSouls
         {
 
         }
+
+        private void PetsExamination_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

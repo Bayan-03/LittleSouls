@@ -189,6 +189,7 @@
     <Compile Include="PetsExamination.Designer.cs">
       <DependentUpon>PetsExamination.cs</DependentUpon>
     </Compile>
+    <Compile Include="proc.cs" />
     <Compile Include="ProfitsDp.cs">
       <SubType>Form</SubType>
     </Compile>
