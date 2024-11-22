@@ -92,10 +92,10 @@
       <DependentUpon>CEO.cs</DependentUpon>
     </Compile>
     <Compile Include="customer.cs">
-      <DependentUpon>LSDB.tt</DependentUpon>
+      <DependentUpon>EmployeeData.tt</DependentUpon>
     </Compile>
     <Compile Include="department.cs">
-      <DependentUpon>LSDB.tt</DependentUpon>
+      <DependentUpon>EmployeeData.tt</DependentUpon>
     </Compile>
     <Compile Include="DonatsDp.cs">
       <SubType>Form</SubType>
@@ -104,7 +104,22 @@
       <DependentUpon>DonatsDp.cs</DependentUpon>
     </Compile>
     <Compile Include="employee.cs">
-      <DependentUpon>LSDB.tt</DependentUpon>
+      <DependentUpon>EmployeeData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeData.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeData.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeData.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeData.edmx</DependentUpon>
     </Compile>
     <Compile Include="EmployeesDp.cs">
       <SubType>Form</SubType>
@@ -119,13 +134,13 @@
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="invoiceItems.cs">
-      <DependentUpon>LSDB.tt</DependentUpon>
+      <DependentUpon>EmployeeData.tt</DependentUpon>
     </Compile>
     <Compile Include="invoices.cs">
-      <DependentUpon>LSDB.tt</DependentUpon>
+      <DependentUpon>EmployeeData.tt</DependentUpon>
     </Compile>
     <Compile Include="items.cs">
-      <DependentUpon>LSDB.tt</DependentUpon>
+      <DependentUpon>EmployeeData.tt</DependentUpon>
     </Compile>
     <Compile Include="littleSoulsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -160,7 +175,7 @@
       <DependentUpon>medicalCare.cs</DependentUpon>
     </Compile>
     <Compile Include="medicalRecod.cs">
-      <DependentUpon>LSDB.tt</DependentUpon>
+      <DependentUpon>EmployeeData.tt</DependentUpon>
     </Compile>
     <Compile Include="Mgr.cs">
       <SubType>Form</SubType>
@@ -169,7 +184,7 @@
       <DependentUpon>Mgr.cs</DependentUpon>
     </Compile>
     <Compile Include="pet.cs">
-      <DependentUpon>LSDB.tt</DependentUpon>
+      <DependentUpon>EmployeeData.tt</DependentUpon>
     </Compile>
     <Compile Include="Pets.cs">
       <SubType>Form</SubType>
@@ -211,7 +226,7 @@
       <DependentUpon>SalesDp.cs</DependentUpon>
     </Compile>
     <Compile Include="storage.cs">
-      <DependentUpon>LSDB.tt</DependentUpon>
+      <DependentUpon>EmployeeData.tt</DependentUpon>
     </Compile>
     <Compile Include="TFo.cs">
       <SubType>Form</SubType>
@@ -287,6 +302,13 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>LSDB.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="EmployeeData.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EmployeeData.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="EmployeeData.edmx.diagram">
+      <DependentUpon>EmployeeData.edmx</DependentUpon>
+    </None>
     <None Include="littleSoulsDataSet.xsc">
       <DependentUpon>littleSoulsDataSet.xsd</DependentUpon>
     </None>
@@ -373,6 +395,16 @@
     <None Include="Resources\icon_logo-063.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="EmployeeData.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmployeeData.edmx</DependentUpon>
+      <LastGenOutput>EmployeeData.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EmployeeData.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmployeeData.edmx</DependentUpon>
+      <LastGenOutput>EmployeeData.cs</LastGenOutput>
+    </Content>
     <Content Include="LSDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>LSDB.Context.cs</LastGenOutput>

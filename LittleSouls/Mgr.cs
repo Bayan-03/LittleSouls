@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LittleSouls
 {
-    public partial class Form3 : Form
+    public partial class Mgr : Form
     {
-        public Form3()
+        public Mgr()
         {
             InitializeComponent();
         }
@@ -37,6 +37,26 @@ namespace LittleSouls
         }
 
         private void guna2PictureBox1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Tb_panal_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void NameLable_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2CirclePictureBox1_Click(object sender, EventArgs e)
         {
 
         }
