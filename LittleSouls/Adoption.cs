@@ -94,60 +94,57 @@ namespace LittleSouls
         int indexrow;
         private void Adoptbtn_Click(object sender, EventArgs e)
         {
-                int selectedRowIndex = -1;
-                try
+            try
+            {
+                // الحصول على الصف المحدد من DataGridView
+                if (adopttable.CurrentRow != null)
                 {
-                    // التحقق من اختيار صف صالح
-                    if (selectedRowIndex >= 0)
+                    // استخراج PetID من الصف المحدد
+                    int petID = int.Parse(adopttable.SelectedCells[0].Value.ToString());
+
+                    // العثور على السجل المطابق في قاعدة البيانات
+                    pet selectedPet = littleSouls2.pet.FirstOrDefault(p => p.petId == petID);
+
+                    if (selectedPet != null)
                     {
-                        // الحصول على PetID من الصف المحدد في DataGridView
-                        int petID = int.Parse(adopttable.Rows[selectedRowIndex].Cells["PetID"].Value.ToString());
-
-                        // العثور على السجل المطابق في قاعدة البيانات
-                        pet selectedPet = littleSouls2.pet.FirstOrDefault(p => p.petId == petID);
-
-                        if (selectedPet != null)
+                        // تحديث OwnerID و AdoptionDate
+                        if (int.TryParse(OwnerIDTextBox.Text, out int ownerID))
                         {
-                            // تحديث OwnerID فقط من TextBox
-                            if (int.TryParse(OwnerIDTextBox.Text, out int ownerID))
-                            {
-                                selectedPet.adopter = ownerID;
-                                selectedPet.adoptDate = DateTime.Now.ToString("dd-MM-yyyy"); // تاريخ ووقت التحديث الحالي فقط
+                            selectedPet.adopter = ownerID;
+                            selectedPet.adoptDate = DateTime.Now.ToString("dd-MM-yyyy");
 
-                                // حفظ التغييرات في قاعدة البيانات
-                                littleSouls2.SaveChanges();
+                            // حفظ التغييرات في قاعدة البيانات
+                            littleSouls2.SaveChanges();
 
-                                MessageBox.Show("تم تحديث OwnerID و AdoptionDate بنجاح!");
+                            MessageBox.Show("تم تحديث OwnerID و AdoptionDate بنجاح!");
 
-                                // تحديث البيانات في DataGridView
-                                this.petTableAdapter.Fill(this.littleSoulsDataSet1.pet);
-                            }
-                            else
-                            {
-                                MessageBox.Show("يرجى إدخال قيمة رقمية صحيحة لـ OwnerID.");
-                            }
+                            // تحديث البيانات في DataGridView
+                            this.petTableAdapter.Fill(this.littleSoulsDataSet1.pet);
                         }
                         else
                         {
-                            MessageBox.Show("لم يتم العثور على السجل المحدد.");
+                            MessageBox.Show("يرجى إدخال قيمة رقمية صحيحة لـ OwnerID.");
                         }
                     }
                     else
                     {
-                        MessageBox.Show("يرجى اختيار صف من الجدول أولاً.");
+                        MessageBox.Show("لم يتم العثور على السجل المحدد.");
                     }
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show("حدث خطأ أثناء التحديث: " + ex.Message);
+                    MessageBox.Show("يرجى اختيار صف من الجدول أولاً.");
                 }
-            
-
-
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("حدث خطأ أثناء التحديث: " + ex.Message);
+            }
         }
 
 
 
-      
+
+
     }
 }

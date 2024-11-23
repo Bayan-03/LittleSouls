@@ -34,7 +34,22 @@ namespace LittleSouls
 
         private void Invoicesbtn_Click(object sender, EventArgs e)
         {
+            this.Hide();
 
+            var invoiceForm = new TFo();
+            invoiceForm.WindowState = FormWindowState.Maximized;
+            invoiceForm.FormClosed += (s, args) => this.Close();
+            invoiceForm.Show();
+        }
+
+        private void MedicalBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            var MedicalForm = new medicalCare();
+            MedicalForm.WindowState = FormWindowState.Maximized;
+            MedicalForm.FormClosed += (s, args) => this.Close();
+            MedicalForm.Show();
         }
     }
 }

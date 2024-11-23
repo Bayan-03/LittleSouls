@@ -51,9 +51,6 @@
             this.storageTableAdapter = new LittleSouls.littleSoulsDataSetTableAdapters.storageTableAdapter();
             this.petBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.AllpetTable = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.littleSoulsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.petBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.petBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.petIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.petSexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,17 +64,22 @@
             this.petSetterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.adopterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.adoptDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.petBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.littleSoulsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.petBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.petBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.littleSoulsDataSet)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
             this.SideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.petBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.storageBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.petBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AllpetTable)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.petBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.littleSoulsDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.petBindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.petBindingSource4)).BeginInit();
             this.SuspendLayout();
             // 
             // petType
@@ -133,6 +135,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(218)))));
+            this.guna2Panel1.Controls.Add(this.label11);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(69, 0);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -310,7 +313,8 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.AllpetTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.AllpetTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.AllpetTable.ColumnHeadersHeight = 19;
+            this.AllpetTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.AllpetTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.petIdDataGridViewTextBoxColumn,
             this.yearOfBirthDataGridViewTextBoxColumn,
@@ -354,7 +358,7 @@
             this.AllpetTable.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.AllpetTable.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Tahoma", 8F);
             this.AllpetTable.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.AllpetTable.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.AllpetTable.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.AllpetTable.ThemeStyle.HeaderStyle.Height = 19;
             this.AllpetTable.ThemeStyle.ReadOnly = true;
             this.AllpetTable.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -365,21 +369,6 @@
             this.AllpetTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.AllpetTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.AllpetTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AllpetTable_CellContentClick);
-            // 
-            // littleSoulsDataSetBindingSource
-            // 
-            this.littleSoulsDataSetBindingSource.DataSource = this.littleSoulsDataSet;
-            this.littleSoulsDataSetBindingSource.Position = 0;
-            // 
-            // petBindingSource3
-            // 
-            this.petBindingSource3.DataMember = "pet";
-            this.petBindingSource3.DataSource = this.littleSoulsDataSetBindingSource;
-            // 
-            // petBindingSource4
-            // 
-            this.petBindingSource4.DataMember = "pet";
-            this.petBindingSource4.DataSource = this.littleSoulsDataSet;
             // 
             // petIdDataGridViewTextBoxColumn
             // 
@@ -485,6 +474,33 @@
             this.adoptDateDataGridViewTextBoxColumn.Name = "adoptDateDataGridViewTextBoxColumn";
             this.adoptDateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // petBindingSource4
+            // 
+            this.petBindingSource4.DataMember = "pet";
+            this.petBindingSource4.DataSource = this.littleSoulsDataSet;
+            // 
+            // littleSoulsDataSetBindingSource
+            // 
+            this.littleSoulsDataSetBindingSource.DataSource = this.littleSoulsDataSet;
+            this.littleSoulsDataSetBindingSource.Position = 0;
+            // 
+            // petBindingSource3
+            // 
+            this.petBindingSource3.DataMember = "pet";
+            this.petBindingSource3.DataSource = this.littleSoulsDataSetBindingSource;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
+            this.label11.Location = new System.Drawing.Point(598, 9);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(171, 27);
+            this.label11.TabIndex = 37;
+            this.label11.Text = "LITTLE SOULS";
+            // 
             // AllPet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -503,15 +519,17 @@
             this.Load += new System.EventHandler(this.AllPet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.petBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.littleSoulsDataSet)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             this.SideBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.petBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.storageBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.petBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AllpetTable)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.petBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.littleSoulsDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.petBindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.petBindingSource4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -553,5 +571,6 @@
         private System.Windows.Forms.BindingSource petBindingSource4;
         private System.Windows.Forms.BindingSource littleSoulsDataSetBindingSource;
         private System.Windows.Forms.BindingSource petBindingSource3;
+        private System.Windows.Forms.Label label11;
     }
 }

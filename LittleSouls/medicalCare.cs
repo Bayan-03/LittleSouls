@@ -19,7 +19,12 @@ namespace LittleSouls
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
+            this.Hide();
 
+            var examForm = new PetsExamination();
+            examForm.WindowState = FormWindowState.Maximized;
+            examForm.FormClosed += (s, args) => this.Close();
+            examForm.Show();
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)

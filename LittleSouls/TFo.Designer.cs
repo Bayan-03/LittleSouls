@@ -50,6 +50,8 @@
             this.invoiceItemsTableAdapter = new LittleSouls.littleSoulsDataSetTableAdapters.invoiceItemsTableAdapter();
             this.lblTotal = new System.Windows.Forms.Label();
             this.btnSaveInvoice = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.SideBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -64,7 +66,7 @@
             this.btnAddItem.Animated = true;
             this.btnAddItem.AutoRoundedCorners = true;
             this.btnAddItem.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddItem.BorderRadius = 17;
+            this.btnAddItem.BorderRadius = 23;
             this.btnAddItem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAddItem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAddItem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -74,9 +76,9 @@
             this.btnAddItem.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnAddItem.Font = new System.Drawing.Font("Graphik Arabic Bold", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnAddItem.ForeColor = System.Drawing.Color.Black;
-            this.btnAddItem.Location = new System.Drawing.Point(1193, 729);
+            this.btnAddItem.Location = new System.Drawing.Point(1126, 122);
             this.btnAddItem.Name = "btnAddItem";
-            this.btnAddItem.Size = new System.Drawing.Size(209, 37);
+            this.btnAddItem.Size = new System.Drawing.Size(133, 48);
             this.btnAddItem.TabIndex = 32;
             this.btnAddItem.Text = "Add";
             this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click_1);
@@ -241,6 +243,9 @@
             // 
             // txtItemCode
             // 
+            this.txtItemCode.Animated = true;
+            this.txtItemCode.BorderColor = System.Drawing.Color.Transparent;
+            this.txtItemCode.BorderRadius = 20;
             this.txtItemCode.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtItemCode.DefaultText = "";
             this.txtItemCode.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -248,28 +253,34 @@
             this.txtItemCode.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtItemCode.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtItemCode.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtItemCode.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtItemCode.Font = new System.Drawing.Font("Graphik Arabic", 10.2F);
             this.txtItemCode.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtItemCode.Location = new System.Drawing.Point(273, 115);
+            this.txtItemCode.Location = new System.Drawing.Point(522, 122);
             this.txtItemCode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtItemCode.Name = "txtItemCode";
             this.txtItemCode.PasswordChar = '\0';
             this.txtItemCode.PlaceholderText = "";
             this.txtItemCode.SelectedText = "";
-            this.txtItemCode.Size = new System.Drawing.Size(229, 48);
+            this.txtItemCode.Size = new System.Drawing.Size(129, 48);
             this.txtItemCode.TabIndex = 35;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(185, 133);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
+            this.label1.Location = new System.Drawing.Point(404, 133);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 15);
+            this.label1.Size = new System.Drawing.Size(116, 24);
             this.label1.TabIndex = 36;
-            this.label1.Text = "Item Code";
+            this.label1.Text = "Item Code:";
             // 
             // txtQuantity
             // 
+            this.txtQuantity.Animated = true;
+            this.txtQuantity.BorderColor = System.Drawing.Color.Transparent;
+            this.txtQuantity.BorderRadius = 20;
             this.txtQuantity.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtQuantity.DefaultText = "";
             this.txtQuantity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -277,15 +288,15 @@
             this.txtQuantity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtQuantity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtQuantity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtQuantity.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtQuantity.Font = new System.Drawing.Font("Graphik Arabic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtQuantity.Location = new System.Drawing.Point(599, 115);
+            this.txtQuantity.Location = new System.Drawing.Point(761, 122);
             this.txtQuantity.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.PasswordChar = '\0';
             this.txtQuantity.PlaceholderText = "";
             this.txtQuantity.SelectedText = "";
-            this.txtQuantity.Size = new System.Drawing.Size(229, 48);
+            this.txtQuantity.Size = new System.Drawing.Size(72, 48);
             this.txtQuantity.TabIndex = 37;
             // 
             // dgvInvoiceItems
@@ -344,12 +355,36 @@
             this.btnSaveInvoice.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnSaveInvoice.Font = new System.Drawing.Font("Graphik Arabic Bold", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnSaveInvoice.ForeColor = System.Drawing.Color.Black;
-            this.btnSaveInvoice.Location = new System.Drawing.Point(219, 729);
+            this.btnSaveInvoice.Location = new System.Drawing.Point(1152, 708);
             this.btnSaveInvoice.Name = "btnSaveInvoice";
             this.btnSaveInvoice.Size = new System.Drawing.Size(209, 37);
             this.btnSaveInvoice.TabIndex = 40;
             this.btnSaveInvoice.Text = "Save";
             this.btnSaveInvoice.Click += new System.EventHandler(this.btnSaveInvoice_Click_1);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
+            this.label2.Location = new System.Drawing.Point(701, 133);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 24);
+            this.label2.TabIndex = 41;
+            this.label2.Text = "QTY:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Graphik Arabic Black", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
+            this.label3.Location = new System.Drawing.Point(151, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(224, 35);
+            this.label3.TabIndex = 42;
+            this.label3.Text = "NEW INVOICE";
             // 
             // TFo
             // 
@@ -358,6 +393,8 @@
             this.BackgroundImage = global::LittleSouls.Properties.Resources.الخلفية_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1435, 830);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnSaveInvoice);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.dgvInvoiceItems);
@@ -406,5 +443,7 @@
         private System.Windows.Forms.Label lblTotal;
         private Guna.UI2.WinForms.Guna2GradientButton btnSaveInvoice;
         private System.Windows.Forms.BindingSource invoiceItemsBindingSource1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
