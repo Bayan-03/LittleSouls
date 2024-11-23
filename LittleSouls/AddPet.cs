@@ -164,6 +164,9 @@ namespace LittleSouls
                     MessageBox.Show("يرجى ملء جميع الحقول المطلوبة.");
                     return;
                 }
+            try
+            {
+
 
                 // إنشاء كائن جديد للحيوان
                 pet NewPet = new pet()
@@ -181,7 +184,7 @@ namespace LittleSouls
                     adopter = null,
                     adoptDate = null,
                     petImage = null,
-                    
+
                 };
 
 
@@ -189,28 +192,28 @@ namespace LittleSouls
                 littleSouls.pet.Add(NewPet);
                 littleSouls.SaveChanges();
                 MessageBox.Show("تمت إضافة الحيوان بنجاح!");
-            
-            //catch (Exception ex)
-            //{
-            //    // طباعة تفاصيل الخطأ بشكل كامل
-            //    //MessageBox.Show("حدث خطأ أثناء إضافة الحيوان: " + ex.Message);
+            }
+            catch (Exception ex)
+            {
 
-            //    //if (ex.InnerException != null)
-            //    //{
-            //    //    MessageBox.Show("التفاصيل: " + ex.InnerException.Message);
-            //    //   ;
-            //    //}
-                
-            //    //// للحصول على تفاصيل الأخطاء الخاصة بـ Entity Framework
-            //    //var entityErrors = littleSouls.GetValidationErrors();
-            //    //foreach (var entityError in entityErrors)
-            //    //{
-            //    //    foreach (var validationError in entityError.ValidationErrors)
-            //    //    {
-            //    //        MessageBox.Show($"خطأ في {entityError.Entry.Entity.GetType().Name}: {validationError.PropertyName} - {validationError.ErrorMessage}");
-            //    //    }
-            //    //}
-            //}
+                MessageBox.Show("حدث خطأ أثناء إضافة الحيوان: " + ex.Message);
+
+                if (ex.InnerException != null)
+                {
+                    MessageBox.Show("التفاصيل: " + ex.InnerException.Message);
+                    ;
+                }
+
+                // للحصول على تفاصيل الأخطاء الخاصة بـ Entity Framework
+                var entityErrors = littleSouls.GetValidationErrors();
+                foreach (var entityError in entityErrors)
+                {
+                    foreach (var validationError in entityError.ValidationErrors)
+                    {
+                        MessageBox.Show($"خطأ في {entityError.Entry.Entity.GetType().Name}: {validationError.PropertyName} - {validationError.ErrorMessage}");
+                    }
+                }
+            }
         }
     }
 }
