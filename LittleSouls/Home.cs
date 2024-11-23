@@ -21,5 +21,20 @@ namespace LittleSouls
         {
 
         }
+
+        private void Petsbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            var PetForm = new Pets();
+            PetForm.WindowState = FormWindowState.Maximized;
+            PetForm.FormClosed += (s, args) => this.Close();
+            PetForm.Show();
+        }
+
+        private void Invoicesbtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

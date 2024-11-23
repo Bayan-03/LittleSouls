@@ -13,9 +13,9 @@ namespace LittleSouls
         {
             InitializeComponent();
 
-            // تحميل البيانات في DataGridView عند إنشاء النموذج
-            this.petTableAdapter.Fill(this.littleSoulsDataSet.pet);
+            //this.petTableAdapter.Fill(this.littleSoulsDataSet.pet);
             LoadAllData();
+
         }
 
         // دالة لتحميل كل البيانات من جدول الحيوانات وربطها بـ DataGridView و ComboBox
@@ -115,6 +115,7 @@ namespace LittleSouls
 
         private void Adoption_Load(object sender, EventArgs e)
         {
+            
         }
 
         private void AllpetTable_CellContentClick(object sender, DataGridViewCellEventArgs e)

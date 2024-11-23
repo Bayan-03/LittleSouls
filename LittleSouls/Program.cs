@@ -16,7 +16,7 @@ namespace LittleSouls
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddPet());
+            Application.Run(new Home());
         }
     }
 }

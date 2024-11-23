@@ -215,6 +215,30 @@ warning 6002: The table/view 'littleSouls.dbo.invoiceItems' does not have a prim
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_pet_pet">
+          <End Role="pet" Type="Self.pet" Multiplicity="1" />
+          <End Role="pet1" Type="Self.pet" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="pet">
+              <PropertyRef Name="petId" />
+            </Principal>
+            <Dependent Role="pet1">
+              <PropertyRef Name="petId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_pet_pet1">
+          <End Role="pet" Type="Self.pet" Multiplicity="1" />
+          <End Role="pet1" Type="Self.pet" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="pet">
+              <PropertyRef Name="petId" />
+            </Principal>
+            <Dependent Role="pet1">
+              <PropertyRef Name="petId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="fk_petAdopter">
           <End Role="customer" Type="Self.customer" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
@@ -301,6 +325,14 @@ warning 6002: The table/view 'littleSouls.dbo.invoiceItems' does not have a prim
           <AssociationSet Name="fk_items" Association="Self.fk_items">
             <End Role="items" EntitySet="items" />
             <End Role="storage" EntitySet="storage" />
+          </AssociationSet>
+          <AssociationSet Name="FK_pet_pet" Association="Self.FK_pet_pet">
+            <End Role="pet" EntitySet="pet" />
+            <End Role="pet1" EntitySet="pet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_pet_pet1" Association="Self.FK_pet_pet1">
+            <End Role="pet" EntitySet="pet" />
+            <End Role="pet1" EntitySet="pet" />
           </AssociationSet>
           <AssociationSet Name="fk_petAdopter" Association="Self.fk_petAdopter">
             <End Role="customer" EntitySet="customer" />
@@ -425,6 +457,10 @@ warning 6002: The table/view 'littleSouls.dbo.invoiceItems' does not have a prim
           <NavigationProperty Name="customer" Relationship="Self.fk_petAdopter" FromRole="pet" ToRole="customer" />
           <NavigationProperty Name="employee" Relationship="Self.fk_petSponsor" FromRole="pet" ToRole="employee" />
           <NavigationProperty Name="medicalRecod" Relationship="Self.fk_petMedical" FromRole="pet" ToRole="medicalRecod" />
+          <NavigationProperty Name="pet1" Relationship="littleSoulsModel.FK_pet_pet" FromRole="pet" ToRole="pet1" />
+          <NavigationProperty Name="pet2" Relationship="littleSoulsModel.FK_pet_pet" FromRole="pet1" ToRole="pet" />
+          <NavigationProperty Name="pet11" Relationship="littleSoulsModel.FK_pet_pet1" FromRole="pet" ToRole="pet1" />
+          <NavigationProperty Name="pet3" Relationship="littleSoulsModel.FK_pet_pet1" FromRole="pet1" ToRole="pet" />
         </EntityType>
         <EntityType Name="storage">
           <Key>
@@ -639,7 +675,39 @@ warning 6002: The table/view 'littleSouls.dbo.invoiceItems' does not have a prim
             <End Role="pet" EntitySet="pet" />
             <End Role="medicalRecod" EntitySet="medicalRecod" />
           </AssociationSet>
+          <AssociationSet Name="FK_pet_pet" Association="littleSoulsModel.FK_pet_pet">
+            <End Role="pet" EntitySet="pet" />
+            <End Role="pet1" EntitySet="pet" />
+          </AssociationSet>
+          <AssociationSet Name="FK_pet_pet1" Association="littleSoulsModel.FK_pet_pet1">
+            <End Role="pet" EntitySet="pet" />
+            <End Role="pet1" EntitySet="pet" />
+          </AssociationSet>
         </EntityContainer>
+        <Association Name="FK_pet_pet">
+          <End Type="littleSoulsModel.pet" Role="pet" Multiplicity="1" />
+          <End Type="littleSoulsModel.pet" Role="pet1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="pet">
+              <PropertyRef Name="petId" />
+            </Principal>
+            <Dependent Role="pet1">
+              <PropertyRef Name="petId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_pet_pet1">
+          <End Type="littleSoulsModel.pet" Role="pet" Multiplicity="1" />
+          <End Type="littleSoulsModel.pet" Role="pet1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="pet">
+              <PropertyRef Name="petId" />
+            </Principal>
+            <Dependent Role="pet1">
+              <PropertyRef Name="petId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->

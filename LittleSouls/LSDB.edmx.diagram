@@ -24,6 +24,8 @@
         <AssociationConnector Association="littleSoulsModel.fk_invoiceItems" ManuallyRouted="false" />
         <AssociationConnector Association="littleSoulsModel.fk_items" ManuallyRouted="false" />
         <AssociationConnector Association="littleSoulsModel.fk_petMedical" ManuallyRouted="false" />
+        <AssociationConnector Association="littleSoulsModel.FK_pet_pet" />
+        <AssociationConnector Association="littleSoulsModel.FK_pet_pet1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

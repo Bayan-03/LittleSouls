@@ -98,6 +98,7 @@
             this.Petsbtn.Text = "Pets";
             this.Petsbtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Petsbtn.TextOffset = new System.Drawing.Point(15, -60);
+            this.Petsbtn.Click += new System.EventHandler(this.Petsbtn_Click);
             // 
             // Invoicesbtn
             // 
@@ -125,6 +126,7 @@
             this.Invoicesbtn.Text = "Invoices";
             this.Invoicesbtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Invoicesbtn.TextOffset = new System.Drawing.Point(15, -60);
+            this.Invoicesbtn.Click += new System.EventHandler(this.Invoicesbtn_Click);
             // 
             // guna2CirclePictureBox2
             // 

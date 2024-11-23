@@ -38,5 +38,9 @@ namespace LittleSouls
         public virtual employee employee { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<medicalRecod> medicalRecod { get; set; }
+        public virtual pet pet1 { get; set; }
+        public virtual pet pet2 { get; set; }
+        public virtual pet pet11 { get; set; }
+        public virtual pet pet3 { get; set; }
     }
 }

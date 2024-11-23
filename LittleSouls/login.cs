@@ -115,24 +115,35 @@ namespace LittleSouls
                                 case "pet setter":
                                 case "cashier":
                                     MessageBox.Show("log in as Staff.", "successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                    Home staffForm = new Home();
-                                    staffForm.Show();
                                     this.Hide();
+                                    var staffForm = new Home();
+                                    staffForm.WindowState = FormWindowState.Maximized;
+                                    staffForm.FormClosed += (s, args) => this.Close();
+                                    staffForm.Show();
+                                    staffForm.Show();
                                     break;
 
                                 case "treasurer":
                                 case "storagekeeper":
                                     MessageBox.Show("log in as manager.", "successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                    Mgr managerForm = new Mgr();
-                                    managerForm.Show();
                                     this.Hide();
+
+                                    var managerForm = new Mgr();
+                                    managerForm.WindowState = FormWindowState.Maximized;
+                                    managerForm.FormClosed += (s, args) => this.Close();
+                                    managerForm.Show();
+                                    managerForm.Show();
                                     break;
 
                                 
 
                                 case "ceo":
                                     MessageBox.Show("log in as CEO.", "successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                                    CEO ceoForm = new CEO();
+                                    this.Hide();
+
+                                    var ceoForm = new CEO();
+                                    ceoForm.WindowState = FormWindowState.Maximized;
+                                    ceoForm.FormClosed += (s, args) => this.Close();
                                     ceoForm.Show();
                                     this.Hide();
                                     break;
