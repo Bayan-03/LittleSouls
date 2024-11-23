@@ -52,21 +52,22 @@
             // 
             this.Tb_panal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(218)))));
             this.Tb_panal.Controls.Add(this.SopjectLable);
-            this.Tb_panal.Location = new System.Drawing.Point(-1, -1);
-            this.Tb_panal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Tb_panal.Location = new System.Drawing.Point(-2, -2);
+            this.Tb_panal.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Tb_panal.Name = "Tb_panal";
-            this.Tb_panal.Size = new System.Drawing.Size(1440, 82);
+            this.Tb_panal.Size = new System.Drawing.Size(2160, 126);
             this.Tb_panal.TabIndex = 38;
             // 
             // SopjectLable
             // 
             this.SopjectLable.AutoSize = false;
             this.SopjectLable.BackColor = System.Drawing.Color.Transparent;
-            this.SopjectLable.Font = new System.Drawing.Font("Graphik Arabic Medium", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.SopjectLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.SopjectLable.ForeColor = System.Drawing.Color.Black;
-            this.SopjectLable.Location = new System.Drawing.Point(91, 29);
+            this.SopjectLable.Location = new System.Drawing.Point(136, 45);
+            this.SopjectLable.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SopjectLable.Name = "SopjectLable";
-            this.SopjectLable.Size = new System.Drawing.Size(203, 32);
+            this.SopjectLable.Size = new System.Drawing.Size(304, 49);
             this.SopjectLable.TabIndex = 5;
             this.SopjectLable.Text = "Employees";
             this.SopjectLable.TextAlignment = System.Drawing.ContentAlignment.BottomCenter;
@@ -108,14 +109,14 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.AllEmployTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.AllEmployTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.AllEmployTable.Location = new System.Drawing.Point(119, 149);
-            this.AllEmployTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AllEmployTable.Location = new System.Drawing.Point(178, 229);
+            this.AllEmployTable.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.AllEmployTable.Name = "AllEmployTable";
             this.AllEmployTable.ReadOnly = true;
             this.AllEmployTable.RowHeadersVisible = false;
             this.AllEmployTable.RowHeadersWidth = 51;
             this.AllEmployTable.RowTemplate.Height = 26;
-            this.AllEmployTable.Size = new System.Drawing.Size(1198, 540);
+            this.AllEmployTable.Size = new System.Drawing.Size(1797, 831);
             this.AllEmployTable.TabIndex = 39;
             this.AllEmployTable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.AllEmployTable.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -211,14 +212,16 @@
             // 
             // EmployeesDp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LittleSouls.Properties.Resources.الخلفية_;
-            this.ClientSize = new System.Drawing.Size(1437, 838);
+            this.ClientSize = new System.Drawing.Size(1924, 1050);
             this.Controls.Add(this.AllEmployTable);
             this.Controls.Add(this.Tb_panal);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "EmployeesDp";
             this.Text = "Employees";
+            this.Load += new System.EventHandler(this.EmployeesDp_Load);
             this.Tb_panal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AllEmployTable)).EndInit();
             this.ResumeLayout(false);

@@ -26,5 +26,10 @@ namespace LittleSouls
         {
 
         }
+
+        private void medicalCare_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

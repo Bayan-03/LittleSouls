@@ -21,5 +21,15 @@ namespace LittleSouls
         {
 
         }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SalesDp_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

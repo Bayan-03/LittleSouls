@@ -85,7 +85,7 @@ namespace LittleSouls
             }
 
             // سلسلة الاتصال بقاعدة البيانات
-            string connectionString = "Server=MyCumputer;Database=littleSouls;Trusted_Connection=True;";
+            string connectionString = Settings.ConnctionString;
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {

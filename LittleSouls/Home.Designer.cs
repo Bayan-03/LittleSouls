@@ -57,15 +57,16 @@
             this.MedicalBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.MedicalBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.MedicalBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(219)))), ((int)(((byte)(157)))));
-            this.MedicalBtn.Font = new System.Drawing.Font("Graphik Arabic Bold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MedicalBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MedicalBtn.ForeColor = System.Drawing.Color.Black;
             this.MedicalBtn.Image = global::LittleSouls.Properties.Resources.vet;
             this.MedicalBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.MedicalBtn.ImageOffset = new System.Drawing.Point(5, 30);
             this.MedicalBtn.ImageSize = new System.Drawing.Size(120, 120);
-            this.MedicalBtn.Location = new System.Drawing.Point(915, 206);
+            this.MedicalBtn.Location = new System.Drawing.Point(1176, 258);
+            this.MedicalBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MedicalBtn.Name = "MedicalBtn";
-            this.MedicalBtn.Size = new System.Drawing.Size(429, 250);
+            this.MedicalBtn.Size = new System.Drawing.Size(552, 312);
             this.MedicalBtn.TabIndex = 13;
             this.MedicalBtn.Text = "Medical Care";
             this.MedicalBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -83,15 +84,16 @@
             this.Petsbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Petsbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.Petsbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(219)))), ((int)(((byte)(157)))));
-            this.Petsbtn.Font = new System.Drawing.Font("Graphik Arabic Bold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Petsbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Petsbtn.ForeColor = System.Drawing.Color.Black;
             this.Petsbtn.Image = global::LittleSouls.Properties.Resources.dog1;
             this.Petsbtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Petsbtn.ImageOffset = new System.Drawing.Point(5, 20);
             this.Petsbtn.ImageSize = new System.Drawing.Size(140, 140);
-            this.Petsbtn.Location = new System.Drawing.Point(211, 206);
+            this.Petsbtn.Location = new System.Drawing.Point(271, 258);
+            this.Petsbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Petsbtn.Name = "Petsbtn";
-            this.Petsbtn.Size = new System.Drawing.Size(429, 250);
+            this.Petsbtn.Size = new System.Drawing.Size(552, 312);
             this.Petsbtn.TabIndex = 16;
             this.Petsbtn.Text = "Pets";
             this.Petsbtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -109,15 +111,16 @@
             this.Invoicesbtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Invoicesbtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.Invoicesbtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(219)))), ((int)(((byte)(157)))));
-            this.Invoicesbtn.Font = new System.Drawing.Font("Graphik Arabic Bold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Invoicesbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Invoicesbtn.ForeColor = System.Drawing.Color.Black;
             this.Invoicesbtn.Image = global::LittleSouls.Properties.Resources.receipt;
             this.Invoicesbtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.Invoicesbtn.ImageOffset = new System.Drawing.Point(5, 20);
             this.Invoicesbtn.ImageSize = new System.Drawing.Size(135, 135);
-            this.Invoicesbtn.Location = new System.Drawing.Point(559, 522);
+            this.Invoicesbtn.Location = new System.Drawing.Point(719, 652);
+            this.Invoicesbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Invoicesbtn.Name = "Invoicesbtn";
-            this.Invoicesbtn.Size = new System.Drawing.Size(429, 250);
+            this.Invoicesbtn.Size = new System.Drawing.Size(552, 312);
             this.Invoicesbtn.TabIndex = 17;
             this.Invoicesbtn.Text = "Invoices";
             this.Invoicesbtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -128,10 +131,11 @@
             this.guna2CirclePictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox2.Image = global::LittleSouls.Properties.Resources.icon_logo_061;
             this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(114, 73);
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(147, 91);
+            this.guna2CirclePictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
             this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(128, 116);
+            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(165, 145);
             this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox2.TabIndex = 30;
             this.guna2CirclePictureBox2.TabStop = false;
@@ -140,9 +144,10 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(218)))));
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(69, 0);
+            this.guna2Panel1.Location = new System.Drawing.Point(89, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1366, 45);
+            this.guna2Panel1.Size = new System.Drawing.Size(1756, 56);
             this.guna2Panel1.TabIndex = 39;
             // 
             // SideBar
@@ -156,8 +161,9 @@
             this.SideBar.Controls.Add(this.guna2CirclePictureBox1);
             this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.SideBar.Location = new System.Drawing.Point(0, 0);
+            this.SideBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SideBar.Name = "SideBar";
-            this.SideBar.Size = new System.Drawing.Size(69, 830);
+            this.SideBar.Size = new System.Drawing.Size(89, 1038);
             this.SideBar.TabIndex = 40;
             // 
             // guna2Button5
@@ -173,9 +179,10 @@
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.Image = global::LittleSouls.Properties.Resources.paws;
             this.guna2Button5.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button5.Location = new System.Drawing.Point(0, 206);
+            this.guna2Button5.Location = new System.Drawing.Point(0, 258);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(69, 61);
+            this.guna2Button5.Size = new System.Drawing.Size(89, 76);
             this.guna2Button5.TabIndex = 24;
             // 
             // guna2Button4
@@ -191,9 +198,10 @@
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.Image = global::LittleSouls.Properties.Resources.animal_care;
             this.guna2Button4.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button4.Location = new System.Drawing.Point(0, 257);
+            this.guna2Button4.Location = new System.Drawing.Point(0, 321);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(69, 61);
+            this.guna2Button4.Size = new System.Drawing.Size(89, 76);
             this.guna2Button4.TabIndex = 23;
             // 
             // guna2Button3
@@ -209,9 +217,10 @@
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.Image = global::LittleSouls.Properties.Resources.invoice;
             this.guna2Button3.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button3.Location = new System.Drawing.Point(0, 308);
+            this.guna2Button3.Location = new System.Drawing.Point(0, 385);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(69, 61);
+            this.guna2Button3.Size = new System.Drawing.Size(89, 76);
             this.guna2Button3.TabIndex = 22;
             // 
             // guna2Button2
@@ -227,9 +236,10 @@
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Image = global::LittleSouls.Properties.Resources.setting__1_;
             this.guna2Button2.ImageSize = new System.Drawing.Size(28, 28);
-            this.guna2Button2.Location = new System.Drawing.Point(0, 734);
+            this.guna2Button2.Location = new System.Drawing.Point(0, 918);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(69, 61);
+            this.guna2Button2.Size = new System.Drawing.Size(89, 76);
             this.guna2Button2.TabIndex = 21;
             // 
             // guna2Button1
@@ -246,9 +256,10 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Image = global::LittleSouls.Properties.Resources.home;
             this.guna2Button1.ImageSize = new System.Drawing.Size(28, 28);
-            this.guna2Button1.Location = new System.Drawing.Point(0, 142);
+            this.guna2Button1.Location = new System.Drawing.Point(0, 178);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(69, 61);
+            this.guna2Button1.Size = new System.Drawing.Size(89, 76);
             this.guna2Button1.TabIndex = 20;
             // 
             // guna2CirclePictureBox1
@@ -257,10 +268,11 @@
             this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox1.Image = global::LittleSouls.Properties.Resources.icon_logo_061;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(4, 4);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(54, 54);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(69, 68);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox1.TabIndex = 20;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -268,20 +280,22 @@
             // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LittleSouls.Properties.Resources.الخلفية_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1435, 830);
+            this.ClientSize = new System.Drawing.Size(1845, 1038);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.SideBar);
             this.Controls.Add(this.MedicalBtn);
             this.Controls.Add(this.Invoicesbtn);
             this.Controls.Add(this.Petsbtn);
             this.Controls.Add(this.guna2CirclePictureBox2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Home";
             this.Text = "Home";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Home_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
             this.SideBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();

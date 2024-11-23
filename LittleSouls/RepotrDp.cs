@@ -16,5 +16,10 @@ namespace LittleSouls
         {
             InitializeComponent();
         }
+
+        private void RepotrDp_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

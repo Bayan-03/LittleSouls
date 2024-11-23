@@ -16,7 +16,7 @@ namespace LittleSouls
 
 
 
-        private string connectionString = "Server=MyCumputer;Database=littleSouls;Trusted_Connection=True;"; // عدل معلومات الاتصال
+        private string connectionString = Settings.ConnctionString; // عدل معلومات الاتصال
         private SqlDataAdapter dataAdapter;
         private DataTable dataTable;
         public storageForm()

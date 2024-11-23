@@ -152,8 +152,7 @@ namespace LittleSouls
 
         private void ADD_Click(object sender, EventArgs e)
         {
-            try
-            {
+            
                 // تحقق من الحقول المطلوبة
                 if (string.IsNullOrEmpty(petgender.Text) ||
                     string.IsNullOrEmpty(speciestxt.Text) ||
@@ -169,6 +168,7 @@ namespace LittleSouls
                 // إنشاء كائن جديد للحيوان
                 pet NewPet = new pet()
                 {
+                    petId = 0,
                     petSex = petgender.Text,
                     petBreed = BreedCombo.SelectedItem?.ToString(),
                     petSpecies = speciestxt.Text,
@@ -178,34 +178,39 @@ namespace LittleSouls
                     yearOfBirth = YearOfBirth.Text,
                     petState = "No",
                     petSetter = int.Parse(petsetter.Text),
-                    adopter = null  
+                    adopter = null,
+                    adoptDate = null,
+                    petImage = null,
+                    
                 };
+
 
                 // إضافة الحيوان الجديد إلى قاعدة البيانات
                 littleSouls.pet.Add(NewPet);
                 littleSouls.SaveChanges();
                 MessageBox.Show("تمت إضافة الحيوان بنجاح!");
-            }
-            catch (Exception ex)
-            {
-                // طباعة تفاصيل الخطأ بشكل كامل
-                MessageBox.Show("حدث خطأ أثناء إضافة الحيوان: " + ex.Message);
+            
+            //catch (Exception ex)
+            //{
+            //    // طباعة تفاصيل الخطأ بشكل كامل
+            //    //MessageBox.Show("حدث خطأ أثناء إضافة الحيوان: " + ex.Message);
 
-                if (ex.InnerException != null)
-                {
-                    MessageBox.Show("التفاصيل: " + ex.InnerException.Message);
-                }
-
-                // للحصول على تفاصيل الأخطاء الخاصة بـ Entity Framework
-                var entityErrors = littleSouls.GetValidationErrors();
-                foreach (var entityError in entityErrors)
-                {
-                    foreach (var validationError in entityError.ValidationErrors)
-                    {
-                        MessageBox.Show($"خطأ في {entityError.Entry.Entity.GetType().Name}: {validationError.PropertyName} - {validationError.ErrorMessage}");
-                    }
-                }
-            }
+            //    //if (ex.InnerException != null)
+            //    //{
+            //    //    MessageBox.Show("التفاصيل: " + ex.InnerException.Message);
+            //    //   ;
+            //    //}
+                
+            //    //// للحصول على تفاصيل الأخطاء الخاصة بـ Entity Framework
+            //    //var entityErrors = littleSouls.GetValidationErrors();
+            //    //foreach (var entityError in entityErrors)
+            //    //{
+            //    //    foreach (var validationError in entityError.ValidationErrors)
+            //    //    {
+            //    //        MessageBox.Show($"خطأ في {entityError.Entry.Entity.GetType().Name}: {validationError.PropertyName} - {validationError.ErrorMessage}");
+            //    //    }
+            //    //}
+            //}
         }
     }
 }
