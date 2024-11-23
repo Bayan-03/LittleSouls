@@ -7,15 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
 using System.Data.SqlClient;
 
 namespace LittleSouls
 {
     public partial class login : Form
     {
-        SqlConnection connect
-            = new SqlConnection(@"Data Source=MyCumputer;Initial Catalog=littleSouls; Integrated Security=True;");
+        //SqlConnection connect
+        //    = new SqlConnection(@"Data Source=MyCumputer;Initial Catalog=littleSouls; Integrated Security=True;");
+
+
         public login()
         {
             InitializeComponent();
@@ -70,60 +71,89 @@ namespace LittleSouls
 
         private void login_btn_Click(object sender, EventArgs e)
         {
-            if (login_username.Text == ""
-                || login_password.Text == "")
+
+            // استدعاء بيانات من واجهة المستخدم
+            string userName = login_username.Text.Trim();
+            string password = login_password.Text.Trim();
+            string jobTitle = comboBoxJobTitle.SelectedItem?.ToString();
+
+            // التحقق من أن الحقول ليست فارغة
+            if (string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(jobTitle))
             {
-                MessageBox.Show("Please fill all blank fields"
-                    , "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please fill in the fields.", "error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
-            else
+
+            // سلسلة الاتصال بقاعدة البيانات
+            string connectionString = "Server=MyCumputer;Database=littleSouls;Trusted_Connection=True;";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                if (connect.State == ConnectionState.Closed)
+                try
                 {
-                    try
+                    connection.Open();
+
+                    // استعلام SQL للتحقق من البيانات
+                    string query = @"SELECT jobTitle FROM employee 
+                                     WHERE userName = @userName AND Pass = @password AND jobTitle = @jobTitle";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        connect.Open();
+                        // إضافة المعاملات لمنع هجمات SQL Injection
+                        command.Parameters.AddWithValue("@userName", userName);
+                        command.Parameters.AddWithValue("@password", password);
+                        command.Parameters.AddWithValue("@jobTitle", jobTitle);
 
-                        string selectData = "SELECT * FROM users WHERE username = @username " +
-                            "AND password = @password";
+                        object result = command.ExecuteScalar();
 
-                        using (SqlCommand cmd = new SqlCommand(selectData, connect))
+                        // التحقق من النتيجة
+                        if (result != null)
                         {
-                            cmd.Parameters.AddWithValue("@username", login_username.Text.Trim());
-                            cmd.Parameters.AddWithValue("@password", login_password.Text.Trim());
-
-                            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                            DataTable table = new DataTable();
-                            adapter.Fill(table);
-
-                            if (table.Rows.Count >= 1)
+                            switch (jobTitle.ToLower())
                             {
-                                MessageBox.Show("Login successfully!"
-                                    , "Information Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                case "veterinary":
+                                case "pet setter":
+                                case "cashier":
+                                    MessageBox.Show("log in as Staff.", "successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    Home staffForm = new Home();
+                                    staffForm.Show();
+                                    this.Hide();
+                                    break;
 
-                                //MainForm mForm = new MainForm();
-                                //mForm.Show();
-                                this.Hide();
-                            }
-                            else
-                            {
-                                MessageBox.Show("Incorrect Username/Password"
-                                    , "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                case "treasurer":
+                                case "storagekeeper":
+                                    MessageBox.Show("log in as manager.", "successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    Mgr managerForm = new Mgr();
+                                    managerForm.Show();
+                                    this.Hide();
+                                    break;
+
+                                
+
+                                case "ceo":
+                                    MessageBox.Show("log in as CEO.", "successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    CEO ceoForm = new CEO();
+                                    ceoForm.Show();
+                                    this.Hide();
+                                    break;
+
+                                default:
+                                    MessageBox.Show(" Invalid Job Title.", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    break;
                             }
                         }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Error: " + ex
-                        , "Error Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    finally
-                    {
-                        connect.Close();
+                        else
+                        {
+                            MessageBox.Show("Incorrect Username/Password.", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
-
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred while connecting to the database: {ex.Message}", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+
         }
     }
 }

@@ -40,6 +40,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.login_username = new Guna.UI2.WinForms.Guna2TextBox();
             this.login_password = new Guna.UI2.WinForms.Guna2TextBox();
+            this.comboBoxJobTitle = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -101,7 +102,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LittleSouls.Properties.Resources.little_soul_04;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 359);
+            this.pictureBox1.Location = new System.Drawing.Point(26, 324);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(24, 30);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -149,7 +150,7 @@
             // 
             this.login_showPass.AutoSize = true;
             this.login_showPass.Font = new System.Drawing.Font("Graphik Arabic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login_showPass.Location = new System.Drawing.Point(185, 401);
+            this.login_showPass.Location = new System.Drawing.Point(181, 366);
             this.login_showPass.Name = "login_showPass";
             this.login_showPass.Size = new System.Drawing.Size(140, 22);
             this.login_showPass.TabIndex = 14;
@@ -206,7 +207,7 @@
             this.login_password.Font = new System.Drawing.Font("Graphik Arabic", 9F);
             this.login_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(92)))), ((int)(((byte)(199)))));
             this.login_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.login_password.Location = new System.Drawing.Point(56, 357);
+            this.login_password.Location = new System.Drawing.Point(56, 322);
             this.login_password.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.login_password.Name = "login_password";
             this.login_password.PasswordChar = '*';
@@ -215,12 +216,35 @@
             this.login_password.Size = new System.Drawing.Size(265, 37);
             this.login_password.TabIndex = 17;
             // 
+            // comboBoxJobTitle
+            // 
+            this.comboBoxJobTitle.BackColor = System.Drawing.Color.Transparent;
+            this.comboBoxJobTitle.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBoxJobTitle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxJobTitle.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxJobTitle.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.comboBoxJobTitle.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.comboBoxJobTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboBoxJobTitle.ItemHeight = 30;
+            this.comboBoxJobTitle.Items.AddRange(new object[] {
+            "cashier",
+            "pet setter",
+            "veterinary",
+            "treasurer",
+            "storagekeeper",
+            "CEO"});
+            this.comboBoxJobTitle.Location = new System.Drawing.Point(26, 394);
+            this.comboBoxJobTitle.Name = "comboBoxJobTitle";
+            this.comboBoxJobTitle.Size = new System.Drawing.Size(295, 36);
+            this.comboBoxJobTitle.TabIndex = 18;
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(352, 597);
+            this.Controls.Add(this.comboBoxJobTitle);
             this.Controls.Add(this.login_password);
             this.Controls.Add(this.login_username);
             this.Controls.Add(this.label2);
@@ -260,5 +284,6 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox login_username;
         private Guna.UI2.WinForms.Guna2TextBox login_password;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBoxJobTitle;
     }
 }

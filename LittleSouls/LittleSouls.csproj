@@ -228,6 +228,12 @@
     <Compile Include="storage.cs">
       <DependentUpon>EmployeeData.tt</DependentUpon>
     </Compile>
+    <Compile Include="storgeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="storgeForm.Designer.cs">
+      <DependentUpon>storgeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TFo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -294,6 +300,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SalesDp.resx">
       <DependentUpon>SalesDp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="storgeForm.resx">
+      <DependentUpon>storgeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TFo.resx">
       <DependentUpon>TFo.cs</DependentUpon>
