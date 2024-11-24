@@ -458,6 +458,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(126, 45);
             this.guna2Button1.TabIndex = 6;
             this.guna2Button1.Text = "Go Back";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2ComboBox4
             // 

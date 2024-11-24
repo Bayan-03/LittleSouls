@@ -44,7 +44,42 @@ namespace LittleSouls
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
+            this.Hide();
 
+            var DonatsDpForm = new DonatsDp();
+            DonatsDpForm.WindowState = FormWindowState.Maximized;
+            DonatsDpForm.FormClosed += (s, args) => this.Close();
+            DonatsDpForm.Show();
+        }
+
+        private void DepButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            var DepartsDpForm = new DepartsDp();
+            DepartsDpForm.WindowState = FormWindowState.Maximized;
+            DepartsDpForm.FormClosed += (s, args) => this.Close();
+            DepartsDpForm.Show();
+        }
+
+        private void ProButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            var ProfitsDpForm = new ProfitsDp();
+            ProfitsDpForm.WindowState = FormWindowState.Maximized;
+            ProfitsDpForm.FormClosed += (s, args) => this.Close();
+            ProfitsDpForm.Show();
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            var SalesDpForm = new SalesDp();
+            SalesDpForm.WindowState = FormWindowState.Maximized;
+            SalesDpForm.FormClosed += (s, args) => this.Close();
+            SalesDpForm.Show(); 
         }
     }
 }

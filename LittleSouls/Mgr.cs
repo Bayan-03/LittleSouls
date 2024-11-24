@@ -24,7 +24,9 @@ namespace LittleSouls
 
         private void button3_Click(object sender, EventArgs e)
         {
-                    }
+           
+
+        }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
@@ -33,6 +35,8 @@ namespace LittleSouls
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
+             
+
 
         }
 
@@ -65,5 +69,30 @@ namespace LittleSouls
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            var EmployeesDpForm = new EmployeesDp();
+            EmployeesDpForm.WindowState = FormWindowState.Maximized;
+            EmployeesDpForm.FormClosed += (s, args) => this.Close();
+            EmployeesDpForm.Show();
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            var CotractsDpForm = new CotractsDp();
+            CotractsDpForm.WindowState = FormWindowState.Maximized;
+            CotractsDpForm.FormClosed += (s, args) => this.Close();
+            CotractsDpForm.Show();
+        }
+
+        //private void guna2Button4_Click(object sender, EventArgs e)
+        //{
+
+        //}
     }
 }

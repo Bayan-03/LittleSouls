@@ -41,12 +41,15 @@
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.Tb_panal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // Tb_panal
@@ -114,11 +117,12 @@
             this.DepButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(219)))), ((int)(((byte)(157)))));
             this.DepButton.Font = new System.Drawing.Font("Graphik Arabic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.DepButton.ForeColor = System.Drawing.Color.Black;
-            this.DepButton.Location = new System.Drawing.Point(200, 217);
+            this.DepButton.Location = new System.Drawing.Point(522, 183);
             this.DepButton.Name = "DepButton";
-            this.DepButton.Size = new System.Drawing.Size(401, 210);
+            this.DepButton.Size = new System.Drawing.Size(401, 176);
             this.DepButton.TabIndex = 37;
             this.DepButton.Text = "Departments";
+            this.DepButton.Click += new System.EventHandler(this.DepButton_Click);
             // 
             // RepButton
             // 
@@ -131,9 +135,9 @@
             this.RepButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(219)))), ((int)(((byte)(157)))));
             this.RepButton.Font = new System.Drawing.Font("Graphik Arabic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.RepButton.ForeColor = System.Drawing.Color.Black;
-            this.RepButton.Location = new System.Drawing.Point(721, 217);
+            this.RepButton.Location = new System.Drawing.Point(949, 183);
             this.RepButton.Name = "RepButton";
-            this.RepButton.Size = new System.Drawing.Size(415, 210);
+            this.RepButton.Size = new System.Drawing.Size(405, 176);
             this.RepButton.TabIndex = 38;
             this.RepButton.Text = "Reports";
             this.RepButton.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -149,9 +153,9 @@
             this.DonButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(219)))), ((int)(((byte)(157)))));
             this.DonButton.Font = new System.Drawing.Font("Graphik Arabic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.DonButton.ForeColor = System.Drawing.Color.Black;
-            this.DonButton.Location = new System.Drawing.Point(200, 463);
+            this.DonButton.Location = new System.Drawing.Point(272, 431);
             this.DonButton.Name = "DonButton";
-            this.DonButton.Size = new System.Drawing.Size(401, 209);
+            this.DonButton.Size = new System.Drawing.Size(401, 176);
             this.DonButton.TabIndex = 39;
             this.DonButton.Text = "Donations";
             this.DonButton.Click += new System.EventHandler(this.guna2Button3_Click);
@@ -167,11 +171,12 @@
             this.ProButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(219)))), ((int)(((byte)(157)))));
             this.ProButton.Font = new System.Drawing.Font("Graphik Arabic Medium", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.ProButton.ForeColor = System.Drawing.Color.Black;
-            this.ProButton.Location = new System.Drawing.Point(721, 463);
+            this.ProButton.Location = new System.Drawing.Point(710, 434);
             this.ProButton.Name = "ProButton";
-            this.ProButton.Size = new System.Drawing.Size(415, 209);
+            this.ProButton.Size = new System.Drawing.Size(415, 176);
             this.ProButton.TabIndex = 40;
             this.ProButton.Text = "Profits";
+            this.ProButton.Click += new System.EventHandler(this.ProButton_Click);
             // 
             // guna2PictureBox1
             // 
@@ -180,9 +185,9 @@
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(1022, 572);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(1018, 521);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(107, 94);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(94, 86);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 41;
             this.guna2PictureBox1.TabStop = false;
@@ -194,9 +199,9 @@
             this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(496, 578);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(583, 530);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(103, 86);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(70, 67);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox2.TabIndex = 42;
             this.guna2PictureBox2.TabStop = false;
@@ -208,9 +213,9 @@
             this.guna2PictureBox3.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(490, 343);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(823, 281);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(103, 78);
+            this.guna2PictureBox3.Size = new System.Drawing.Size(87, 71);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox3.TabIndex = 43;
             this.guna2PictureBox3.TabStop = false;
@@ -222,12 +227,43 @@
             this.guna2PictureBox4.FillColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox4.Image")));
             this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(1022, 328);
+            this.guna2PictureBox4.Location = new System.Drawing.Point(1233, 276);
             this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(109, 92);
+            this.guna2PictureBox4.Size = new System.Drawing.Size(108, 77);
             this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox4.TabIndex = 44;
             this.guna2PictureBox4.TabStop = false;
+            // 
+            // guna2PictureBox5
+            // 
+            this.guna2PictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(219)))), ((int)(((byte)(157)))));
+            this.guna2PictureBox5.BorderRadius = 10;
+            this.guna2PictureBox5.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
+            this.guna2PictureBox5.ImageRotate = 0F;
+            this.guna2PictureBox5.Location = new System.Drawing.Point(369, 273);
+            this.guna2PictureBox5.Name = "guna2PictureBox5";
+            this.guna2PictureBox5.Size = new System.Drawing.Size(105, 83);
+            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox5.TabIndex = 54;
+            this.guna2PictureBox5.TabStop = false;
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.BorderRadius = 20;
+            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(219)))), ((int)(((byte)(157)))));
+            this.guna2Button4.Font = new System.Drawing.Font("Graphik Arabic Medium", 24F, System.Drawing.FontStyle.Bold);
+            this.guna2Button4.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button4.Location = new System.Drawing.Point(80, 183);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.Size = new System.Drawing.Size(414, 176);
+            this.guna2Button4.TabIndex = 53;
+            this.guna2Button4.Text = "Sales";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // CEO
             // 
@@ -236,6 +272,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1437, 838);
+            this.Controls.Add(this.guna2PictureBox5);
+            this.Controls.Add(this.guna2Button4);
             this.Controls.Add(this.guna2PictureBox4);
             this.Controls.Add(this.guna2PictureBox3);
             this.Controls.Add(this.guna2PictureBox2);
@@ -256,6 +294,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -274,5 +313,7 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
     }
 }

@@ -42,10 +42,11 @@
             this.Tb_panal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(218)))));
             this.Tb_panal.Controls.Add(this.guna2Button1);
             this.Tb_panal.Controls.Add(this.SopjectLable);
-            this.Tb_panal.Location = new System.Drawing.Point(-1, -1);
+            this.Tb_panal.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Tb_panal.Location = new System.Drawing.Point(0, 0);
             this.Tb_panal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tb_panal.Name = "Tb_panal";
-            this.Tb_panal.Size = new System.Drawing.Size(1440, 82);
+            this.Tb_panal.Size = new System.Drawing.Size(1437, 82);
             this.Tb_panal.TabIndex = 38;
             // 
             // SopjectLable
@@ -92,6 +93,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(126, 45);
             this.guna2Button1.TabIndex = 41;
             this.guna2Button1.Text = "Go Back";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // DonatsDp
             // 

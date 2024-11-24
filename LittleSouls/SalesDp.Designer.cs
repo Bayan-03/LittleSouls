@@ -68,9 +68,9 @@
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(96, 86);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(191, 145);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1193, 720);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(1074, 596);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 39;
             this.guna2PictureBox1.TabStop = false;
@@ -94,6 +94,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(126, 45);
             this.guna2Button1.TabIndex = 7;
             this.guna2Button1.Text = "Go Back";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // SalesDp
             // 

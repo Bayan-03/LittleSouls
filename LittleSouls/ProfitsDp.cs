@@ -26,5 +26,15 @@ namespace LittleSouls
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            var ProfitsButton = new CEO();
+            ProfitsButton.WindowState = FormWindowState.Maximized;
+            ProfitsButton.FormClosed += (s, args) => this.Close();
+            ProfitsButton.Show();
+        }
     }
 }

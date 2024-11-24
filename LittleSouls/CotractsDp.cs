@@ -41,5 +41,15 @@ namespace LittleSouls
         {
 
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            var CotractsButton = new Mgr();
+            CotractsButton.WindowState = FormWindowState.Maximized;
+            CotractsButton.FormClosed += (s, args) => this.Close();
+            CotractsButton.Show();
+        }
     }
 }
