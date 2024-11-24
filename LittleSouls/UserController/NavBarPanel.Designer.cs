@@ -50,10 +50,10 @@
             this.SideBar.Controls.Add(this.guna2CirclePictureBox1);
             this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.SideBar.Location = new System.Drawing.Point(0, 0);
-            this.SideBar.Margin = new System.Windows.Forms.Padding(4);
             this.SideBar.Name = "SideBar";
-            this.SideBar.Size = new System.Drawing.Size(89, 711);
+            this.SideBar.Size = new System.Drawing.Size(69, 569);
             this.SideBar.TabIndex = 41;
+            this.SideBar.Paint += new System.Windows.Forms.PaintEventHandler(this.SideBar_Paint_1);
             // 
             // guna2Button5
             // 
@@ -68,10 +68,9 @@
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.Image = global::LittleSouls.Properties.Resources.paws;
             this.guna2Button5.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button5.Location = new System.Drawing.Point(0, 258);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button5.Location = new System.Drawing.Point(0, 206);
             this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(89, 76);
+            this.guna2Button5.Size = new System.Drawing.Size(69, 61);
             this.guna2Button5.TabIndex = 24;
             this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
@@ -88,10 +87,9 @@
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.Image = global::LittleSouls.Properties.Resources.animal_care;
             this.guna2Button4.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button4.Location = new System.Drawing.Point(0, 321);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button4.Location = new System.Drawing.Point(0, 257);
             this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(89, 76);
+            this.guna2Button4.Size = new System.Drawing.Size(69, 61);
             this.guna2Button4.TabIndex = 23;
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
@@ -108,10 +106,9 @@
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.Image = global::LittleSouls.Properties.Resources.invoice;
             this.guna2Button3.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2Button3.Location = new System.Drawing.Point(0, 385);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button3.Location = new System.Drawing.Point(0, 308);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(89, 76);
+            this.guna2Button3.Size = new System.Drawing.Size(69, 61);
             this.guna2Button3.TabIndex = 22;
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
@@ -128,10 +125,9 @@
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Image = global::LittleSouls.Properties.Resources.setting__1_;
             this.guna2Button2.ImageSize = new System.Drawing.Size(28, 28);
-            this.guna2Button2.Location = new System.Drawing.Point(0, 918);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button2.Location = new System.Drawing.Point(0, 734);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(89, 76);
+            this.guna2Button2.Size = new System.Drawing.Size(69, 61);
             this.guna2Button2.TabIndex = 21;
             // 
             // guna2Button1
@@ -148,10 +144,9 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.Image = global::LittleSouls.Properties.Resources.home;
             this.guna2Button1.ImageSize = new System.Drawing.Size(28, 28);
-            this.guna2Button1.Location = new System.Drawing.Point(0, 178);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button1.Location = new System.Drawing.Point(0, 142);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(89, 76);
+            this.guna2Button1.Size = new System.Drawing.Size(69, 61);
             this.guna2Button1.TabIndex = 20;
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
@@ -161,11 +156,10 @@
             this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox1.Image = global::LittleSouls.Properties.Resources.icon_logo_061;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(4, 4);
-            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(3, 3);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(69, 68);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(54, 54);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox1.TabIndex = 20;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -173,11 +167,12 @@
             // 
             // NavBarPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.SideBar);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "NavBarPanel";
-            this.Size = new System.Drawing.Size(88, 711);
+            this.Size = new System.Drawing.Size(68, 569);
             this.SideBar.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);

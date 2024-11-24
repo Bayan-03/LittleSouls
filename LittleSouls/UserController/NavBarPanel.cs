@@ -19,6 +19,7 @@ namespace LittleSouls
         public event EventHandler showHomeForm;
         public event EventHandler showPetsForm;
         public event EventHandler showMedicalCareForm;
+        public event EventHandler showInvoiceForm;
 
         private void onShowedHomeForm()
         {
@@ -39,6 +40,14 @@ namespace LittleSouls
         private void onshowMedicalCareForm()
         {
             var handler = this.showMedicalCareForm;
+            if (handler != null)
+            {
+                handler(this, EventArgs.Empty);
+            }
+        }
+        private void onshowInvoiceForm()
+        {
+            var handler = this.showInvoiceForm;
             if (handler != null)
             {
                 handler(this, EventArgs.Empty);
@@ -70,10 +79,19 @@ namespace LittleSouls
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
+            if (showInvoiceForm != null)
+            {
+                onshowInvoiceForm();
+            }
+        }
+    
+
+        private void SideBar_Paint(object sender, PaintEventArgs e)
+        {
 
         }
 
-        private void SideBar_Paint(object sender, PaintEventArgs e)
+        private void SideBar_Paint_1(object sender, PaintEventArgs e)
         {
 
         }
