@@ -51,11 +51,6 @@ namespace LittleSouls
 
         }
 
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2Button2_Click(object sender, EventArgs e)
         {
 
@@ -242,6 +237,14 @@ namespace LittleSouls
             PetsForm.WindowState = FormWindowState.Maximized;
             PetsForm.FormClosed += (s, args) => this.Close();
             PetsForm.Show();
+        }
+        private void navBarPanel1_showInvoiceForm(object sender, EventArgs e)
+        {
+            this.Hide();
+            var InvoiceForm = new TFo();
+            InvoiceForm.WindowState = FormWindowState.Maximized;
+            InvoiceForm.FormClosed += (s, args) => this.Close();
+            InvoiceForm.Show();
         }
     }
 }
