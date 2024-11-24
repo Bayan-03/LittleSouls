@@ -108,7 +108,7 @@
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
             this.label11.Location = new System.Drawing.Point(598, 9);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(221, 32);
+            this.label11.Size = new System.Drawing.Size(192, 29);
             this.label11.TabIndex = 37;
             this.label11.Text = "LITTLE SOULS";
             // 
@@ -120,7 +120,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(105)))), ((int)(((byte)(168)))));
             this.label1.Location = new System.Drawing.Point(177, 120);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(373, 52);
+            this.label1.Size = new System.Drawing.Size(309, 42);
             this.label1.TabIndex = 40;
             this.label1.Text = "MEDICAL CARE";
             // 
@@ -128,16 +128,18 @@
             // 
             this.navBarPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.navBarPanel1.Location = new System.Drawing.Point(0, 0);
+            this.navBarPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.navBarPanel1.Name = "navBarPanel1";
             this.navBarPanel1.Size = new System.Drawing.Size(88, 830);
             this.navBarPanel1.TabIndex = 41;
             this.navBarPanel1.showHomeForm += new System.EventHandler(this.navBarPanel1_showHomeForm);
             this.navBarPanel1.showPetsForm += new System.EventHandler(this.navBarPanel1_showPetsForm);
             this.navBarPanel1.showMedicalCareForm += new System.EventHandler(this.navBarPanel1_showMedicalCareForm);
+            this.navBarPanel1.showInvoiceForm += new System.EventHandler(this.navBarPanel1_showInvoiceForm);
             // 
             // medicalCare
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LittleSouls.Properties.Resources.الخلفية_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;

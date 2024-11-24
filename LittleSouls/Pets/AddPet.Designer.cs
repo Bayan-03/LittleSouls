@@ -58,10 +58,9 @@
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(218)))));
             this.guna2Panel1.Controls.Add(this.label11);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(88, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Location = new System.Drawing.Point(68, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1757, 56);
+            this.guna2Panel1.Size = new System.Drawing.Size(1367, 45);
             this.guna2Panel1.TabIndex = 72;
             this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
@@ -71,10 +70,9 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label11.Location = new System.Drawing.Point(716, 11);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(557, 9);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(221, 32);
+            this.label11.Size = new System.Drawing.Size(192, 29);
             this.label11.TabIndex = 37;
             this.label11.Text = "LITTLE SOULS";
             // 
@@ -99,10 +97,9 @@
             "Turttel",
             "Bird",
             "Rabbite"});
-            this.BreedCombo.Location = new System.Drawing.Point(609, 666);
-            this.BreedCombo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreedCombo.Location = new System.Drawing.Point(474, 533);
             this.BreedCombo.Name = "BreedCombo";
-            this.BreedCombo.Size = new System.Drawing.Size(244, 36);
+            this.BreedCombo.Size = new System.Drawing.Size(191, 36);
             this.BreedCombo.TabIndex = 85;
             this.BreedCombo.SelectedIndexChanged += new System.EventHandler(this.Gendercheck_SelectedIndexChanged);
             // 
@@ -128,10 +125,9 @@
             "Gray",
             "Blue",
             "Gold"});
-            this.PetColor.Location = new System.Drawing.Point(609, 360);
-            this.PetColor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PetColor.Location = new System.Drawing.Point(474, 288);
             this.PetColor.Name = "PetColor";
-            this.PetColor.Size = new System.Drawing.Size(238, 36);
+            this.PetColor.Size = new System.Drawing.Size(186, 36);
             this.PetColor.TabIndex = 78;
             this.PetColor.SelectedIndexChanged += new System.EventHandler(this.PetColor_SelectedIndexChanged);
             // 
@@ -141,10 +137,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label2.Location = new System.Drawing.Point(1121, 205);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(872, 164);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(199, 38);
+            this.label2.Size = new System.Drawing.Size(175, 32);
             this.label2.TabIndex = 83;
             this.label2.Tag = "";
             this.label2.Text = "Helth State:";
@@ -156,10 +151,9 @@
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label9.Location = new System.Drawing.Point(361, 365);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(281, 292);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(214, 38);
+            this.label9.Size = new System.Drawing.Size(187, 32);
             this.label9.TabIndex = 79;
             this.label9.Tag = "";
             this.label9.Text = "Soul\'s Color:";
@@ -171,10 +165,9 @@
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label29.Location = new System.Drawing.Point(1144, 366);
-            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label29.Location = new System.Drawing.Point(890, 293);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(182, 38);
+            this.label29.Size = new System.Drawing.Size(159, 32);
             this.label29.TabIndex = 74;
             this.label29.Text = "Pet Setter:";
             this.label29.Click += new System.EventHandler(this.label29_Click);
@@ -185,10 +178,9 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label3.Location = new System.Drawing.Point(375, 212);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(292, 170);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(204, 38);
+            this.label3.Size = new System.Drawing.Size(178, 32);
             this.label3.TabIndex = 77;
             this.label3.Text = "Pet Gender:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -199,10 +191,9 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label12.Location = new System.Drawing.Point(432, 518);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(336, 414);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(151, 38);
+            this.label12.Size = new System.Drawing.Size(132, 32);
             this.label12.TabIndex = 80;
             this.label12.Text = "Species:";
             this.label12.Click += new System.EventHandler(this.label12_Click);
@@ -213,10 +204,9 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label6.Location = new System.Drawing.Point(473, 670);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(368, 536);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 38);
+            this.label6.Size = new System.Drawing.Size(104, 32);
             this.label6.TabIndex = 75;
             this.label6.Text = "Breed:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
@@ -234,13 +224,13 @@
             this.speciestxt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.speciestxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.speciestxt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.speciestxt.Location = new System.Drawing.Point(603, 511);
-            this.speciestxt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.speciestxt.Location = new System.Drawing.Point(469, 409);
+            this.speciestxt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.speciestxt.Name = "speciestxt";
             this.speciestxt.PasswordChar = '\0';
             this.speciestxt.PlaceholderText = "";
             this.speciestxt.SelectedText = "";
-            this.speciestxt.Size = new System.Drawing.Size(246, 49);
+            this.speciestxt.Size = new System.Drawing.Size(191, 39);
             this.speciestxt.TabIndex = 86;
             this.speciestxt.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
@@ -259,10 +249,9 @@
             this.health.Items.AddRange(new object[] {
             "Male",
             "Femal"});
-            this.health.Location = new System.Drawing.Point(1382, 205);
-            this.health.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.health.Location = new System.Drawing.Point(1075, 164);
             this.health.Name = "health";
-            this.health.Size = new System.Drawing.Size(244, 36);
+            this.health.Size = new System.Drawing.Size(191, 36);
             this.health.TabIndex = 87;
             this.health.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
@@ -279,13 +268,13 @@
             this.Arraival.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Arraival.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Arraival.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Arraival.Location = new System.Drawing.Point(1382, 520);
-            this.Arraival.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Arraival.Location = new System.Drawing.Point(1075, 416);
+            this.Arraival.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Arraival.Name = "Arraival";
             this.Arraival.PasswordChar = '\0';
             this.Arraival.PlaceholderText = "";
             this.Arraival.SelectedText = "";
-            this.Arraival.Size = new System.Drawing.Size(246, 49);
+            this.Arraival.Size = new System.Drawing.Size(191, 39);
             this.Arraival.TabIndex = 89;
             this.Arraival.TextChanged += new System.EventHandler(this.guna2TextBox2_TextChanged);
             // 
@@ -295,10 +284,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label1.Location = new System.Drawing.Point(1070, 518);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(832, 414);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(248, 38);
+            this.label1.Size = new System.Drawing.Size(217, 32);
             this.label1.TabIndex = 90;
             this.label1.Text = "Arraival Daate:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -316,13 +304,13 @@
             this.YearOfBirth.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.YearOfBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.YearOfBirth.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.YearOfBirth.Location = new System.Drawing.Point(1387, 681);
-            this.YearOfBirth.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.YearOfBirth.Location = new System.Drawing.Point(1079, 545);
+            this.YearOfBirth.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.YearOfBirth.Name = "YearOfBirth";
             this.YearOfBirth.PasswordChar = '\0';
             this.YearOfBirth.PlaceholderText = "";
             this.YearOfBirth.SelectedText = "";
-            this.YearOfBirth.Size = new System.Drawing.Size(246, 49);
+            this.YearOfBirth.Size = new System.Drawing.Size(191, 39);
             this.YearOfBirth.TabIndex = 91;
             this.YearOfBirth.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
             // 
@@ -332,10 +320,9 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label4.Location = new System.Drawing.Point(1098, 681);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(854, 545);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(229, 38);
+            this.label4.Size = new System.Drawing.Size(199, 32);
             this.label4.TabIndex = 92;
             this.label4.Text = "Year Of Birth:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -345,7 +332,7 @@
             this.ADD.Animated = true;
             this.ADD.AutoRoundedCorners = true;
             this.ADD.BackColor = System.Drawing.Color.Transparent;
-            this.ADD.BorderRadius = 26;
+            this.ADD.BorderRadius = 20;
             this.ADD.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ADD.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.ADD.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -356,10 +343,9 @@
             this.ADD.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ADD.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.ADD.ForeColor = System.Drawing.Color.Black;
-            this.ADD.Location = new System.Drawing.Point(1504, 918);
-            this.ADD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ADD.Location = new System.Drawing.Point(1170, 734);
             this.ADD.Name = "ADD";
-            this.ADD.Size = new System.Drawing.Size(197, 54);
+            this.ADD.Size = new System.Drawing.Size(153, 43);
             this.ADD.TabIndex = 93;
             this.ADD.Text = "ADD";
             this.ADD.Click += new System.EventHandler(this.ADD_Click);
@@ -370,7 +356,7 @@
             this.Adoptbtn.AutoRoundedCorners = true;
             this.Adoptbtn.BackColor = System.Drawing.Color.Transparent;
             this.Adoptbtn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.Adoptbtn.BorderRadius = 26;
+            this.Adoptbtn.BorderRadius = 20;
             this.Adoptbtn.BorderThickness = 2;
             this.Adoptbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Adoptbtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -382,10 +368,9 @@
             this.Adoptbtn.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.Adoptbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.Adoptbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.Adoptbtn.Location = new System.Drawing.Point(291, 918);
-            this.Adoptbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Adoptbtn.Location = new System.Drawing.Point(226, 734);
             this.Adoptbtn.Name = "Adoptbtn";
-            this.Adoptbtn.Size = new System.Drawing.Size(197, 54);
+            this.Adoptbtn.Size = new System.Drawing.Size(153, 43);
             this.Adoptbtn.TabIndex = 94;
             this.Adoptbtn.Text = "Clear";
             this.Adoptbtn.Click += new System.EventHandler(this.Adoptbtn_Click);
@@ -396,10 +381,9 @@
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.label18.Location = new System.Drawing.Point(179, 100);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Location = new System.Drawing.Point(139, 80);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(336, 46);
+            this.label18.Size = new System.Drawing.Size(278, 38);
             this.label18.TabIndex = 95;
             this.label18.Text = "Add A NEW PET";
             // 
@@ -418,10 +402,9 @@
             this.petgender.Items.AddRange(new object[] {
             "Male",
             "Femal"});
-            this.petgender.Location = new System.Drawing.Point(609, 212);
-            this.petgender.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.petgender.Location = new System.Drawing.Point(474, 170);
             this.petgender.Name = "petgender";
-            this.petgender.Size = new System.Drawing.Size(238, 36);
+            this.petgender.Size = new System.Drawing.Size(186, 36);
             this.petgender.TabIndex = 96;
             // 
             // petsetter
@@ -437,33 +420,35 @@
             this.petsetter.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.petsetter.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.petsetter.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.petsetter.Location = new System.Drawing.Point(1382, 358);
-            this.petsetter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.petsetter.Location = new System.Drawing.Point(1075, 286);
+            this.petsetter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.petsetter.Name = "petsetter";
             this.petsetter.PasswordChar = '\0';
             this.petsetter.PlaceholderText = "";
             this.petsetter.SelectedText = "";
-            this.petsetter.Size = new System.Drawing.Size(246, 49);
+            this.petsetter.Size = new System.Drawing.Size(191, 39);
             this.petsetter.TabIndex = 97;
             // 
             // navBarPanel1
             // 
             this.navBarPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.navBarPanel1.Location = new System.Drawing.Point(0, 0);
+            this.navBarPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.navBarPanel1.Name = "navBarPanel1";
-            this.navBarPanel1.Size = new System.Drawing.Size(88, 1038);
+            this.navBarPanel1.Size = new System.Drawing.Size(68, 830);
             this.navBarPanel1.TabIndex = 98;
             this.navBarPanel1.showHomeForm += new System.EventHandler(this.navBarPanel1_showHomeForm);
             this.navBarPanel1.showPetsForm += new System.EventHandler(this.navBarPanel1_showPetsForm);
             this.navBarPanel1.showMedicalCareForm += new System.EventHandler(this.navBarPanel1_showMedicalCareForm);
+            this.navBarPanel1.showInvoiceForm += new System.EventHandler(this.navBarPanel1_showInvoiceForm);
             // 
             // AddPet
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LittleSouls.Properties.Resources.الخلفية_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1845, 1038);
+            this.ClientSize = new System.Drawing.Size(1435, 830);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.navBarPanel1);
             this.Controls.Add(this.petsetter);
@@ -485,7 +470,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label6);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AddPet";
             this.Text = "Add Pet";
             this.Load += new System.EventHandler(this.AddPet_Load);

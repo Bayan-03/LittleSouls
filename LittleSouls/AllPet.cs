@@ -237,5 +237,13 @@ namespace LittleSouls
             PetsForm.FormClosed += (s, args) => this.Close();
             PetsForm.Show();
         }
+        private void navBarPanel1_showInvoiceForm(object sender, EventArgs e)
+        {
+            this.Hide();
+            var InvoiceForm = new TFo();
+            InvoiceForm.WindowState = FormWindowState.Maximized;
+            InvoiceForm.FormClosed += (s, args) => this.Close();
+            InvoiceForm.Show();
+        }
     }
 }

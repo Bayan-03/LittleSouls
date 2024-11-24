@@ -87,5 +87,13 @@ namespace LittleSouls
             medicalCareForm.FormClosed += (s, args) => this.Close();
             medicalCareForm.Show();
         }
+        private void navBarPanel1_showInvoiceForm(object sender, EventArgs e)
+        {
+            this.Hide();
+            var InvoiceForm = new TFo();
+            InvoiceForm.WindowState = FormWindowState.Maximized;
+            InvoiceForm.FormClosed += (s, args) => this.Close();
+            InvoiceForm.Show();
+        }
     }
 }

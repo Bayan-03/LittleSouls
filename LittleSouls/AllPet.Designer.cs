@@ -243,13 +243,14 @@
             // 
             this.navBarPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.navBarPanel1.Location = new System.Drawing.Point(0, 0);
-            this.navBarPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.navBarPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.navBarPanel1.Name = "navBarPanel1";
             this.navBarPanel1.Size = new System.Drawing.Size(68, 830);
             this.navBarPanel1.TabIndex = 41;
             this.navBarPanel1.showHomeForm += new System.EventHandler(this.navBarPanel1_showHomeForm);
             this.navBarPanel1.showPetsForm += new System.EventHandler(this.navBarPanel1_showPetsForm);
             this.navBarPanel1.showMedicalCareForm += new System.EventHandler(this.navBarPanel1_showMedicalCareForm);
+            this.navBarPanel1.showInvoiceForm += new System.EventHandler(this.navBarPanel1_showInvoiceForm);
             // 
             // AllPet
             // 

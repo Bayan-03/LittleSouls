@@ -43,10 +43,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(105)))), ((int)(((byte)(168)))));
-            this.label1.Location = new System.Drawing.Point(168, 92);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(131, 74);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 52);
+            this.label1.Size = new System.Drawing.Size(120, 42);
             this.label1.TabIndex = 8;
             this.label1.Text = "PETS";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -68,10 +67,9 @@
             this.AllPetsbtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.AllPetsbtn.ImageOffset = new System.Drawing.Point(5, 30);
             this.AllPetsbtn.ImageSize = new System.Drawing.Size(124, 124);
-            this.AllPetsbtn.Location = new System.Drawing.Point(359, 321);
-            this.AllPetsbtn.Margin = new System.Windows.Forms.Padding(4);
+            this.AllPetsbtn.Location = new System.Drawing.Point(279, 257);
             this.AllPetsbtn.Name = "AllPetsbtn";
-            this.AllPetsbtn.Size = new System.Drawing.Size(523, 258);
+            this.AllPetsbtn.Size = new System.Drawing.Size(407, 206);
             this.AllPetsbtn.TabIndex = 9;
             this.AllPetsbtn.Text = "All Pets";
             this.AllPetsbtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -94,10 +92,9 @@
             this.AdoptBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.AdoptBtn.ImageOffset = new System.Drawing.Point(5, 20);
             this.AdoptBtn.ImageSize = new System.Drawing.Size(120, 120);
-            this.AdoptBtn.Location = new System.Drawing.Point(1059, 321);
-            this.AdoptBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.AdoptBtn.Location = new System.Drawing.Point(824, 257);
             this.AdoptBtn.Name = "AdoptBtn";
-            this.AdoptBtn.Size = new System.Drawing.Size(523, 258);
+            this.AdoptBtn.Size = new System.Drawing.Size(407, 206);
             this.AdoptBtn.TabIndex = 10;
             this.AdoptBtn.Text = "Adoption";
             this.AdoptBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -120,10 +117,9 @@
             this.AddPetBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.AddPetBtn.ImageOffset = new System.Drawing.Point(5, 20);
             this.AddPetBtn.ImageSize = new System.Drawing.Size(115, 115);
-            this.AddPetBtn.Location = new System.Drawing.Point(708, 651);
-            this.AddPetBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.AddPetBtn.Location = new System.Drawing.Point(551, 521);
             this.AddPetBtn.Name = "AddPetBtn";
-            this.AddPetBtn.Size = new System.Drawing.Size(523, 258);
+            this.AddPetBtn.Size = new System.Drawing.Size(407, 206);
             this.AddPetBtn.TabIndex = 11;
             this.AddPetBtn.Text = "Add  Pet";
             this.AddPetBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -134,36 +130,36 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(218)))));
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(88, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel1.Location = new System.Drawing.Point(68, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1757, 56);
+            this.guna2Panel1.Size = new System.Drawing.Size(1367, 45);
             this.guna2Panel1.TabIndex = 13;
             // 
             // navBarPanel1
             // 
             this.navBarPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.navBarPanel1.Location = new System.Drawing.Point(0, 0);
+            this.navBarPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.navBarPanel1.Name = "navBarPanel1";
-            this.navBarPanel1.Size = new System.Drawing.Size(88, 1038);
+            this.navBarPanel1.Size = new System.Drawing.Size(68, 830);
             this.navBarPanel1.TabIndex = 14;
             this.navBarPanel1.showHomeForm += new System.EventHandler(this.navBarPanel1_showHomeForm);
             this.navBarPanel1.showPetsForm += new System.EventHandler(this.navBarPanel1_showPetsForm);
             this.navBarPanel1.showMedicalCareForm += new System.EventHandler(this.navBarPanel1_showMedicalCareForm);
+            this.navBarPanel1.showInvoiceForm += new System.EventHandler(this.navBarPanel1_showInvoiceForm);
             // 
             // Pets
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1845, 1038);
+            this.ClientSize = new System.Drawing.Size(1435, 830);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.AddPetBtn);
             this.Controls.Add(this.AdoptBtn);
             this.Controls.Add(this.AllPetsbtn);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.navBarPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Pets";
             this.Text = "Pets";
             this.Load += new System.EventHandler(this.Pets_Load);
