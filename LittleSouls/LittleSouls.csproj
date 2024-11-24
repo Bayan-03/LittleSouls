@@ -61,10 +61,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddPet.cs">
+    <Compile Include="Pets\AddPet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddPet.Designer.cs">
+    <Compile Include="Pets\AddPet.Designer.cs">
       <DependentUpon>AddPet.cs</DependentUpon>
     </Compile>
     <Compile Include="ADOP.cs">
@@ -231,7 +231,7 @@
     <Compile Include="TFo.Designer.cs">
       <DependentUpon>TFo.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddPet.resx">
+    <EmbeddedResource Include="Pets\AddPet.resx">
       <DependentUpon>AddPet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADOP.resx">

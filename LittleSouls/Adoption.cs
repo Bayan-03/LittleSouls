@@ -120,6 +120,7 @@ namespace LittleSouls
 
                             // تحديث البيانات في DataGridView
                             this.petTableAdapter.Fill(this.littleSoulsDataSet1.pet);
+                            this.petTableAdapter.Fill(this.littleSoulsDataSet.pet);
                         }
                         else
                         {
