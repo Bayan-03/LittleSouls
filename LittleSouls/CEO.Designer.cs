@@ -55,10 +55,12 @@
             this.Tb_panal.Controls.Add(this.label1);
             this.Tb_panal.Controls.Add(this.NameLable);
             this.Tb_panal.Controls.Add(this.guna2CirclePictureBox1);
-            this.Tb_panal.Location = new System.Drawing.Point(-1, 0);
+            this.Tb_panal.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Tb_panal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
+            this.Tb_panal.Location = new System.Drawing.Point(0, 0);
             this.Tb_panal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tb_panal.Name = "Tb_panal";
-            this.Tb_panal.Size = new System.Drawing.Size(1440, 82);
+            this.Tb_panal.Size = new System.Drawing.Size(1437, 82);
             this.Tb_panal.TabIndex = 36;
             this.Tb_panal.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
@@ -80,7 +82,7 @@
             this.NameLable.AutoSize = false;
             this.NameLable.BackColor = System.Drawing.Color.Transparent;
             this.NameLable.Font = new System.Drawing.Font("Graphik Arabic Medium", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.NameLable.ForeColor = System.Drawing.Color.Black;
+            this.NameLable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
             this.NameLable.Location = new System.Drawing.Point(119, 21);
             this.NameLable.Name = "NameLable";
             this.NameLable.Size = new System.Drawing.Size(197, 32);
@@ -90,7 +92,7 @@
             // 
             // guna2CirclePictureBox1
             // 
-            this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.Black;
+            this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(35, 9);
