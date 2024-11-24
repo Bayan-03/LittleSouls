@@ -90,6 +90,14 @@ namespace LittleSouls
             CotractsDpForm.Show();
         }
 
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            var reportForm = new Mgr();
+            reportForm.WindowState = FormWindowState.Maximized;
+            reportForm.FormClosed += (s, args) => this.Close();
+            reportForm.Show();
+        }
+
         //private void guna2Button4_Click(object sender, EventArgs e)
         //{
 
