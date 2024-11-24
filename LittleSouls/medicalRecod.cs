@@ -16,7 +16,7 @@ namespace LittleSouls
     {
         public int recordId { get; set; }
         public Nullable<int> petId { get; set; }
-        public string dateOfExamination { get; set; }
+        public System.DateTime dateOfExamination { get; set; }
         public string treatmentsProvided { get; set; }
         public string diagnosis { get; set; }
         public string surgeryInformation { get; set; }

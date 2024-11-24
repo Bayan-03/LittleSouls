@@ -19,8 +19,8 @@ namespace LittleSouls
         public int quantity { get; set; }
         public decimal price { get; set; }
         public string itemCondition { get; set; }
-        public string receivedDate { get; set; }
-        public string expirationDate { get; set; }
+        public System.DateTime receivedDate { get; set; }
+        public System.DateTime expirationDate { get; set; }
         public string supplier { get; set; }
     
         public virtual items items { get; set; }
