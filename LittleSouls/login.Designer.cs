@@ -40,7 +40,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.login_username = new Guna.UI2.WinForms.Guna2TextBox();
             this.login_password = new Guna.UI2.WinForms.Guna2TextBox();
+<<<<<<< Updated upstream
             this.comboBoxJobTitle = new Guna.UI2.WinForms.Guna2ComboBox();
+=======
+>>>>>>> Stashed changes
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,9 +61,10 @@
             this.login_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(92)))), ((int)(((byte)(199)))));
             this.login_btn.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login_btn.ForeColor = System.Drawing.Color.White;
-            this.login_btn.Location = new System.Drawing.Point(31, 459);
+            this.login_btn.Location = new System.Drawing.Point(27, 373);
+            this.login_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.login_btn.Name = "login_btn";
-            this.login_btn.Size = new System.Drawing.Size(290, 44);
+            this.login_btn.Size = new System.Drawing.Size(249, 36);
             this.login_btn.TabIndex = 7;
             this.login_btn.Text = "LOG IN";
             this.login_btn.Click += new System.EventHandler(this.login_btn_Click);
@@ -71,9 +75,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Graphik Arabic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(218)))));
-            this.label1.Location = new System.Drawing.Point(79, 560);
+            this.label1.Location = new System.Drawing.Point(68, 455);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 18);
+            this.label1.Size = new System.Drawing.Size(154, 14);
             this.label1.TabIndex = 8;
             this.label1.Text = "home for pretty little souls";
             // 
@@ -81,9 +85,10 @@
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pictureBox3.Image = global::LittleSouls.Properties.Resources.icon_logo_062;
-            this.pictureBox3.Location = new System.Drawing.Point(274, 560);
+            this.pictureBox3.Location = new System.Drawing.Point(235, 455);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(18, 22);
+            this.pictureBox3.Size = new System.Drawing.Size(15, 18);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
@@ -92,9 +97,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::LittleSouls.Properties.Resources.user_05;
-            this.pictureBox2.Location = new System.Drawing.Point(26, 277);
+            this.pictureBox2.Location = new System.Drawing.Point(22, 225);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 30);
+            this.pictureBox2.Size = new System.Drawing.Size(21, 24);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
@@ -102,9 +108,14 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LittleSouls.Properties.Resources.little_soul_04;
-            this.pictureBox1.Location = new System.Drawing.Point(26, 324);
+<<<<<<< Updated upstream
+            this.pictureBox1.Location = new System.Drawing.Point(22, 263);
+=======
+            this.pictureBox1.Location = new System.Drawing.Point(22, 292);
+>>>>>>> Stashed changes
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 30);
+            this.pictureBox1.Size = new System.Drawing.Size(21, 24);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -113,12 +124,14 @@
             // 
             this.guna2PictureBox1.Image = global::LittleSouls.Properties.Resources.logo_01;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(73, 39);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(63, 32);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(206, 169);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(177, 137);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox1.TabIndex = 1;
             this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // Exitbtn
             // 
@@ -129,9 +142,10 @@
             this.Exitbtn.FillColor = System.Drawing.Color.White;
             this.Exitbtn.Font = new System.Drawing.Font("Segoe UI", 13.8F);
             this.Exitbtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(92)))), ((int)(((byte)(199)))));
-            this.Exitbtn.Location = new System.Drawing.Point(303, 0);
+            this.Exitbtn.Location = new System.Drawing.Point(260, 0);
+            this.Exitbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Exitbtn.Name = "Exitbtn";
-            this.Exitbtn.Size = new System.Drawing.Size(49, 33);
+            this.Exitbtn.Size = new System.Drawing.Size(42, 27);
             this.Exitbtn.TabIndex = 0;
             this.Exitbtn.Text = "x";
             this.Exitbtn.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -141,8 +155,9 @@
             this.guna2Panel3.Controls.Add(this.Exitbtn);
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel3.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(352, 33);
+            this.guna2Panel3.Size = new System.Drawing.Size(302, 27);
             this.guna2Panel3.TabIndex = 11;
             this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
             // 
@@ -150,9 +165,14 @@
             // 
             this.login_showPass.AutoSize = true;
             this.login_showPass.Font = new System.Drawing.Font("Graphik Arabic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login_showPass.Location = new System.Drawing.Point(181, 366);
+<<<<<<< Updated upstream
+            this.login_showPass.Location = new System.Drawing.Point(155, 297);
+=======
+            this.login_showPass.Location = new System.Drawing.Point(159, 326);
+>>>>>>> Stashed changes
+            this.login_showPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.login_showPass.Name = "login_showPass";
-            this.login_showPass.Size = new System.Drawing.Size(140, 22);
+            this.login_showPass.Size = new System.Drawing.Size(116, 18);
             this.login_showPass.TabIndex = 14;
             this.login_showPass.Text = "Show Passowrd";
             this.login_showPass.UseVisualStyleBackColor = true;
@@ -163,9 +183,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Graphik Arabic SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(92)))), ((int)(((byte)(199)))));
-            this.label2.Location = new System.Drawing.Point(118, 211);
+            this.label2.Location = new System.Drawing.Point(101, 171);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 35);
+            this.label2.Size = new System.Drawing.Size(94, 28);
             this.label2.TabIndex = 15;
             this.label2.Text = "LOG IN";
             // 
@@ -183,13 +203,12 @@
             this.login_username.Font = new System.Drawing.Font("Graphik Arabic", 9F);
             this.login_username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(92)))), ((int)(((byte)(199)))));
             this.login_username.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.login_username.Location = new System.Drawing.Point(56, 277);
-            this.login_username.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.login_username.Location = new System.Drawing.Point(48, 225);
             this.login_username.Name = "login_username";
             this.login_username.PasswordChar = '\0';
             this.login_username.PlaceholderText = "";
             this.login_username.SelectedText = "";
-            this.login_username.Size = new System.Drawing.Size(265, 37);
+            this.login_username.Size = new System.Drawing.Size(227, 30);
             this.login_username.TabIndex = 16;
             this.login_username.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
@@ -207,15 +226,19 @@
             this.login_password.Font = new System.Drawing.Font("Graphik Arabic", 9F);
             this.login_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(92)))), ((int)(((byte)(199)))));
             this.login_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.login_password.Location = new System.Drawing.Point(56, 322);
-            this.login_password.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+<<<<<<< Updated upstream
+            this.login_password.Location = new System.Drawing.Point(48, 262);
+=======
+            this.login_password.Location = new System.Drawing.Point(48, 290);
+>>>>>>> Stashed changes
             this.login_password.Name = "login_password";
             this.login_password.PasswordChar = '*';
             this.login_password.PlaceholderText = "";
             this.login_password.SelectedText = "";
-            this.login_password.Size = new System.Drawing.Size(265, 37);
+            this.login_password.Size = new System.Drawing.Size(227, 30);
             this.login_password.TabIndex = 17;
             // 
+<<<<<<< Updated upstream
             // comboBoxJobTitle
             // 
             this.comboBoxJobTitle.BackColor = System.Drawing.Color.Transparent;
@@ -233,18 +256,25 @@
             "treasurer",
             "storagekeeper",
             "CEO"});
-            this.comboBoxJobTitle.Location = new System.Drawing.Point(26, 394);
+            this.comboBoxJobTitle.Location = new System.Drawing.Point(22, 320);
+            this.comboBoxJobTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxJobTitle.Name = "comboBoxJobTitle";
-            this.comboBoxJobTitle.Size = new System.Drawing.Size(295, 36);
+            this.comboBoxJobTitle.Size = new System.Drawing.Size(253, 36);
             this.comboBoxJobTitle.TabIndex = 18;
+            this.comboBoxJobTitle.SelectedIndexChanged += new System.EventHandler(this.comboBoxJobTitle_SelectedIndexChanged);
             // 
+=======
+>>>>>>> Stashed changes
             // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(352, 597);
+            this.ClientSize = new System.Drawing.Size(302, 485);
+<<<<<<< Updated upstream
             this.Controls.Add(this.comboBoxJobTitle);
+=======
+>>>>>>> Stashed changes
             this.Controls.Add(this.login_password);
             this.Controls.Add(this.login_username);
             this.Controls.Add(this.label2);
@@ -257,6 +287,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login";
@@ -284,6 +315,9 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox login_username;
         private Guna.UI2.WinForms.Guna2TextBox login_password;
+<<<<<<< Updated upstream
         private Guna.UI2.WinForms.Guna2ComboBox comboBoxJobTitle;
+=======
+>>>>>>> Stashed changes
     }
 }

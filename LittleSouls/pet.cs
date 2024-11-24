@@ -29,10 +29,9 @@ namespace LittleSouls
         public string petColor { get; set; }
         public string healthStatus { get; set; }
         public string petState { get; set; }
-        public byte[] petImage { get; set; }
         public int petSetter { get; set; }
         public Nullable<int> adopter { get; set; }
-        public string adoptDate { get; set; }
+        public Nullable<System.DateTime> adoptDate { get; set; }
     
         public virtual customer customer { get; set; }
         public virtual employee employee { get; set; }
