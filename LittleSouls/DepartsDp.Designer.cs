@@ -32,8 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.AllEmployTable = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Tb_panal = new Guna.UI2.WinForms.Guna2Panel();
-            this.SopjectLable = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.Emp_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Empname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Yearofbirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,6 +42,9 @@
             this.EmpSalary = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.petimage = new System.Windows.Forms.DataGridViewImageColumn();
             this.EmpStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tb_panal = new Guna.UI2.WinForms.Guna2Panel();
+            this.SopjectLable = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.AllEmployTable)).BeginInit();
             this.Tb_panal.SuspendLayout();
             this.SuspendLayout();
@@ -116,29 +117,6 @@
             this.AllEmployTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.AllEmployTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.EmployTable_CellContentClick);
             // 
-            // Tb_panal
-            // 
-            this.Tb_panal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(218)))));
-            this.Tb_panal.Controls.Add(this.SopjectLable);
-            this.Tb_panal.Location = new System.Drawing.Point(-2, -1);
-            this.Tb_panal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Tb_panal.Name = "Tb_panal";
-            this.Tb_panal.Size = new System.Drawing.Size(1440, 82);
-            this.Tb_panal.TabIndex = 38;
-            // 
-            // SopjectLable
-            // 
-            this.SopjectLable.AutoSize = false;
-            this.SopjectLable.BackColor = System.Drawing.Color.Transparent;
-            this.SopjectLable.Font = new System.Drawing.Font("Graphik Arabic Medium", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.SopjectLable.ForeColor = System.Drawing.Color.Black;
-            this.SopjectLable.Location = new System.Drawing.Point(74, 29);
-            this.SopjectLable.Name = "SopjectLable";
-            this.SopjectLable.Size = new System.Drawing.Size(396, 32);
-            this.SopjectLable.TabIndex = 5;
-            this.SopjectLable.Text = "Employees Of Department";
-            this.SopjectLable.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Emp_ID
             // 
             this.Emp_ID.HeaderText = "ID";
@@ -209,6 +187,50 @@
             this.EmpStatus.Name = "EmpStatus";
             this.EmpStatus.ReadOnly = true;
             // 
+            // Tb_panal
+            // 
+            this.Tb_panal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(218)))));
+            this.Tb_panal.Controls.Add(this.guna2Button1);
+            this.Tb_panal.Controls.Add(this.SopjectLable);
+            this.Tb_panal.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Tb_panal.Location = new System.Drawing.Point(0, 0);
+            this.Tb_panal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Tb_panal.Name = "Tb_panal";
+            this.Tb_panal.Size = new System.Drawing.Size(1437, 82);
+            this.Tb_panal.TabIndex = 38;
+            // 
+            // SopjectLable
+            // 
+            this.SopjectLable.AutoSize = false;
+            this.SopjectLable.BackColor = System.Drawing.Color.Transparent;
+            this.SopjectLable.Font = new System.Drawing.Font("Graphik Arabic Medium", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.SopjectLable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
+            this.SopjectLable.Location = new System.Drawing.Point(74, 29);
+            this.SopjectLable.Name = "SopjectLable";
+            this.SopjectLable.Size = new System.Drawing.Size(396, 32);
+            this.SopjectLable.TabIndex = 5;
+            this.SopjectLable.Text = "Employees Of Department";
+            this.SopjectLable.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
+            this.guna2Button1.BorderRadius = 5;
+            this.guna2Button1.BorderThickness = 1;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Graphik Arabic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
+            this.guna2Button1.Location = new System.Drawing.Point(1244, 16);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(126, 45);
+            this.guna2Button1.TabIndex = 41;
+            this.guna2Button1.Text = "Go Back";
+            // 
             // DepartsDp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -241,5 +263,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn EmpSalary;
         private System.Windows.Forms.DataGridViewImageColumn petimage;
         private System.Windows.Forms.DataGridViewTextBoxColumn EmpStatus;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
