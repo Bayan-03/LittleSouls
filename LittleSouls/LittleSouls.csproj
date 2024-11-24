@@ -168,6 +168,12 @@
     <Compile Include="Mgr.Designer.cs">
       <DependentUpon>Mgr.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserController\NavBarPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserController\NavBarPanel.Designer.cs">
+      <DependentUpon>NavBarPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="pet.cs">
       <DependentUpon>LSDB.tt</DependentUpon>
     </Compile>
@@ -189,7 +195,6 @@
     <Compile Include="PetsExamination.Designer.cs">
       <DependentUpon>PetsExamination.cs</DependentUpon>
     </Compile>
-    <Compile Include="proc.cs" />
     <Compile Include="ProfitsDp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -258,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mgr.resx">
       <DependentUpon>Mgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\NavBarPanel.resx">
+      <DependentUpon>NavBarPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pets.resx">
       <DependentUpon>Pets.cs</DependentUpon>
