@@ -244,6 +244,16 @@ namespace LittleSouls
         {
             //SaveChanges();
         }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            var stButton = new Mgr();
+            stButton.WindowState = FormWindowState.Maximized;
+            stButton.FormClosed += (s, args) => this.Close();
+            stButton.Show();
+        }
     }
 
 }

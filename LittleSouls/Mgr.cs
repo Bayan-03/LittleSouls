@@ -35,7 +35,12 @@ namespace LittleSouls
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-             
+            this.Hide();
+
+            var stForm = new storageForm();
+            stForm.WindowState = FormWindowState.Maximized;
+            stForm.FormClosed += (s, args) => this.Close();
+            stForm.Show();
 
 
         }
