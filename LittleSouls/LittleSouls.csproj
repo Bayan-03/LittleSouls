@@ -61,17 +61,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CotractsDp.cs">
+    <Compile Include="CEOPath\CEO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CotractsDp.Designer.cs">
-      <DependentUpon>CotractsDp.cs</DependentUpon>
+    <Compile Include="CEOPath\CEO.Designer.cs">
+      <DependentUpon>CEO.cs</DependentUpon>
     </Compile>
-    <Compile Include="DepartsDp.cs">
+    <Compile Include="CEOPath\DepartsDp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DepartsDp.Designer.cs">
+    <Compile Include="CEOPath\DepartsDp.Designer.cs">
       <DependentUpon>DepartsDp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CEOPath\DonatsDp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEOPath\DonatsDp.Designer.cs">
+      <DependentUpon>DonatsDp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CEOPath\ProfitsDp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEOPath\ProfitsDp.Designer.cs">
+      <DependentUpon>ProfitsDp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CEOPath\SalesDp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CEOPath\SalesDp.Designer.cs">
+      <DependentUpon>SalesDp.cs</DependentUpon>
     </Compile>
     <Compile Include="invoice.cs">
       <DependentUpon>LSDB.tt</DependentUpon>
@@ -82,11 +100,35 @@
     <Compile Include="item.cs">
       <DependentUpon>LSDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Pets\AddPet.cs">
+    <Compile Include="ManegerPath\CotractsDp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pets\AddPet.Designer.cs">
-      <DependentUpon>AddPet.cs</DependentUpon>
+    <Compile Include="ManegerPath\CotractsDp.Designer.cs">
+      <DependentUpon>CotractsDp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManegerPath\EmployeesDp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManegerPath\EmployeesDp.Designer.cs">
+      <DependentUpon>EmployeesDp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManegerPath\Mgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManegerPath\Mgr.Designer.cs">
+      <DependentUpon>Mgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManegerPath\RepotrDp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManegerPath\RepotrDp.Designer.cs">
+      <DependentUpon>RepotrDp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManegerPath\storgeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManegerPath\storgeForm.Designer.cs">
+      <DependentUpon>storgeForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ADOP.cs">
       <SubType>Form</SubType>
@@ -94,44 +136,14 @@
     <Compile Include="ADOP.Designer.cs">
       <DependentUpon>ADOP.cs</DependentUpon>
     </Compile>
-    <Compile Include="Adoption.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Adoption.Designer.cs">
-      <DependentUpon>Adoption.cs</DependentUpon>
-    </Compile>
-    <Compile Include="CEO.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CEO.Designer.cs">
-      <DependentUpon>CEO.cs</DependentUpon>
-    </Compile>
     <Compile Include="customer.cs">
       <DependentUpon>LSDB.tt</DependentUpon>
     </Compile>
     <Compile Include="department.cs">
       <DependentUpon>LSDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="DonatsDp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DonatsDp.Designer.cs">
-      <DependentUpon>DonatsDp.cs</DependentUpon>
-    </Compile>
     <Compile Include="employee.cs">
       <DependentUpon>LSDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EmployeesDp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EmployeesDp.Designer.cs">
-      <DependentUpon>EmployeesDp.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Home.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="littleSoulsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -159,32 +171,56 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LSDB.edmx</DependentUpon>
     </Compile>
-    <Compile Include="medicalCare.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="medicalCare.Designer.cs">
-      <DependentUpon>medicalCare.cs</DependentUpon>
-    </Compile>
     <Compile Include="medicalRecod.cs">
       <DependentUpon>LSDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="Mgr.cs">
+    <Compile Include="StafPath\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Mgr.Designer.cs">
-      <DependentUpon>Mgr.cs</DependentUpon>
+    <Compile Include="StafPath\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pets\AllPet.cs">
+    <Compile Include="StafPath\MedicalFolder\medicalCare.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pets\AllPet.Designer.cs">
+    <Compile Include="StafPath\MedicalFolder\medicalCare.Designer.cs">
+      <DependentUpon>medicalCare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StafPath\MedicalFolder\PetsExamination.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StafPath\MedicalFolder\PetsExamination.Designer.cs">
+      <DependentUpon>PetsExamination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StafPath\Pets\AddPet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StafPath\Pets\AddPet.Designer.cs">
+      <DependentUpon>AddPet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StafPath\Pets\Adoption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StafPath\Pets\Adoption.Designer.cs">
+      <DependentUpon>Adoption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StafPath\Pets\AllPet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StafPath\Pets\AllPet.Designer.cs">
       <DependentUpon>AllPet.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pets\Pets.cs">
+    <Compile Include="StafPath\Pets\Pets.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Pets\Pets.Designer.cs">
+    <Compile Include="StafPath\Pets\Pets.Designer.cs">
       <DependentUpon>Pets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StafPath\TFo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StafPath\TFo.Designer.cs">
+      <DependentUpon>TFo.cs</DependentUpon>
     </Compile>
     <Compile Include="UserController\NavBarPanel.cs">
       <SubType>UserControl</SubType>
@@ -195,98 +231,74 @@
     <Compile Include="pet.cs">
       <DependentUpon>LSDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="PetsExamination.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PetsExamination.Designer.cs">
-      <DependentUpon>PetsExamination.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ProfitsDp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ProfitsDp.Designer.cs">
-      <DependentUpon>ProfitsDp.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RepotrDp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RepotrDp.Designer.cs">
-      <DependentUpon>RepotrDp.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SalesDp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SalesDp.Designer.cs">
-      <DependentUpon>SalesDp.cs</DependentUpon>
-    </Compile>
     <Compile Include="Settings.cs" />
     <Compile Include="storage.cs">
       <DependentUpon>LSDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="storgeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="storgeForm.Designer.cs">
-      <DependentUpon>storgeForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TFo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TFo.Designer.cs">
-      <DependentUpon>TFo.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="CotractsDp.resx">
-      <DependentUpon>CotractsDp.cs</DependentUpon>
+    <EmbeddedResource Include="CEOPath\CEO.resx">
+      <DependentUpon>CEO.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DepartsDp.resx">
+    <EmbeddedResource Include="CEOPath\DepartsDp.resx">
       <DependentUpon>DepartsDp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pets\AddPet.resx">
-      <DependentUpon>AddPet.cs</DependentUpon>
+    <EmbeddedResource Include="CEOPath\DonatsDp.resx">
+      <DependentUpon>DonatsDp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEOPath\ProfitsDp.resx">
+      <DependentUpon>ProfitsDp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CEOPath\SalesDp.resx">
+      <DependentUpon>SalesDp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManegerPath\CotractsDp.resx">
+      <DependentUpon>CotractsDp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManegerPath\EmployeesDp.resx">
+      <DependentUpon>EmployeesDp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManegerPath\Mgr.resx">
+      <DependentUpon>Mgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManegerPath\RepotrDp.resx">
+      <DependentUpon>RepotrDp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManegerPath\storgeForm.resx">
+      <DependentUpon>storgeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ADOP.resx">
       <DependentUpon>ADOP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Adoption.resx">
-      <DependentUpon>Adoption.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CEO.resx">
-      <DependentUpon>CEO.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DonatsDp.resx">
-      <DependentUpon>DonatsDp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EmployeesDp.resx">
-      <DependentUpon>EmployeesDp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="medicalCare.resx">
+    <EmbeddedResource Include="StafPath\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StafPath\MedicalFolder\medicalCare.resx">
       <DependentUpon>medicalCare.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Mgr.resx">
-      <DependentUpon>Mgr.cs</DependentUpon>
+    <EmbeddedResource Include="StafPath\MedicalFolder\PetsExamination.resx">
+      <DependentUpon>PetsExamination.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pets\AllPet.resx">
+    <EmbeddedResource Include="StafPath\Pets\AddPet.resx">
+      <DependentUpon>AddPet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StafPath\Pets\Adoption.resx">
+      <DependentUpon>Adoption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StafPath\Pets\AllPet.resx">
       <DependentUpon>AllPet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pets\Pets.resx">
+    <EmbeddedResource Include="StafPath\Pets\Pets.resx">
       <DependentUpon>Pets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StafPath\TFo.resx">
+      <DependentUpon>TFo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserController\NavBarPanel.resx">
       <DependentUpon>NavBarPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PetsExamination.resx">
-      <DependentUpon>PetsExamination.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ProfitsDp.resx">
-      <DependentUpon>ProfitsDp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -298,18 +310,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RepotrDp.resx">
-      <DependentUpon>RepotrDp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SalesDp.resx">
-      <DependentUpon>SalesDp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="storgeForm.resx">
-      <DependentUpon>storgeForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TFo.resx">
-      <DependentUpon>TFo.cs</DependentUpon>
-    </EmbeddedResource>
     <EntityDeploy Include="LSDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>LSDB.Designer.cs</LastGenOutput>
@@ -410,16 +410,9 @@
       <DependentUpon>LSDB.edmx</DependentUpon>
       <LastGenOutput>LSDB.cs</LastGenOutput>
     </Content>
-    <None Include="Resources\log-out.png" />
-    <None Include="Resources\log-out %281%29.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CEOPath\" />
-    <Folder Include="ManegerPath\" />
-    <Folder Include="StafPath\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
