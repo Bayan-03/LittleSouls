@@ -100,12 +100,6 @@
     <Compile Include="Adoption.Designer.cs">
       <DependentUpon>Adoption.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pets\AllPet.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pets\AllPet.Designer.cs">
-      <DependentUpon>AllPet.cs</DependentUpon>
-    </Compile>
     <Compile Include="CEO.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -180,6 +174,18 @@
     <Compile Include="Mgr.Designer.cs">
       <DependentUpon>Mgr.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pets\AllPet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pets\AllPet.Designer.cs">
+      <DependentUpon>AllPet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pets\Pets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pets\Pets.Designer.cs">
+      <DependentUpon>Pets.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserController\NavBarPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -188,12 +194,6 @@
     </Compile>
     <Compile Include="pet.cs">
       <DependentUpon>LSDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Pets\Pets.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pets\Pets.Designer.cs">
-      <DependentUpon>Pets.cs</DependentUpon>
     </Compile>
     <Compile Include="PetsExamination.cs">
       <SubType>Form</SubType>
@@ -252,9 +252,6 @@
     <EmbeddedResource Include="Adoption.resx">
       <DependentUpon>Adoption.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pets\AllPet.resx">
-      <DependentUpon>AllPet.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CEO.resx">
       <DependentUpon>CEO.cs</DependentUpon>
     </EmbeddedResource>
@@ -276,11 +273,14 @@
     <EmbeddedResource Include="Mgr.resx">
       <DependentUpon>Mgr.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserController\NavBarPanel.resx">
-      <DependentUpon>NavBarPanel.cs</DependentUpon>
+    <EmbeddedResource Include="Pets\AllPet.resx">
+      <DependentUpon>AllPet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pets\Pets.resx">
       <DependentUpon>Pets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserController\NavBarPanel.resx">
+      <DependentUpon>NavBarPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PetsExamination.resx">
       <DependentUpon>PetsExamination.cs</DependentUpon>
@@ -410,9 +410,16 @@
       <DependentUpon>LSDB.edmx</DependentUpon>
       <LastGenOutput>LSDB.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\log-out.png" />
+    <None Include="Resources\log-out %281%29.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CEOPath\" />
+    <Folder Include="ManegerPath\" />
+    <Folder Include="StafPath\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
