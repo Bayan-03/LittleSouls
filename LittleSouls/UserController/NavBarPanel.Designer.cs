@@ -32,7 +32,7 @@
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            //this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.SideBar.SuspendLayout();
@@ -45,7 +45,6 @@
             this.SideBar.Controls.Add(this.guna2Button5);
             this.SideBar.Controls.Add(this.guna2Button4);
             this.SideBar.Controls.Add(this.guna2Button3);
-            this.SideBar.Controls.Add(this.guna2Button2);
             this.SideBar.Controls.Add(this.guna2Button1);
             this.SideBar.Controls.Add(this.guna2CirclePictureBox1);
             this.SideBar.Dock = System.Windows.Forms.DockStyle.Left;
@@ -53,7 +52,6 @@
             this.SideBar.Name = "SideBar";
             this.SideBar.Size = new System.Drawing.Size(69, 569);
             this.SideBar.TabIndex = 41;
-            this.SideBar.Paint += new System.Windows.Forms.PaintEventHandler(this.SideBar_Paint_1);
             // 
             // guna2Button5
             // 
@@ -112,24 +110,6 @@
             this.guna2Button3.TabIndex = 22;
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
-            // guna2Button2
-            // 
-            this.guna2Button2.Animated = true;
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Image = global::LittleSouls.Properties.Resources.setting__1_;
-            this.guna2Button2.ImageSize = new System.Drawing.Size(28, 28);
-            this.guna2Button2.Location = new System.Drawing.Point(0, 734);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(69, 61);
-            this.guna2Button2.TabIndex = 21;
-            // 
             // guna2Button1
             // 
             this.guna2Button1.Animated = true;
@@ -185,7 +165,6 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
     }

@@ -86,10 +86,7 @@ namespace LittleSouls
         }
     
 
-        private void SideBar_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
 
         private void SideBar_Paint_1(object sender, PaintEventArgs e)
         {
