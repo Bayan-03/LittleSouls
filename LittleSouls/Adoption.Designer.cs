@@ -762,7 +762,7 @@
             // 
             this.navBarPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.navBarPanel1.Location = new System.Drawing.Point(0, 0);
-            this.navBarPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.navBarPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.navBarPanel1.Name = "navBarPanel1";
             this.navBarPanel1.Size = new System.Drawing.Size(68, 955);
             this.navBarPanel1.TabIndex = 60;

@@ -94,8 +94,7 @@ namespace LittleSouls
         int indexrow;
         private void Adoptbtn_Click(object sender, EventArgs e)
         {
-            try
-            {
+            
                 // الحصول على الصف المحدد من DataGridView
                 if (adopttable.CurrentRow != null)
                 {
@@ -137,11 +136,8 @@ namespace LittleSouls
                     MessageBox.Show("يرجى اختيار صف من الجدول أولاً.");
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("حدث خطأ أثناء التحديث: " + ex.Message);
-            }
-        }
+          
+        
 
         private void navBarPanel1_showHomeForm(object sender, EventArgs e)
         {

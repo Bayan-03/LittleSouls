@@ -97,7 +97,7 @@ namespace LittleSouls
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            var reportForm = new Mgr();
+            var reportForm = new RepotrDp();
             reportForm.WindowState = FormWindowState.Maximized;
             reportForm.FormClosed += (s, args) => this.Close();
             reportForm.Show();

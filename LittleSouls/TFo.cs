@@ -155,22 +155,21 @@ namespace LittleSouls
                 int invoiceNumber = invoice.invoicesNumber; // تأكد من استخدام الاسم الصحيح هنا
 
                 // إضافة تفاصيل العناصر المرتبطة بالفاتورة
-                foreach (DataGridViewRow row in dgvInvoiceItems.Rows)
-                {
-                    if (row.Cells[0].Value == null) continue; // تجاهل الصفوف الفارغة
+                
+                    
 
                     // إضافة عنصر إلى جدول invoiceItems
                     var invoiceItem = new invoiceItems
                     {
                         invoiceNumber = invoiceNumber, // استخدام الرقم الذي تم توليده
-                        itemCode = int.Parse(row.Cells[0].Value.ToString()), // كود العنصر
-                        quantity = int.Parse(row.Cells[2].Value.ToString()), // الكمية
-                        price = decimal.Parse(row.Cells[3].Value.ToString()) // السعر
+                        itemCode = int.Parse(txtItemCode.Text), // كود العنصر
+                        quantity = int.Parse(txtQuantity.Text), // الكمية
+                        //price = decimal.Parse(invoiceItem.price) // السعر
                     };
 
                     // إضافة بيانات العناصر المرتبطة بالفاتورة
                     context.invoiceItems.Add(invoiceItem);
-                }
+                
 
                 // حفظ التغييرات في قاعدة البيانات
                 context.SaveChanges();

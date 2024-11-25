@@ -48,6 +48,7 @@
             this.petBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.littleSoulsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.petBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.petBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.navBarPanel1 = new LittleSouls.NavBarPanel();
             ((System.ComponentModel.ISupportInitialize)(this.petBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.littleSoulsDataSet)).BeginInit();
@@ -59,6 +60,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.petBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.littleSoulsDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.petBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.petBindingSource5)).BeginInit();
             this.SuspendLayout();
             // 
             // petType
@@ -239,6 +241,11 @@
             this.petBindingSource3.DataMember = "pet";
             this.petBindingSource3.DataSource = this.littleSoulsDataSetBindingSource;
             // 
+            // petBindingSource5
+            // 
+            this.petBindingSource5.DataMember = "pet";
+            this.petBindingSource5.DataSource = this.littleSoulsDataSetBindingSource;
+            // 
             // navBarPanel1
             // 
             this.navBarPanel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -279,6 +286,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.petBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.littleSoulsDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.petBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.petBindingSource5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,5 +310,6 @@
         private System.Windows.Forms.BindingSource petBindingSource3;
         private System.Windows.Forms.Label label11;
         private NavBarPanel navBarPanel1;
+        private System.Windows.Forms.BindingSource petBindingSource5;
     }
 }
