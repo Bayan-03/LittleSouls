@@ -17,7 +17,7 @@ namespace LittleSouls
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public customer()
         {
-            this.pet = new HashSet<pet>();
+            this.pets = new HashSet<pet>();
         }
     
         public int customerId { get; set; }
@@ -33,6 +33,6 @@ namespace LittleSouls
         public string buildingNumber { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<pet> pet { get; set; }
+        public virtual ICollection<pet> pets { get; set; }
     }
 }

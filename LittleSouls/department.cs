@@ -17,13 +17,13 @@ namespace LittleSouls
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public department()
         {
-            this.employee = new HashSet<employee>();
+            this.employees = new HashSet<employee>();
         }
     
         public int departmentId { get; set; }
         public string departmentName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<employee> employee { get; set; }
+        public virtual ICollection<employee> employees { get; set; }
     }
 }

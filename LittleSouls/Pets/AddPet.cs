@@ -185,7 +185,7 @@ namespace LittleSouls
 
 
                 // إضافة الحيوان الجديد إلى قاعدة البيانات
-                littleSouls.pet.Add(NewPet);
+                littleSouls.pets.Add(NewPet);
                 littleSouls.SaveChanges();
                 MessageBox.Show("تمت إضافة الحيوان بنجاح!");
             }

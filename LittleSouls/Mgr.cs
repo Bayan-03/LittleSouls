@@ -87,12 +87,12 @@ namespace LittleSouls
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
 
-            var CotractsDpForm = new CotractsDp();
-            CotractsDpForm.WindowState = FormWindowState.Maximized;
-            CotractsDpForm.FormClosed += (s, args) => this.Close();
-            CotractsDpForm.Show();
+            //var CotractsDpForm = new CotractsDp();
+            //CotractsDpForm.WindowState = FormWindowState.Maximized;
+            //CotractsDpForm.FormClosed += (s, args) => this.Close();
+            //CotractsDpForm.Show();
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)

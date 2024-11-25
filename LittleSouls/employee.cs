@@ -17,10 +17,10 @@ namespace LittleSouls
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public employee()
         {
-            this.invoices = new HashSet<invoices>();
+            this.invoices = new HashSet<invoice>();
             this.employee1 = new HashSet<employee>();
-            this.medicalRecod = new HashSet<medicalRecod>();
-            this.pet = new HashSet<pet>();
+            this.medicalRecods = new HashSet<medicalRecod>();
+            this.pets = new HashSet<pet>();
         }
     
         public int employeeId { get; set; }
@@ -39,13 +39,13 @@ namespace LittleSouls
     
         public virtual department department { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<invoices> invoices { get; set; }
+        public virtual ICollection<invoice> invoices { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<employee> employee1 { get; set; }
         public virtual employee employee2 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<medicalRecod> medicalRecod { get; set; }
+        public virtual ICollection<medicalRecod> medicalRecods { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<pet> pet { get; set; }
+        public virtual ICollection<pet> pets { get; set; }
     }
 }

@@ -37,7 +37,7 @@ namespace LittleSouls
             try
             {
                 // جلب جميع البيانات من جدول الحيوانات باستخدام LINQ to Entities
-                var storageView = littleSouls.storage
+                var storageView = littleSouls.storages
                     .Select(p => new
                     {
                         p.shipmentNo,
@@ -56,7 +56,7 @@ namespace LittleSouls
                 dataGridViewStorage.DataSource =storageView;
 
                 // جلب أنواع الحيوانات الفريدة لعرضها في ComboBox
-                var StorgeCategorie = littleSouls.storage
+                var StorgeCategorie = littleSouls.storages
                     .Select(p => p.supplier)
                     .Distinct()
                     .ToList();
@@ -85,7 +85,7 @@ namespace LittleSouls
                 string selectedCategorie = ComboBoxStorgeCategories.SelectedItem?.ToString();
 
                 // استعلام قاعدة البيانات
-                var filteredStorageQuery = littleSouls.storage.AsQueryable();
+                var filteredStorageQuery = littleSouls.storages.AsQueryable();
 
                 // تطبيق الفلترة إذا لم يكن النوع "All"
                 if (!string.IsNullOrEmpty(selectedCategorie) && selectedCategorie!= "All")

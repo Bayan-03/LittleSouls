@@ -54,12 +54,12 @@ namespace LittleSouls
 
         private void DepButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            //this.Hide();
 
-            var DepartsDpForm = new DepartsDp();
-            DepartsDpForm.WindowState = FormWindowState.Maximized;
-            DepartsDpForm.FormClosed += (s, args) => this.Close();
-            DepartsDpForm.Show();
+            //var DepartsDpForm = new DepartsDp();
+            //DepartsDpForm.WindowState = FormWindowState.Maximized;
+            //DepartsDpForm.FormClosed += (s, args) => this.Close();
+            //DepartsDpForm.Show();
         }
 
         private void ProButton_Click(object sender, EventArgs e)

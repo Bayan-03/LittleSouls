@@ -81,7 +81,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(88, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1347, 42);
+            this.guna2Panel1.Size = new System.Drawing.Size(1305, 42);
             this.guna2Panel1.TabIndex = 33;
             // 
             // label11
@@ -162,7 +162,7 @@
             this.dgvInvoiceItems.Name = "dgvInvoiceItems";
             this.dgvInvoiceItems.RowHeadersWidth = 51;
             this.dgvInvoiceItems.RowTemplate.Height = 26;
-            this.dgvInvoiceItems.Size = new System.Drawing.Size(1117, 371);
+            this.dgvInvoiceItems.Size = new System.Drawing.Size(1087, 371);
             this.dgvInvoiceItems.TabIndex = 38;
             // 
             // invoiceItemsBindingSource1
@@ -189,7 +189,7 @@
             this.lblTotal.AutoSize = true;
             this.lblTotal.BackColor = System.Drawing.Color.Transparent;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Location = new System.Drawing.Point(239, 635);
+            this.lblTotal.Location = new System.Drawing.Point(182, 598);
             this.lblTotal.Name = "lblTotal";
             this.lblTotal.Size = new System.Drawing.Size(160, 32);
             this.lblTotal.TabIndex = 39;
@@ -210,7 +210,7 @@
             this.btnSaveInvoice.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnSaveInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnSaveInvoice.ForeColor = System.Drawing.Color.Black;
-            this.btnSaveInvoice.Location = new System.Drawing.Point(1152, 708);
+            this.btnSaveInvoice.Location = new System.Drawing.Point(1066, 598);
             this.btnSaveInvoice.Name = "btnSaveInvoice";
             this.btnSaveInvoice.Size = new System.Drawing.Size(209, 37);
             this.btnSaveInvoice.TabIndex = 40;
@@ -245,8 +245,9 @@
             // 
             this.navBarPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.navBarPanel1.Location = new System.Drawing.Point(0, 0);
+            this.navBarPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.navBarPanel1.Name = "navBarPanel1";
-            this.navBarPanel1.Size = new System.Drawing.Size(88, 830);
+            this.navBarPanel1.Size = new System.Drawing.Size(88, 725);
             this.navBarPanel1.TabIndex = 43;
             this.navBarPanel1.showHomeForm += new System.EventHandler(this.navBarPanel1_showHomeForm);
             this.navBarPanel1.showPetsForm += new System.EventHandler(this.navBarPanel1_showPetsForm);
@@ -258,7 +259,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LittleSouls.Properties.Resources.الخلفية_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1435, 830);
+            this.ClientSize = new System.Drawing.Size(1393, 725);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.navBarPanel1);
             this.Controls.Add(this.label3);

@@ -61,6 +61,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="invoice.cs">
+      <DependentUpon>LSDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="invoiceItem.cs">
+      <DependentUpon>LSDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="item.cs">
+      <DependentUpon>LSDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Pets\AddPet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,15 +126,6 @@
     </Compile>
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
-    </Compile>
-    <Compile Include="invoiceItems.cs">
-      <DependentUpon>LSDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="invoices.cs">
-      <DependentUpon>LSDB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="items.cs">
-      <DependentUpon>LSDB.tt</DependentUpon>
     </Compile>
     <Compile Include="littleSoulsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>

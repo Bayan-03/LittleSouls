@@ -12,23 +12,21 @@ namespace LittleSouls
     using System;
     using System.Collections.Generic;
     
-    public partial class items
+    public partial class invoice
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public items()
+        public invoice()
         {
-            this.invoiceItems = new HashSet<invoiceItems>();
-            this.storage = new HashSet<storage>();
+            this.invoiceItems = new HashSet<invoiceItem>();
         }
     
-        public int itemCode { get; set; }
-        public string itemName { get; set; }
-        public int quantity { get; set; }
-        public decimal sellPrice { get; set; }
+        public int invoicesNumber { get; set; }
+        public string invoiceIssueDate { get; set; }
+        public int employeeId { get; set; }
+        public Nullable<decimal> total { get; set; }
     
+        public virtual employee employee { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<invoiceItems> invoiceItems { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<storage> storage { get; set; }
+        public virtual ICollection<invoiceItem> invoiceItems { get; set; }
     }
 }

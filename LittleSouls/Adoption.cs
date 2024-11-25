@@ -102,7 +102,7 @@ namespace LittleSouls
                     int petID = int.Parse(adopttable.SelectedCells[0].Value.ToString());
 
                     // العثور على السجل المطابق في قاعدة البيانات
-                    pet selectedPet = littleSouls2.pet.FirstOrDefault(p => p.petId == petID);
+                    pet selectedPet = littleSouls2.pets.FirstOrDefault(p => p.petId == petID);
 
                     if (selectedPet != null)
                     {

@@ -25,14 +25,14 @@ namespace LittleSouls
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<customer> customer { get; set; }
-        public virtual DbSet<department> department { get; set; }
-        public virtual DbSet<employee> employee { get; set; }
-        public virtual DbSet<invoices> invoices { get; set; }
-        public virtual DbSet<items> items { get; set; }
-        public virtual DbSet<medicalRecod> medicalRecod { get; set; }
-        public virtual DbSet<pet> pet { get; set; }
-        public virtual DbSet<storage> storage { get; set; }
-        public virtual DbSet<invoiceItems> invoiceItems { get; set; }
+        public virtual DbSet<customer> customers { get; set; }
+        public virtual DbSet<department> departments { get; set; }
+        public virtual DbSet<employee> employees { get; set; }
+        public virtual DbSet<invoiceItem> invoiceItems { get; set; }
+        public virtual DbSet<invoice> invoices { get; set; }
+        public virtual DbSet<item> items { get; set; }
+        public virtual DbSet<medicalRecod> medicalRecods { get; set; }
+        public virtual DbSet<pet> pets { get; set; }
+        public virtual DbSet<storage> storages { get; set; }
     }
 }

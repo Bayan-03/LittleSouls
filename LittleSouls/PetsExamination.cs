@@ -104,7 +104,7 @@ namespace LittleSouls
                     vaccinations = vaccinations.Text,
                     vetetinarianId = int.Parse(veteinarianId.Text)
                 };
-                littleSouls.medicalRecod.Add(mr);
+                littleSouls.medicalRecods.Add(mr);
                 littleSouls.SaveChanges();
                 MessageBox.Show(".تمت إضافة السجل الطبي بنجاح!");
 

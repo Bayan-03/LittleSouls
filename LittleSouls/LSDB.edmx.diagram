@@ -5,27 +5,25 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="44eae84dd4234b12b69a8a92bb08db24" Name="Diagram1" ZoomLevel="66">
-        <EntityTypeShape EntityType="littleSoulsModel.customer" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
-        <EntityTypeShape EntityType="littleSoulsModel.department" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="littleSoulsModel.employee" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="littleSoulsModel.invoices" Width="1.5" PointX="5.25" PointY="5.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="littleSoulsModel.items" Width="1.5" PointX="5.25" PointY="13.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="littleSoulsModel.medicalRecod" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="littleSoulsModel.pet" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="littleSoulsModel.storage" Width="1.5" PointX="7.5" PointY="13.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="littleSoulsModel.invoiceItems" Width="1.5" PointX="7.5" PointY="5.625" IsExpanded="true" />
-        <AssociationConnector Association="littleSoulsModel.fk_petAdopter" ManuallyRouted="false" />
-        <AssociationConnector Association="littleSoulsModel.fk_employeeDepartment" ManuallyRouted="false" />
-        <AssociationConnector Association="littleSoulsModel.fk_casheer" ManuallyRouted="false" />
-        <AssociationConnector Association="littleSoulsModel.fk_departmentManager" ManuallyRouted="false" />
-        <AssociationConnector Association="littleSoulsModel.fk_employeeMedical" ManuallyRouted="false" />
-        <AssociationConnector Association="littleSoulsModel.fk_petSponsor" ManuallyRouted="false" />
-        <AssociationConnector Association="littleSoulsModel.fk_invoiceNumber" ManuallyRouted="false" />
-        <AssociationConnector Association="littleSoulsModel.fk_invoiceItems" ManuallyRouted="false" />
-        <AssociationConnector Association="littleSoulsModel.fk_items" ManuallyRouted="false" />
-        <AssociationConnector Association="littleSoulsModel.fk_petMedical" ManuallyRouted="false" />
-        <AssociationConnector Association="littleSoulsModel.FK_pet_pet" />
-        <AssociationConnector Association="littleSoulsModel.FK_pet_pet1" />
+        <EntityTypeShape EntityType="littleSoulsModel.customer" Width="1.5" PointX="6" PointY="1.125" />
+        <EntityTypeShape EntityType="littleSoulsModel.department" Width="1.5" PointX="0.75" PointY="6" />
+        <EntityTypeShape EntityType="littleSoulsModel.employee" Width="1.5" PointX="3" PointY="4.5" />
+        <EntityTypeShape EntityType="littleSoulsModel.invoiceItem" Width="1.5" PointX="7.5" PointY="9.375" />
+        <EntityTypeShape EntityType="littleSoulsModel.invoice" Width="1.5" PointX="5.25" PointY="9.375" />
+        <EntityTypeShape EntityType="littleSoulsModel.item" Width="1.5" PointX="5.25" PointY="12.375" />
+        <EntityTypeShape EntityType="littleSoulsModel.medicalRecod" Width="1.5" PointX="5.25" PointY="5.375" />
+        <EntityTypeShape EntityType="littleSoulsModel.pet" Width="1.5" PointX="8.25" PointY="3.75" />
+        <EntityTypeShape EntityType="littleSoulsModel.storage" Width="1.5" PointX="7.5" PointY="13.125" />
+        <AssociationConnector Association="littleSoulsModel.fk_petAdopter" />
+        <AssociationConnector Association="littleSoulsModel.fk_employeeDepartment" />
+        <AssociationConnector Association="littleSoulsModel.fk_casheer" />
+        <AssociationConnector Association="littleSoulsModel.fk_departmentManager" />
+        <AssociationConnector Association="littleSoulsModel.fk_employeeMedical" />
+        <AssociationConnector Association="littleSoulsModel.fk_petSponsor" />
+        <AssociationConnector Association="littleSoulsModel.fk_invoiceItems" />
+        <AssociationConnector Association="littleSoulsModel.fk_invoiceNumber" />
+        <AssociationConnector Association="littleSoulsModel.fk_items" />
+        <AssociationConnector Association="littleSoulsModel.fk_petMedical" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

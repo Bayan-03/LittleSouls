@@ -140,7 +140,7 @@ namespace LittleSouls
             using (var context = new littleSoulsEntities())
             {
                 // إنشاء الفاتورة
-                var invoice = new invoices
+                var invoice = new invoice
                 {
                     invoiceIssueDate = DateTime.Now.ToString("yyyy-MM-dd"),
                     employeeId = 1, // معرّف الموظف المناسب
@@ -159,12 +159,13 @@ namespace LittleSouls
                     
 
                     // إضافة عنصر إلى جدول invoiceItems
-                    var invoiceItem = new invoiceItems
+                    var invoiceItem = new invoiceItem
                     {
                         invoiceNumber = invoiceNumber, // استخدام الرقم الذي تم توليده
                         itemCode = int.Parse(txtItemCode.Text), // كود العنصر
                         quantity = int.Parse(txtQuantity.Text), // الكمية
-                        //price = decimal.Parse(invoiceItem.price) // السعر
+                        /*price = decimal.Parse(price)*/ // السعر
+
                     };
 
                     // إضافة بيانات العناصر المرتبطة بالفاتورة

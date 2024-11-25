@@ -46,14 +46,11 @@
           <Property Name="employeeStatus" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="employeeManager" Type="int" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'littleSouls.dbo.invoiceItems' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="invoiceItems">
           <Key>
-            <PropertyRef Name="itemCode" />
-            <PropertyRef Name="invoiceNumber" />
-            <PropertyRef Name="quantity" />
+            <PropertyRef Name="ID" />
           </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="itemCode" Type="int" Nullable="false" />
           <Property Name="invoiceNumber" Type="int" Nullable="false" />
           <Property Name="quantity" Type="int" Nullable="false" />
@@ -261,19 +258,12 @@ warning 6002: The table/view 'littleSouls.dbo.invoiceItems' does not have a prim
           <EntitySet Name="customer" EntityType="Self.customer" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="department" EntityType="Self.department" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="employee" EntityType="Self.employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="invoiceItems" EntityType="Self.invoiceItems" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="invoices" EntityType="Self.invoices" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="items" EntityType="Self.items" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="medicalRecod" EntityType="Self.medicalRecod" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="pet" EntityType="Self.pet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="storage" EntityType="Self.storage" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="invoiceItems" EntityType="Self.invoiceItems" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [invoiceItems].[itemCode] AS [itemCode], 
-    [invoiceItems].[invoiceNumber] AS [invoiceNumber], 
-    [invoiceItems].[quantity] AS [quantity], 
-    [invoiceItems].[price] AS [price]
-    FROM [dbo].[invoiceItems] AS [invoiceItems]</DefiningQuery>
-          </EntitySet>
           <AssociationSet Name="fk_casheer" Association="Self.fk_casheer">
             <End Role="employee" EntitySet="employee" />
             <End Role="invoices" EntitySet="invoices" />
@@ -319,76 +309,139 @@ warning 6002: The table/view 'littleSouls.dbo.invoiceItems' does not have a prim
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="littleSoulsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="littleSoulsEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="customers" EntityType="littleSoulsModel.customer" />
+          <EntitySet Name="departments" EntityType="littleSoulsModel.department" />
+          <EntitySet Name="employees" EntityType="littleSoulsModel.employee" />
+          <EntitySet Name="invoiceItems" EntityType="littleSoulsModel.invoiceItem" />
+          <EntitySet Name="invoices" EntityType="littleSoulsModel.invoice" />
+          <EntitySet Name="items" EntityType="littleSoulsModel.item" />
+          <EntitySet Name="medicalRecods" EntityType="littleSoulsModel.medicalRecod" />
+          <EntitySet Name="pets" EntityType="littleSoulsModel.pet" />
+          <EntitySet Name="storages" EntityType="littleSoulsModel.storage" />
+          <AssociationSet Name="fk_petAdopter" Association="littleSoulsModel.fk_petAdopter">
+            <End Role="customer" EntitySet="customers" />
+            <End Role="pet" EntitySet="pets" />
+          </AssociationSet>
+          <AssociationSet Name="fk_employeeDepartment" Association="littleSoulsModel.fk_employeeDepartment">
+            <End Role="department" EntitySet="departments" />
+            <End Role="employee" EntitySet="employees" />
+          </AssociationSet>
+          <AssociationSet Name="fk_casheer" Association="littleSoulsModel.fk_casheer">
+            <End Role="employee" EntitySet="employees" />
+            <End Role="invoice" EntitySet="invoices" />
+          </AssociationSet>
+          <AssociationSet Name="fk_departmentManager" Association="littleSoulsModel.fk_departmentManager">
+            <End Role="employee" EntitySet="employees" />
+            <End Role="employee1" EntitySet="employees" />
+          </AssociationSet>
+          <AssociationSet Name="fk_employeeMedical" Association="littleSoulsModel.fk_employeeMedical">
+            <End Role="employee" EntitySet="employees" />
+            <End Role="medicalRecod" EntitySet="medicalRecods" />
+          </AssociationSet>
+          <AssociationSet Name="fk_petSponsor" Association="littleSoulsModel.fk_petSponsor">
+            <End Role="employee" EntitySet="employees" />
+            <End Role="pet" EntitySet="pets" />
+          </AssociationSet>
+          <AssociationSet Name="fk_invoiceItems" Association="littleSoulsModel.fk_invoiceItems">
+            <End Role="item" EntitySet="items" />
+            <End Role="invoiceItem" EntitySet="invoiceItems" />
+          </AssociationSet>
+          <AssociationSet Name="fk_invoiceNumber" Association="littleSoulsModel.fk_invoiceNumber">
+            <End Role="invoice" EntitySet="invoices" />
+            <End Role="invoiceItem" EntitySet="invoiceItems" />
+          </AssociationSet>
+          <AssociationSet Name="fk_items" Association="littleSoulsModel.fk_items">
+            <End Role="item" EntitySet="items" />
+            <End Role="storage" EntitySet="storages" />
+          </AssociationSet>
+          <AssociationSet Name="fk_petMedical" Association="littleSoulsModel.fk_petMedical">
+            <End Role="pet" EntitySet="pets" />
+            <End Role="medicalRecod" EntitySet="medicalRecods" />
+          </AssociationSet>
+        </EntityContainer>
         <EntityType Name="customer">
           <Key>
             <PropertyRef Name="customerId" />
           </Key>
           <Property Name="customerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="firstName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="lastname" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="sex" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="firstName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="lastname" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="sex" Type="String" Nullable="false" MaxLength="7" FixedLength="false" Unicode="false" />
           <Property Name="informationAllergy" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
           <Property Name="phoneNumber" Type="Int32" Nullable="false" />
           <Property Name="email" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="country" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="city" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="country" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="city" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="zipCode" Type="Int32" Nullable="false" />
-          <Property Name="buildingNumber" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="pet" Relationship="Self.fk_petAdopter" FromRole="customer" ToRole="pet" />
+          <Property Name="buildingNumber" Type="String" Nullable="false" MaxLength="6" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="pets" Relationship="littleSoulsModel.fk_petAdopter" FromRole="customer" ToRole="pet" />
         </EntityType>
         <EntityType Name="department">
           <Key>
             <PropertyRef Name="departmentId" />
           </Key>
           <Property Name="departmentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="departmentName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="employee" Relationship="Self.fk_employeeDepartment" FromRole="department" ToRole="employee" />
+          <Property Name="departmentName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="employees" Relationship="littleSoulsModel.fk_employeeDepartment" FromRole="department" ToRole="employee" />
         </EntityType>
         <EntityType Name="employee">
           <Key>
             <PropertyRef Name="employeeId" />
           </Key>
           <Property Name="employeeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="firstName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="lastName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="firstName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="lastName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="yearOfBirth" Type="Int32" Nullable="false" />
           <Property Name="departmentId" Type="Int32" Nullable="false" />
-          <Property Name="jobTitle" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="jobTitle" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="phoneNumber" Type="Int32" Nullable="false" />
-          <Property Name="email" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="salary" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
-          <Property Name="userName" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="Pass" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="employeeStatus" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="salary" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="userName" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="Pass" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="employeeStatus" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
           <Property Name="employeeManager" Type="Int32" />
-          <NavigationProperty Name="department" Relationship="Self.fk_employeeDepartment" FromRole="employee" ToRole="department" />
-          <NavigationProperty Name="invoices" Relationship="Self.fk_casheer" FromRole="employee" ToRole="invoices" />
-          <NavigationProperty Name="employee1" Relationship="Self.fk_departmentManager" FromRole="employee" ToRole="employee1" />
-          <NavigationProperty Name="employee2" Relationship="Self.fk_departmentManager" FromRole="employee1" ToRole="employee" />
-          <NavigationProperty Name="medicalRecod" Relationship="Self.fk_employeeMedical" FromRole="employee" ToRole="medicalRecod" />
-          <NavigationProperty Name="pet" Relationship="Self.fk_petSponsor" FromRole="employee" ToRole="pet" />
+          <NavigationProperty Name="department" Relationship="littleSoulsModel.fk_employeeDepartment" FromRole="employee" ToRole="department" />
+          <NavigationProperty Name="invoices" Relationship="littleSoulsModel.fk_casheer" FromRole="employee" ToRole="invoice" />
+          <NavigationProperty Name="employee1" Relationship="littleSoulsModel.fk_departmentManager" FromRole="employee" ToRole="employee1" />
+          <NavigationProperty Name="employee2" Relationship="littleSoulsModel.fk_departmentManager" FromRole="employee1" ToRole="employee" />
+          <NavigationProperty Name="medicalRecods" Relationship="littleSoulsModel.fk_employeeMedical" FromRole="employee" ToRole="medicalRecod" />
+          <NavigationProperty Name="pets" Relationship="littleSoulsModel.fk_petSponsor" FromRole="employee" ToRole="pet" />
         </EntityType>
-        <EntityType Name="invoices">
+        <EntityType Name="invoiceItem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="itemCode" Type="Int32" Nullable="false" />
+          <Property Name="invoiceNumber" Type="Int32" Nullable="false" />
+          <Property Name="quantity" Type="Int32" Nullable="false" />
+          <Property Name="price" Type="Decimal" Precision="18" Scale="0" />
+          <NavigationProperty Name="item" Relationship="littleSoulsModel.fk_invoiceItems" FromRole="invoiceItem" ToRole="item" />
+          <NavigationProperty Name="invoice" Relationship="littleSoulsModel.fk_invoiceNumber" FromRole="invoiceItem" ToRole="invoice" />
+        </EntityType>
+        <EntityType Name="invoice">
           <Key>
             <PropertyRef Name="invoicesNumber" />
           </Key>
           <Property Name="invoicesNumber" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="invoiceIssueDate" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="invoiceIssueDate" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
           <Property Name="employeeId" Type="Int32" Nullable="false" />
           <Property Name="total" Type="Decimal" Precision="18" Scale="0" />
-          <NavigationProperty Name="employee" Relationship="Self.fk_casheer" FromRole="invoices" ToRole="employee" />
-          <NavigationProperty Name="invoiceItems" Relationship="Self.fk_invoiceNumber" FromRole="invoices" ToRole="invoiceItems" />
+          <NavigationProperty Name="employee" Relationship="littleSoulsModel.fk_casheer" FromRole="invoice" ToRole="employee" />
+          <NavigationProperty Name="invoiceItems" Relationship="littleSoulsModel.fk_invoiceNumber" FromRole="invoice" ToRole="invoiceItem" />
         </EntityType>
-        <EntityType Name="items">
+        <EntityType Name="item">
           <Key>
             <PropertyRef Name="itemCode" />
           </Key>
           <Property Name="itemCode" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="itemName" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="itemName" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
           <Property Name="quantity" Type="Int32" Nullable="false" />
-          <Property Name="sellPrice" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
-          <NavigationProperty Name="invoiceItems" Relationship="Self.fk_invoiceItems" FromRole="items" ToRole="invoiceItems" />
-          <NavigationProperty Name="storage" Relationship="Self.fk_items" FromRole="items" ToRole="storage" />
+          <Property Name="sellPrice" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <NavigationProperty Name="invoiceItems" Relationship="littleSoulsModel.fk_invoiceItems" FromRole="item" ToRole="invoiceItem" />
+          <NavigationProperty Name="storages" Relationship="littleSoulsModel.fk_items" FromRole="item" ToRole="storage" />
         </EntityType>
         <EntityType Name="medicalRecod">
           <Key>
@@ -396,14 +449,14 @@ warning 6002: The table/view 'littleSouls.dbo.invoiceItems' does not have a prim
           </Key>
           <Property Name="recordId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="petId" Type="Int32" />
-          <Property Name="dateOfExamination" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dateOfExamination" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
           <Property Name="treatmentsProvided" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-          <Property Name="diagnosis" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="diagnosis" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
           <Property Name="surgeryInformation" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
           <Property Name="vaccinations" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
           <Property Name="vetetinarianId" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="employee" Relationship="Self.fk_employeeMedical" FromRole="medicalRecod" ToRole="employee" />
-          <NavigationProperty Name="pet" Relationship="Self.fk_petMedical" FromRole="medicalRecod" ToRole="pet" />
+          <NavigationProperty Name="employee" Relationship="littleSoulsModel.fk_employeeMedical" FromRole="medicalRecod" ToRole="employee" />
+          <NavigationProperty Name="pet" Relationship="littleSoulsModel.fk_petMedical" FromRole="medicalRecod" ToRole="pet" />
         </EntityType>
         <EntityType Name="pet">
           <Key>
@@ -411,24 +464,20 @@ warning 6002: The table/view 'littleSouls.dbo.invoiceItems' does not have a prim
           </Key>
           <Property Name="petId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="yearOfBirth" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
-          <Property Name="petSex" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="petBreed" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="petSex" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="petBreed" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
           <Property Name="petSpecies" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-          <Property Name="dateOfArraival" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="petColor" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="healthStatus" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="petState" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="dateOfArraival" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="petColor" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="healthStatus" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="petState" Type="String" Nullable="false" MaxLength="7" FixedLength="false" Unicode="false" />
           <Property Name="petImage" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="petSetter" Type="Int32" Nullable="false" />
           <Property Name="adopter" Type="Int32" />
           <Property Name="adoptDate" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="customer" Relationship="Self.fk_petAdopter" FromRole="pet" ToRole="customer" />
-          <NavigationProperty Name="employee" Relationship="Self.fk_petSponsor" FromRole="pet" ToRole="employee" />
-          <NavigationProperty Name="medicalRecod" Relationship="Self.fk_petMedical" FromRole="pet" ToRole="medicalRecod" />
-          <NavigationProperty Name="pet1" Relationship="littleSoulsModel.FK_pet_pet" FromRole="pet" ToRole="pet1" />
-          <NavigationProperty Name="pet2" Relationship="littleSoulsModel.FK_pet_pet" FromRole="pet1" ToRole="pet" />
-          <NavigationProperty Name="pet11" Relationship="littleSoulsModel.FK_pet_pet1" FromRole="pet" ToRole="pet1" />
-          <NavigationProperty Name="pet3" Relationship="littleSoulsModel.FK_pet_pet1" FromRole="pet1" ToRole="pet" />
+          <NavigationProperty Name="customer" Relationship="littleSoulsModel.fk_petAdopter" FromRole="pet" ToRole="customer" />
+          <NavigationProperty Name="employee" Relationship="littleSoulsModel.fk_petSponsor" FromRole="pet" ToRole="employee" />
+          <NavigationProperty Name="medicalRecods" Relationship="littleSoulsModel.fk_petMedical" FromRole="pet" ToRole="medicalRecod" />
         </EntityType>
         <EntityType Name="storage">
           <Key>
@@ -437,31 +486,18 @@ warning 6002: The table/view 'littleSouls.dbo.invoiceItems' does not have a prim
           <Property Name="shipmentNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="itemCode" Type="Int32" Nullable="false" />
           <Property Name="quantity" Type="Int32" Nullable="false" />
-          <Property Name="price" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
-          <Property Name="itemCondition" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="receivedDate" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="expirationDate" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="supplier" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="items" Relationship="Self.fk_items" FromRole="storage" ToRole="items" />
-        </EntityType>
-        <EntityType Name="invoiceItems">
-          <Key>
-            <PropertyRef Name="itemCode" />
-            <PropertyRef Name="invoiceNumber" />
-            <PropertyRef Name="quantity" />
-          </Key>
-          <Property Name="itemCode" Type="Int32" Nullable="false" />
-          <Property Name="invoiceNumber" Type="Int32" Nullable="false" />
-          <Property Name="quantity" Type="Int32" Nullable="false" />
-          <Property Name="price" Type="Decimal" Precision="18" Scale="0" />
-          <NavigationProperty Name="invoices" Relationship="Self.fk_invoiceNumber" FromRole="invoiceItems" ToRole="invoices" />
-          <NavigationProperty Name="items" Relationship="Self.fk_invoiceItems" FromRole="invoiceItems" ToRole="items" />
+          <Property Name="price" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+          <Property Name="itemCondition" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="receivedDate" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Name="expirationDate" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Name="supplier" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="item" Relationship="littleSoulsModel.fk_items" FromRole="storage" ToRole="item" />
         </EntityType>
         <Association Name="fk_petAdopter">
-          <End Role="customer" Type="Self.customer" Multiplicity="0..1">
+          <End Type="littleSoulsModel.customer" Role="customer" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="pet" Type="Self.pet" Multiplicity="*" />
+          <End Type="littleSoulsModel.pet" Role="pet" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="customer">
               <PropertyRef Name="customerId" />
@@ -472,10 +508,10 @@ warning 6002: The table/view 'littleSouls.dbo.invoiceItems' does not have a prim
           </ReferentialConstraint>
         </Association>
         <Association Name="fk_employeeDepartment">
-          <End Role="department" Type="Self.department" Multiplicity="1">
+          <End Type="littleSoulsModel.department" Role="department" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="employee" Type="Self.employee" Multiplicity="*" />
+          <End Type="littleSoulsModel.employee" Role="employee" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="department">
               <PropertyRef Name="departmentId" />
@@ -486,22 +522,22 @@ warning 6002: The table/view 'littleSouls.dbo.invoiceItems' does not have a prim
           </ReferentialConstraint>
         </Association>
         <Association Name="fk_casheer">
-          <End Role="employee" Type="Self.employee" Multiplicity="1">
+          <End Type="littleSoulsModel.employee" Role="employee" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="invoices" Type="Self.invoices" Multiplicity="*" />
+          <End Type="littleSoulsModel.invoice" Role="invoice" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="employee">
               <PropertyRef Name="employeeId" />
             </Principal>
-            <Dependent Role="invoices">
+            <Dependent Role="invoice">
               <PropertyRef Name="employeeId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
         <Association Name="fk_departmentManager">
-          <End Role="employee" Type="Self.employee" Multiplicity="0..1" />
-          <End Role="employee1" Type="Self.employee" Multiplicity="*" />
+          <End Type="littleSoulsModel.employee" Role="employee" Multiplicity="0..1" />
+          <End Type="littleSoulsModel.employee" Role="employee1" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="employee">
               <PropertyRef Name="employeeId" />
@@ -512,8 +548,8 @@ warning 6002: The table/view 'littleSouls.dbo.invoiceItems' does not have a prim
           </ReferentialConstraint>
         </Association>
         <Association Name="fk_employeeMedical">
-          <End Role="employee" Type="Self.employee" Multiplicity="1" />
-          <End Role="medicalRecod" Type="Self.medicalRecod" Multiplicity="*" />
+          <End Type="littleSoulsModel.employee" Role="employee" Multiplicity="1" />
+          <End Type="littleSoulsModel.medicalRecod" Role="medicalRecod" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="employee">
               <PropertyRef Name="employeeId" />
@@ -524,10 +560,10 @@ warning 6002: The table/view 'littleSouls.dbo.invoiceItems' does not have a prim
           </ReferentialConstraint>
         </Association>
         <Association Name="fk_petSponsor">
-          <End Role="employee" Type="Self.employee" Multiplicity="1">
+          <End Type="littleSoulsModel.employee" Role="employee" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="pet" Type="Self.pet" Multiplicity="*" />
+          <End Type="littleSoulsModel.pet" Role="pet" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="employee">
               <PropertyRef Name="employeeId" />
@@ -537,41 +573,41 @@ warning 6002: The table/view 'littleSouls.dbo.invoiceItems' does not have a prim
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_invoiceNumber">
-          <End Role="invoices" Type="Self.invoices" Multiplicity="1">
+        <Association Name="fk_invoiceItems">
+          <End Type="littleSoulsModel.item" Role="item" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="invoiceItems" Type="Self.invoiceItems" Multiplicity="*" />
+          <End Type="littleSoulsModel.invoiceItem" Role="invoiceItem" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="invoices">
+            <Principal Role="item">
+              <PropertyRef Name="itemCode" />
+            </Principal>
+            <Dependent Role="invoiceItem">
+              <PropertyRef Name="itemCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_invoiceNumber">
+          <End Type="littleSoulsModel.invoice" Role="invoice" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Type="littleSoulsModel.invoiceItem" Role="invoiceItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="invoice">
               <PropertyRef Name="invoicesNumber" />
             </Principal>
-            <Dependent Role="invoiceItems">
+            <Dependent Role="invoiceItem">
               <PropertyRef Name="invoiceNumber" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_invoiceItems">
-          <End Role="items" Type="Self.items" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="invoiceItems" Type="Self.invoiceItems" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="items">
-              <PropertyRef Name="itemCode" />
-            </Principal>
-            <Dependent Role="invoiceItems">
-              <PropertyRef Name="itemCode" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="fk_items">
-          <End Role="items" Type="Self.items" Multiplicity="1">
+          <End Type="littleSoulsModel.item" Role="item" Multiplicity="1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="storage" Type="Self.storage" Multiplicity="*" />
+          <End Type="littleSoulsModel.storage" Role="storage" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="items">
+            <Principal Role="item">
               <PropertyRef Name="itemCode" />
             </Principal>
             <Dependent Role="storage">
@@ -580,10 +616,10 @@ warning 6002: The table/view 'littleSouls.dbo.invoiceItems' does not have a prim
           </ReferentialConstraint>
         </Association>
         <Association Name="fk_petMedical">
-          <End Role="pet" Type="Self.pet" Multiplicity="0..1">
+          <End Type="littleSoulsModel.pet" Role="pet" Multiplicity="0..1">
             <OnDelete Action="Cascade" />
           </End>
-          <End Role="medicalRecod" Type="Self.medicalRecod" Multiplicity="*" />
+          <End Type="littleSoulsModel.medicalRecod" Role="medicalRecod" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="pet">
               <PropertyRef Name="petId" />
@@ -593,213 +629,131 @@ warning 6002: The table/view 'littleSouls.dbo.invoiceItems' does not have a prim
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="littleSoulsEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="customer" EntityType="Self.customer" />
-          <EntitySet Name="department" EntityType="Self.department" />
-          <EntitySet Name="employee" EntityType="Self.employee" />
-          <EntitySet Name="invoices" EntityType="Self.invoices" />
-          <EntitySet Name="items" EntityType="Self.items" />
-          <EntitySet Name="medicalRecod" EntityType="Self.medicalRecod" />
-          <EntitySet Name="pet" EntityType="Self.pet" />
-          <EntitySet Name="storage" EntityType="Self.storage" />
-          <EntitySet Name="invoiceItems" EntityType="Self.invoiceItems" />
-          <AssociationSet Name="fk_petAdopter" Association="Self.fk_petAdopter">
-            <End Role="customer" EntitySet="customer" />
-            <End Role="pet" EntitySet="pet" />
-          </AssociationSet>
-          <AssociationSet Name="fk_employeeDepartment" Association="Self.fk_employeeDepartment">
-            <End Role="department" EntitySet="department" />
-            <End Role="employee" EntitySet="employee" />
-          </AssociationSet>
-          <AssociationSet Name="fk_casheer" Association="Self.fk_casheer">
-            <End Role="employee" EntitySet="employee" />
-            <End Role="invoices" EntitySet="invoices" />
-          </AssociationSet>
-          <AssociationSet Name="fk_departmentManager" Association="Self.fk_departmentManager">
-            <End Role="employee" EntitySet="employee" />
-            <End Role="employee1" EntitySet="employee" />
-          </AssociationSet>
-          <AssociationSet Name="fk_employeeMedical" Association="Self.fk_employeeMedical">
-            <End Role="employee" EntitySet="employee" />
-            <End Role="medicalRecod" EntitySet="medicalRecod" />
-          </AssociationSet>
-          <AssociationSet Name="fk_petSponsor" Association="Self.fk_petSponsor">
-            <End Role="employee" EntitySet="employee" />
-            <End Role="pet" EntitySet="pet" />
-          </AssociationSet>
-          <AssociationSet Name="fk_invoiceNumber" Association="Self.fk_invoiceNumber">
-            <End Role="invoices" EntitySet="invoices" />
-            <End Role="invoiceItems" EntitySet="invoiceItems" />
-          </AssociationSet>
-          <AssociationSet Name="fk_invoiceItems" Association="Self.fk_invoiceItems">
-            <End Role="items" EntitySet="items" />
-            <End Role="invoiceItems" EntitySet="invoiceItems" />
-          </AssociationSet>
-          <AssociationSet Name="fk_items" Association="Self.fk_items">
-            <End Role="items" EntitySet="items" />
-            <End Role="storage" EntitySet="storage" />
-          </AssociationSet>
-          <AssociationSet Name="fk_petMedical" Association="Self.fk_petMedical">
-            <End Role="pet" EntitySet="pet" />
-            <End Role="medicalRecod" EntitySet="medicalRecod" />
-          </AssociationSet>
-          <AssociationSet Name="FK_pet_pet" Association="littleSoulsModel.FK_pet_pet">
-            <End Role="pet" EntitySet="pet" />
-            <End Role="pet1" EntitySet="pet" />
-          </AssociationSet>
-          <AssociationSet Name="FK_pet_pet1" Association="littleSoulsModel.FK_pet_pet1">
-            <End Role="pet" EntitySet="pet" />
-            <End Role="pet1" EntitySet="pet" />
-          </AssociationSet>
-        </EntityContainer>
-        <Association Name="FK_pet_pet">
-          <End Type="littleSoulsModel.pet" Role="pet" Multiplicity="1" />
-          <End Type="littleSoulsModel.pet" Role="pet1" Multiplicity="0..1" />
-          <ReferentialConstraint>
-            <Principal Role="pet">
-              <PropertyRef Name="petId" />
-            </Principal>
-            <Dependent Role="pet1">
-              <PropertyRef Name="petId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_pet_pet1">
-          <End Type="littleSoulsModel.pet" Role="pet" Multiplicity="1" />
-          <End Type="littleSoulsModel.pet" Role="pet1" Multiplicity="0..1" />
-          <ReferentialConstraint>
-            <Principal Role="pet">
-              <PropertyRef Name="petId" />
-            </Principal>
-            <Dependent Role="pet1">
-              <PropertyRef Name="petId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-      </Schema>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="littleSoulsModelStoreContainer" CdmEntityContainer="littleSoulsEntities">
-          <EntitySetMapping Name="customer">
+          <EntitySetMapping Name="customers">
             <EntityTypeMapping TypeName="littleSoulsModel.customer">
               <MappingFragment StoreEntitySet="customer">
-                <ScalarProperty Name="customerId" ColumnName="customerId" />
-                <ScalarProperty Name="firstName" ColumnName="firstName" />
-                <ScalarProperty Name="lastname" ColumnName="lastname" />
-                <ScalarProperty Name="sex" ColumnName="sex" />
-                <ScalarProperty Name="informationAllergy" ColumnName="informationAllergy" />
-                <ScalarProperty Name="phoneNumber" ColumnName="phoneNumber" />
-                <ScalarProperty Name="email" ColumnName="email" />
-                <ScalarProperty Name="country" ColumnName="country" />
-                <ScalarProperty Name="city" ColumnName="city" />
-                <ScalarProperty Name="zipCode" ColumnName="zipCode" />
                 <ScalarProperty Name="buildingNumber" ColumnName="buildingNumber" />
+                <ScalarProperty Name="zipCode" ColumnName="zipCode" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="country" ColumnName="country" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="phoneNumber" ColumnName="phoneNumber" />
+                <ScalarProperty Name="informationAllergy" ColumnName="informationAllergy" />
+                <ScalarProperty Name="sex" ColumnName="sex" />
+                <ScalarProperty Name="lastname" ColumnName="lastname" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+                <ScalarProperty Name="customerId" ColumnName="customerId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="department">
+          <EntitySetMapping Name="departments">
             <EntityTypeMapping TypeName="littleSoulsModel.department">
               <MappingFragment StoreEntitySet="department">
-                <ScalarProperty Name="departmentId" ColumnName="departmentId" />
                 <ScalarProperty Name="departmentName" ColumnName="departmentName" />
+                <ScalarProperty Name="departmentId" ColumnName="departmentId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="employee">
+          <EntitySetMapping Name="employees">
             <EntityTypeMapping TypeName="littleSoulsModel.employee">
               <MappingFragment StoreEntitySet="employee">
-                <ScalarProperty Name="employeeId" ColumnName="employeeId" />
-                <ScalarProperty Name="firstName" ColumnName="firstName" />
-                <ScalarProperty Name="lastName" ColumnName="lastName" />
-                <ScalarProperty Name="yearOfBirth" ColumnName="yearOfBirth" />
-                <ScalarProperty Name="departmentId" ColumnName="departmentId" />
-                <ScalarProperty Name="jobTitle" ColumnName="jobTitle" />
-                <ScalarProperty Name="phoneNumber" ColumnName="phoneNumber" />
-                <ScalarProperty Name="email" ColumnName="email" />
-                <ScalarProperty Name="salary" ColumnName="salary" />
-                <ScalarProperty Name="userName" ColumnName="userName" />
-                <ScalarProperty Name="Pass" ColumnName="Pass" />
-                <ScalarProperty Name="employeeStatus" ColumnName="employeeStatus" />
                 <ScalarProperty Name="employeeManager" ColumnName="employeeManager" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="invoices">
-            <EntityTypeMapping TypeName="littleSoulsModel.invoices">
-              <MappingFragment StoreEntitySet="invoices">
-                <ScalarProperty Name="invoicesNumber" ColumnName="invoicesNumber" />
-                <ScalarProperty Name="invoiceIssueDate" ColumnName="invoiceIssueDate" />
-                <ScalarProperty Name="employeeId" ColumnName="employeeId" />
-                <ScalarProperty Name="total" ColumnName="total" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="items">
-            <EntityTypeMapping TypeName="littleSoulsModel.items">
-              <MappingFragment StoreEntitySet="items">
-                <ScalarProperty Name="itemCode" ColumnName="itemCode" />
-                <ScalarProperty Name="itemName" ColumnName="itemName" />
-                <ScalarProperty Name="quantity" ColumnName="quantity" />
-                <ScalarProperty Name="sellPrice" ColumnName="sellPrice" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="medicalRecod">
-            <EntityTypeMapping TypeName="littleSoulsModel.medicalRecod">
-              <MappingFragment StoreEntitySet="medicalRecod">
-                <ScalarProperty Name="recordId" ColumnName="recordId" />
-                <ScalarProperty Name="petId" ColumnName="petId" />
-                <ScalarProperty Name="dateOfExamination" ColumnName="dateOfExamination" />
-                <ScalarProperty Name="treatmentsProvided" ColumnName="treatmentsProvided" />
-                <ScalarProperty Name="diagnosis" ColumnName="diagnosis" />
-                <ScalarProperty Name="surgeryInformation" ColumnName="surgeryInformation" />
-                <ScalarProperty Name="vaccinations" ColumnName="vaccinations" />
-                <ScalarProperty Name="vetetinarianId" ColumnName="vetetinarianId" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="pet">
-            <EntityTypeMapping TypeName="littleSoulsModel.pet">
-              <MappingFragment StoreEntitySet="pet">
-                <ScalarProperty Name="petId" ColumnName="petId" />
+                <ScalarProperty Name="employeeStatus" ColumnName="employeeStatus" />
+                <ScalarProperty Name="Pass" ColumnName="Pass" />
+                <ScalarProperty Name="userName" ColumnName="userName" />
+                <ScalarProperty Name="salary" ColumnName="salary" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="phoneNumber" ColumnName="phoneNumber" />
+                <ScalarProperty Name="jobTitle" ColumnName="jobTitle" />
+                <ScalarProperty Name="departmentId" ColumnName="departmentId" />
                 <ScalarProperty Name="yearOfBirth" ColumnName="yearOfBirth" />
-                <ScalarProperty Name="petSex" ColumnName="petSex" />
-                <ScalarProperty Name="petBreed" ColumnName="petBreed" />
-                <ScalarProperty Name="petSpecies" ColumnName="petSpecies" />
-                <ScalarProperty Name="dateOfArraival" ColumnName="dateOfArraival" />
-                <ScalarProperty Name="petColor" ColumnName="petColor" />
-                <ScalarProperty Name="healthStatus" ColumnName="healthStatus" />
-                <ScalarProperty Name="petState" ColumnName="petState" />
-                <ScalarProperty Name="petImage" ColumnName="petImage" />
-                <ScalarProperty Name="petSetter" ColumnName="petSetter" />
-                <ScalarProperty Name="adopter" ColumnName="adopter" />
-                <ScalarProperty Name="adoptDate" ColumnName="adoptDate" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="storage">
-            <EntityTypeMapping TypeName="littleSoulsModel.storage">
-              <MappingFragment StoreEntitySet="storage">
-                <ScalarProperty Name="shipmentNo" ColumnName="shipmentNo" />
-                <ScalarProperty Name="itemCode" ColumnName="itemCode" />
-                <ScalarProperty Name="quantity" ColumnName="quantity" />
-                <ScalarProperty Name="price" ColumnName="price" />
-                <ScalarProperty Name="itemCondition" ColumnName="itemCondition" />
-                <ScalarProperty Name="receivedDate" ColumnName="receivedDate" />
-                <ScalarProperty Name="expirationDate" ColumnName="expirationDate" />
-                <ScalarProperty Name="supplier" ColumnName="supplier" />
+                <ScalarProperty Name="lastName" ColumnName="lastName" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+                <ScalarProperty Name="employeeId" ColumnName="employeeId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="invoiceItems">
-            <EntityTypeMapping TypeName="littleSoulsModel.invoiceItems">
+            <EntityTypeMapping TypeName="littleSoulsModel.invoiceItem">
               <MappingFragment StoreEntitySet="invoiceItems">
-                <ScalarProperty Name="itemCode" ColumnName="itemCode" />
-                <ScalarProperty Name="invoiceNumber" ColumnName="invoiceNumber" />
-                <ScalarProperty Name="quantity" ColumnName="quantity" />
                 <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="quantity" ColumnName="quantity" />
+                <ScalarProperty Name="invoiceNumber" ColumnName="invoiceNumber" />
+                <ScalarProperty Name="itemCode" ColumnName="itemCode" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="invoices">
+            <EntityTypeMapping TypeName="littleSoulsModel.invoice">
+              <MappingFragment StoreEntitySet="invoices">
+                <ScalarProperty Name="total" ColumnName="total" />
+                <ScalarProperty Name="employeeId" ColumnName="employeeId" />
+                <ScalarProperty Name="invoiceIssueDate" ColumnName="invoiceIssueDate" />
+                <ScalarProperty Name="invoicesNumber" ColumnName="invoicesNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="items">
+            <EntityTypeMapping TypeName="littleSoulsModel.item">
+              <MappingFragment StoreEntitySet="items">
+                <ScalarProperty Name="sellPrice" ColumnName="sellPrice" />
+                <ScalarProperty Name="quantity" ColumnName="quantity" />
+                <ScalarProperty Name="itemName" ColumnName="itemName" />
+                <ScalarProperty Name="itemCode" ColumnName="itemCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="medicalRecods">
+            <EntityTypeMapping TypeName="littleSoulsModel.medicalRecod">
+              <MappingFragment StoreEntitySet="medicalRecod">
+                <ScalarProperty Name="vetetinarianId" ColumnName="vetetinarianId" />
+                <ScalarProperty Name="vaccinations" ColumnName="vaccinations" />
+                <ScalarProperty Name="surgeryInformation" ColumnName="surgeryInformation" />
+                <ScalarProperty Name="diagnosis" ColumnName="diagnosis" />
+                <ScalarProperty Name="treatmentsProvided" ColumnName="treatmentsProvided" />
+                <ScalarProperty Name="dateOfExamination" ColumnName="dateOfExamination" />
+                <ScalarProperty Name="petId" ColumnName="petId" />
+                <ScalarProperty Name="recordId" ColumnName="recordId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="pets">
+            <EntityTypeMapping TypeName="littleSoulsModel.pet">
+              <MappingFragment StoreEntitySet="pet">
+                <ScalarProperty Name="adoptDate" ColumnName="adoptDate" />
+                <ScalarProperty Name="adopter" ColumnName="adopter" />
+                <ScalarProperty Name="petSetter" ColumnName="petSetter" />
+                <ScalarProperty Name="petImage" ColumnName="petImage" />
+                <ScalarProperty Name="petState" ColumnName="petState" />
+                <ScalarProperty Name="healthStatus" ColumnName="healthStatus" />
+                <ScalarProperty Name="petColor" ColumnName="petColor" />
+                <ScalarProperty Name="dateOfArraival" ColumnName="dateOfArraival" />
+                <ScalarProperty Name="petSpecies" ColumnName="petSpecies" />
+                <ScalarProperty Name="petBreed" ColumnName="petBreed" />
+                <ScalarProperty Name="petSex" ColumnName="petSex" />
+                <ScalarProperty Name="yearOfBirth" ColumnName="yearOfBirth" />
+                <ScalarProperty Name="petId" ColumnName="petId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="storages">
+            <EntityTypeMapping TypeName="littleSoulsModel.storage">
+              <MappingFragment StoreEntitySet="storage">
+                <ScalarProperty Name="supplier" ColumnName="supplier" />
+                <ScalarProperty Name="expirationDate" ColumnName="expirationDate" />
+                <ScalarProperty Name="receivedDate" ColumnName="receivedDate" />
+                <ScalarProperty Name="itemCondition" ColumnName="itemCondition" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="quantity" ColumnName="quantity" />
+                <ScalarProperty Name="itemCode" ColumnName="itemCode" />
+                <ScalarProperty Name="shipmentNo" ColumnName="shipmentNo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

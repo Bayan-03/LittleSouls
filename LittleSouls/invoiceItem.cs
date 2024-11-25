@@ -12,14 +12,15 @@ namespace LittleSouls
     using System;
     using System.Collections.Generic;
     
-    public partial class invoiceItems
+    public partial class invoiceItem
     {
+        public int ID { get; set; }
         public int itemCode { get; set; }
         public int invoiceNumber { get; set; }
         public int quantity { get; set; }
         public Nullable<decimal> price { get; set; }
     
-        public virtual invoices invoices { get; set; }
-        public virtual items items { get; set; }
+        public virtual item item { get; set; }
+        public virtual invoice invoice { get; set; }
     }
 }

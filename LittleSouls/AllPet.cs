@@ -59,7 +59,7 @@ namespace LittleSouls
             try
             {
                 // جلب جميع البيانات من جدول الحيوانات باستخدام LINQ to Entities
-                var allPets = littleSouls.pet
+                var allPets = littleSouls.pets
                     .Select(p => new
                     {
                         p.petId,
@@ -82,7 +82,7 @@ namespace LittleSouls
                 AllpetTable.DataSource = allPets;
 
                 // جلب أنواع الحيوانات الفريدة لعرضها في ComboBox
-                var petTypes = littleSouls.pet
+                var petTypes = littleSouls.pets
                     .Select(p => p.petBreed)
                     .Distinct()
                     .ToList();
@@ -109,7 +109,7 @@ namespace LittleSouls
                 string selectedType = petType.SelectedItem?.ToString();
 
                 // استعلام قاعدة البيانات
-                var filteredPetsQuery = littleSouls.pet.AsQueryable();
+                var filteredPetsQuery = littleSouls.pets.AsQueryable();
 
                 // تطبيق الفلترة إذا لم يكن النوع "All"
                 if (!string.IsNullOrEmpty(selectedType) && selectedType != "All")

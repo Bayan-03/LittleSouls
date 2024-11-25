@@ -23,6 +23,6 @@ namespace LittleSouls
         public string expirationDate { get; set; }
         public string supplier { get; set; }
     
-        public virtual items items { get; set; }
+        public virtual item item { get; set; }
     }
 }
