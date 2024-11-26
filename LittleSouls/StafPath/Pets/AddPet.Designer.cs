@@ -441,6 +441,7 @@
             this.navBarPanel1.showPetsForm += new System.EventHandler(this.navBarPanel1_showPetsForm);
             this.navBarPanel1.showMedicalCareForm += new System.EventHandler(this.navBarPanel1_showMedicalCareForm);
             this.navBarPanel1.showInvoiceForm += new System.EventHandler(this.navBarPanel1_showInvoiceForm);
+            this.navBarPanel1.showLogInForm += new System.EventHandler(this.navBarPanel1_showLogInForm);
             // 
             // AddPet
             // 

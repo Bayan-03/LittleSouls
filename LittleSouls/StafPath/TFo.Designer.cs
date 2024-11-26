@@ -92,7 +92,7 @@
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
             this.label11.Location = new System.Drawing.Point(561, 9);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(221, 32);
+            this.label11.Size = new System.Drawing.Size(192, 29);
             this.label11.TabIndex = 36;
             this.label11.Text = "LITTLE SOULS";
             // 
@@ -127,7 +127,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
             this.label1.Location = new System.Drawing.Point(376, 133);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 29);
+            this.label1.Size = new System.Drawing.Size(118, 25);
             this.label1.TabIndex = 36;
             this.label1.Text = "Item Code:";
             // 
@@ -191,7 +191,7 @@
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.Location = new System.Drawing.Point(182, 598);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(160, 32);
+            this.lblTotal.Size = new System.Drawing.Size(136, 29);
             this.lblTotal.TabIndex = 39;
             this.lblTotal.Text = "Total: 00.0";
             // 
@@ -225,7 +225,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
             this.label2.Location = new System.Drawing.Point(681, 133);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 29);
+            this.label2.Size = new System.Drawing.Size(64, 25);
             this.label2.TabIndex = 41;
             this.label2.Text = "QTY:";
             // 
@@ -237,7 +237,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
             this.label3.Location = new System.Drawing.Point(151, 76);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(268, 40);
+            this.label3.Size = new System.Drawing.Size(227, 36);
             this.label3.TabIndex = 42;
             this.label3.Text = "NEW INVOICE";
             // 
@@ -252,10 +252,11 @@
             this.navBarPanel1.showHomeForm += new System.EventHandler(this.navBarPanel1_showHomeForm);
             this.navBarPanel1.showPetsForm += new System.EventHandler(this.navBarPanel1_showPetsForm);
             this.navBarPanel1.showMedicalCareForm += new System.EventHandler(this.navBarPanel1_showMedicalCareForm);
+            this.navBarPanel1.showLogInForm += new System.EventHandler(this.navBarPanel1_showLogInForm);
             // 
             // TFo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LittleSouls.Properties.Resources.الخلفية_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
