@@ -598,7 +598,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(68, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1346, 42);
+            this.guna2Panel1.Size = new System.Drawing.Size(1367, 42);
             this.guna2Panel1.TabIndex = 56;
             // 
             // label1
@@ -764,7 +764,7 @@
             this.navBarPanel1.Location = new System.Drawing.Point(0, 0);
             this.navBarPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.navBarPanel1.Name = "navBarPanel1";
-            this.navBarPanel1.Size = new System.Drawing.Size(68, 955);
+            this.navBarPanel1.Size = new System.Drawing.Size(68, 840);
             this.navBarPanel1.TabIndex = 60;
             this.navBarPanel1.showHomeForm += new System.EventHandler(this.navBarPanel1_showHomeForm);
             this.navBarPanel1.showPetsForm += new System.EventHandler(this.navBarPanel1_showPetsForm);
@@ -774,7 +774,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.BackgroundImage = global::LittleSouls.Properties.Resources.الخلفية_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1435, 840);
@@ -787,6 +786,7 @@
             this.Controls.Add(this.Adoptbtn);
             this.Name = "Adoption";
             this.Text = "Adoption";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Adoption_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

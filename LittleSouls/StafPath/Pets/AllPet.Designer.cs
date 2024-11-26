@@ -274,6 +274,7 @@
             this.Controls.Add(this.petType);
             this.Name = "AllPet";
             this.Text = "AllPet";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AllPet_Load);
             ((System.ComponentModel.ISupportInitialize)(this.petBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.littleSoulsDataSet)).EndInit();

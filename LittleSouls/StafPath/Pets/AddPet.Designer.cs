@@ -472,6 +472,7 @@
             this.Controls.Add(this.label6);
             this.Name = "AddPet";
             this.Text = "Add Pet";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.AddPet_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();

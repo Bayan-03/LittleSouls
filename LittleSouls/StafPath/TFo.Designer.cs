@@ -79,9 +79,9 @@
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(218)))));
             this.guna2Panel1.Controls.Add(this.label11);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(88, 0);
+            this.guna2Panel1.Location = new System.Drawing.Point(76, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(1305, 42);
+            this.guna2Panel1.Size = new System.Drawing.Size(1317, 42);
             this.guna2Panel1.TabIndex = 33;
             // 
             // label11
@@ -92,7 +92,7 @@
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
             this.label11.Location = new System.Drawing.Point(561, 9);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(221, 32);
+            this.label11.Size = new System.Drawing.Size(192, 29);
             this.label11.TabIndex = 36;
             this.label11.Text = "LITTLE SOULS";
             // 
@@ -127,7 +127,7 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
             this.label1.Location = new System.Drawing.Point(376, 133);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 29);
+            this.label1.Size = new System.Drawing.Size(118, 25);
             this.label1.TabIndex = 36;
             this.label1.Text = "Item Code:";
             // 
@@ -191,7 +191,7 @@
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotal.Location = new System.Drawing.Point(182, 598);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(160, 32);
+            this.lblTotal.Size = new System.Drawing.Size(136, 29);
             this.lblTotal.TabIndex = 39;
             this.lblTotal.Text = "Total: 00.0";
             // 
@@ -225,7 +225,7 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
             this.label2.Location = new System.Drawing.Point(681, 133);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 29);
+            this.label2.Size = new System.Drawing.Size(64, 25);
             this.label2.TabIndex = 41;
             this.label2.Text = "QTY:";
             // 
@@ -237,7 +237,7 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
             this.label3.Location = new System.Drawing.Point(151, 76);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(268, 40);
+            this.label3.Size = new System.Drawing.Size(227, 36);
             this.label3.TabIndex = 42;
             this.label3.Text = "NEW INVOICE";
             // 
@@ -247,7 +247,7 @@
             this.navBarPanel1.Location = new System.Drawing.Point(0, 0);
             this.navBarPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.navBarPanel1.Name = "navBarPanel1";
-            this.navBarPanel1.Size = new System.Drawing.Size(88, 725);
+            this.navBarPanel1.Size = new System.Drawing.Size(76, 725);
             this.navBarPanel1.TabIndex = 43;
             this.navBarPanel1.showHomeForm += new System.EventHandler(this.navBarPanel1_showHomeForm);
             this.navBarPanel1.showPetsForm += new System.EventHandler(this.navBarPanel1_showPetsForm);
@@ -255,7 +255,7 @@
             // 
             // TFo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LittleSouls.Properties.Resources.الخلفية_;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -274,6 +274,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "TFo";
             this.Text = "Invoices";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Invoices_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();

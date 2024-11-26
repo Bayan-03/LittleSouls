@@ -62,7 +62,7 @@
             this.guna2Button1.Font = new System.Drawing.Font("Graphik Arabic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
             this.guna2Button1.Location = new System.Drawing.Point(1450, 23);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(147, 55);
             this.guna2Button1.TabIndex = 39;
@@ -76,7 +76,7 @@
             this.SopjectLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.SopjectLable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
             this.SopjectLable.Location = new System.Drawing.Point(93, 36);
-            this.SopjectLable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SopjectLable.Margin = new System.Windows.Forms.Padding(4);
             this.SopjectLable.Name = "SopjectLable";
             this.SopjectLable.Size = new System.Drawing.Size(206, 39);
             this.SopjectLable.TabIndex = 5;
@@ -114,9 +114,10 @@
             this.ClientSize = new System.Drawing.Size(1676, 1031);
             this.Controls.Add(this.Uploadfile);
             this.Controls.Add(this.Tb_panal);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RepotrDp";
             this.Text = "Reportscs";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.RepotrDp_Load);
             this.Tb_panal.ResumeLayout(false);
             this.ResumeLayout(false);

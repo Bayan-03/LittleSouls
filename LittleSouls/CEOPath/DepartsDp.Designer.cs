@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.AllEmployTable = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Emp_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Empname = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,8 +43,8 @@
             this.petimage = new System.Windows.Forms.DataGridViewImageColumn();
             this.EmpStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tb_panal = new Guna.UI2.WinForms.Guna2Panel();
-            this.SopjectLable = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.SopjectLable = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.AllEmployTable)).BeginInit();
             this.Tb_panal.SuspendLayout();
             this.SuspendLayout();
@@ -53,16 +53,16 @@
             // 
             this.AllEmployTable.AllowUserToAddRows = false;
             this.AllEmployTable.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.AllEmployTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.AllEmployTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.AllEmployTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.AllEmployTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.AllEmployTable.ColumnHeadersHeight = 36;
             this.AllEmployTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.AllEmployTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -76,23 +76,23 @@
             this.EmpSalary,
             this.petimage,
             this.EmpStatus});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.AllEmployTable.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AllEmployTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.AllEmployTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.AllEmployTable.Location = new System.Drawing.Point(118, 130);
-            this.AllEmployTable.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AllEmployTable.Location = new System.Drawing.Point(138, 160);
+            this.AllEmployTable.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.AllEmployTable.Name = "AllEmployTable";
             this.AllEmployTable.ReadOnly = true;
             this.AllEmployTable.RowHeadersVisible = false;
             this.AllEmployTable.RowHeadersWidth = 51;
             this.AllEmployTable.RowTemplate.Height = 26;
-            this.AllEmployTable.Size = new System.Drawing.Size(1198, 540);
+            this.AllEmployTable.Size = new System.Drawing.Size(1398, 665);
             this.AllEmployTable.TabIndex = 37;
             this.AllEmployTable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.AllEmployTable.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -194,23 +194,10 @@
             this.Tb_panal.Controls.Add(this.SopjectLable);
             this.Tb_panal.Dock = System.Windows.Forms.DockStyle.Top;
             this.Tb_panal.Location = new System.Drawing.Point(0, 0);
-            this.Tb_panal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Tb_panal.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Tb_panal.Name = "Tb_panal";
-            this.Tb_panal.Size = new System.Drawing.Size(1437, 82);
+            this.Tb_panal.Size = new System.Drawing.Size(1676, 101);
             this.Tb_panal.TabIndex = 38;
-            // 
-            // SopjectLable
-            // 
-            this.SopjectLable.AutoSize = false;
-            this.SopjectLable.BackColor = System.Drawing.Color.Transparent;
-            this.SopjectLable.Font = new System.Drawing.Font("Graphik Arabic Medium", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.SopjectLable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.SopjectLable.Location = new System.Drawing.Point(74, 29);
-            this.SopjectLable.Name = "SopjectLable";
-            this.SopjectLable.Size = new System.Drawing.Size(396, 32);
-            this.SopjectLable.TabIndex = 5;
-            this.SopjectLable.Text = "Employees Of Department";
-            this.SopjectLable.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2Button1
             // 
@@ -225,23 +212,40 @@
             this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
             this.guna2Button1.Font = new System.Drawing.Font("Graphik Arabic Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
-            this.guna2Button1.Location = new System.Drawing.Point(1244, 16);
+            this.guna2Button1.Location = new System.Drawing.Point(1451, 20);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(126, 45);
+            this.guna2Button1.Size = new System.Drawing.Size(147, 55);
             this.guna2Button1.TabIndex = 41;
             this.guna2Button1.Text = "Go Back";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
+            // SopjectLable
+            // 
+            this.SopjectLable.AutoSize = false;
+            this.SopjectLable.BackColor = System.Drawing.Color.Transparent;
+            this.SopjectLable.Font = new System.Drawing.Font("Graphik Arabic Medium", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.SopjectLable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(93)))), ((int)(((byte)(143)))));
+            this.SopjectLable.Location = new System.Drawing.Point(86, 36);
+            this.SopjectLable.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SopjectLable.Name = "SopjectLable";
+            this.SopjectLable.Size = new System.Drawing.Size(462, 39);
+            this.SopjectLable.TabIndex = 5;
+            this.SopjectLable.Text = "Employees Of Department";
+            this.SopjectLable.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // DepartsDp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LittleSouls.Properties.Resources.الخلفية_;
-            this.ClientSize = new System.Drawing.Size(1437, 838);
+            this.ClientSize = new System.Drawing.Size(1676, 1031);
             this.Controls.Add(this.Tb_panal);
             this.Controls.Add(this.AllEmployTable);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DepartsDp";
             this.Text = "Department";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Department_Load);
             ((System.ComponentModel.ISupportInitialize)(this.AllEmployTable)).EndInit();
             this.Tb_panal.ResumeLayout(false);

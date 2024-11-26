@@ -162,6 +162,7 @@
             this.Controls.Add(this.navBarPanel1);
             this.Name = "Pets";
             this.Text = "Pets";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Pets_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
