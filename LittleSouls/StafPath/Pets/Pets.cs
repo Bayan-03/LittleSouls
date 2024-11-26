@@ -95,5 +95,14 @@ namespace LittleSouls
             InvoiceForm.FormClosed += (s, args) => this.Close();
             InvoiceForm.Show();
         }
+
+        private void navBarPanel1_showLogInForm(object sender, EventArgs e)
+        {
+            this.Hide();
+            var LoginForm = new login();
+            LoginForm.WindowState = FormWindowState.Minimized;
+            LoginForm.FormClosed += (s, args) => this.Close();
+            LoginForm.Show();
+        }
     }
 }
